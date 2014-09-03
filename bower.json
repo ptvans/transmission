@@ -1,0 +1,26 @@
+{
+  "name": "mixture-boilerplate",
+  "version": "0.9.0",
+  "homepage": "https://github.com/poezn/mixture-boilerplate",
+  "authors": [
+    "Michael Porath <michael@porath.ch>"
+  ],
+  "description": "Boilerplate package to use with mixture.io",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "backbone": "~1.1.2",
+    "d3": "~3.4.11",
+    "jquery": "~2.1.1",
+    "modernizr": "~2.8.3",
+    "nouislider": "~7.0.1",
+    "topojson": "~1.6.18",
+    "underscore": "~1.7.0"
+  }
+}

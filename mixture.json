@@ -1,0 +1,27 @@
+{
+  "convertHtml": {
+    "relativePaths": false
+  },
+  "debug": true,
+  "ignoreDir": [
+    "node_modules",
+    "scripts",
+    "source-data",
+    "tmp",
+    "dist"
+  ],
+  "optimiseSVG": false,
+  "preprocessorLocations": [
+    "css",
+    "js"
+  ],
+  "projectDescription": "",
+  "projectName": "cpi",
+  "simpleModeFileTypes": [
+    ".js",
+    ".html",
+    ".svg"
+  ],
+  "templateDefaultPage": "index",
+  "type": "simple"
+}
