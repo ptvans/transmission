@@ -2,6 +2,9 @@ $font-sans: sans-serif;
 $font-serifs: Georgia, serif;
 
 
+h1 { font-size: 32px; }
+h2 { font-size: 24px; }
+
 
 body {
 	width: 100vw;
@@ -29,7 +32,7 @@ body {
 #content {
 	width: 860px;
 	margin: auto;
-	background-color: #fff;
+	background-color: #F4F4F4;
 	padding: 40px;
 }
 
@@ -38,19 +41,25 @@ body {
 	margin: 30px 0;
 }
 
+.column-50 {
+	display: inline-block;
+	width: 50%;
+}
 
 .chart-sm {
 	width: 300px;
-	height: 240px;
-	background-color: #efefef;
-	color: #ccc;
 }
 
-
 .chart-lg {
-	width: 760px;
-	height: 300px;
-	background-color: #efefef;
+	width: 100%;
+}
+
+.chart-lg, .chart-sm {
+	background-color: #fff;
 	color: #ccc;
+	margin: 20px 0px;
+	text-align: center;
+	vertical-align: middle;
+	box-shadow: 0px 1px 4px rgba(40,20,20,0.2);
 }
 
