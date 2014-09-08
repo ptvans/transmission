@@ -1,9 +1,29 @@
-$font-sans: sans-serif;
-$font-serifs: Georgia, serif;
+$font-sans: 'Cronos Pro', sans-serif;
+$font-serif: 'Chaparral Pro', Georgia, serif;
+$font-detail: Verdana, Arial, sans-serif;
+
+$cpi-orange: #E96D34;
+$cpi-dk-orange: #B95727;
+$cpi-brown: #9C4722;
+
+$body-grey: #656565;
+
+$red: #ef542c;
+$dk-marine-blue: #326b84;
+$dk-purple: rgb(113, 75, 121);
+$gb-green: #35736b;
+$green: #028b00;
+$dk-blue: #174190;
+$orange: #dd6a34;
 
 
-h1 { font-size: 32px; clear: both;}
-h2 { font-size: 24px; clear: both;}
+h1, h2, h3, h4, h5 {
+	font-family: 'Proxima Nova';
+	font-weight: bold;
+}
+
+h1 { font-size: 32px; clear: both; color: $red;}
+h2 { font-size: 24px; clear: both; color: $cpi-brown;}
 
 
 body {
@@ -11,11 +31,37 @@ body {
 	background-color: #587891;
 }
 
-.title {
+#header {
+	height: 65px;
+	position: fixed;
+	width: 100vw;
+	background-color: #fff;
+	/*border-bottom: 2px red solid;*/
+	box-shadow: 0px 2px 8px rgba(40,20,20,0.25);
+
+	img {
+		height: 60px;
+		margin: 2px 0px 2px 5px;
+	}
+
+	#story-title {
+		display: inline-block;
+		font-size: 26px;
+		color: $dk-marine-blue;
+		width: 30%;
+		margin: 11px 20%;
+		font-family: $font-sans;
+		text-align: center;
+	}
+}
+
+
+h1.title {
 	width: 860px;
 	margin: auto;
 	padding: 40px;
 	font-size: 40px;
+	color: #fff;
 }
 
 .intro {
@@ -40,6 +86,14 @@ body {
 	margin: auto;
 	background-color: #F4F4F4;
 	padding: 40px;
+	color: $body-grey;
+	font-size: 16px;
+	line-height: 32px;
+	box-shadow: 0px 1px 6px rgba(20,20,20,0.5);
+
+	p {
+		font-family: $font-serif;
+	}
 }
 
 .section, .slide {
@@ -48,6 +102,18 @@ body {
 .section {
 	margin-bottom: 100px;
 	border-bottom: 1px solid #ccc;
+}
+
+.blockquote {
+	display: inline-block;
+	font-size: 26px;
+	padding: 20px 0px;
+	border-top: 1px solid $red;
+	border-bottom: 1px solid $red;
+	color: $red;
+	width: 270px;
+	font-family: $font-serif;
+	margin: 40px 0px;
 }
 
 .column-50 {
@@ -67,6 +133,7 @@ body {
 	text-align: center;
 	vertical-align: middle;
 	box-shadow: 0px 1px 4px rgba(40,20,20,0.2);
+	padding: 15px;
 }
 
 .chart-sm {
@@ -75,4 +142,16 @@ body {
 	margin-left: 30px;
 }
 
+.chart-sm-title {
+	width: 340px;
+	margin-left: 30px;
+	font-size: 24px;
+	color: $body-grey;
+	font-family: $font-serif;
+}
+
+.chart-sm-wrapper {
+	width: 370px;
+	float: right;
+}
 

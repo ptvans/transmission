@@ -1,78 +1,141 @@
 /* [sass, css, custom.scss] */
-/* line 5, /Users/lappy/Documents/Users/lappy/Sites/cpi_new-climate-economy/css/custom.scss */
+/* line 20, /Users/lappy/Documents/Users/lappy/Sites/cpi_new-climate-economy/css/custom.scss */
+h1, h2, h3, h4, h5 {
+  font-family: 'Proxima Nova';
+  font-weight: bold; }
+
+/* line 25, /Users/lappy/Documents/Users/lappy/Sites/cpi_new-climate-economy/css/custom.scss */
 h1 {
   font-size: 32px;
-  clear: both; }
+  clear: both;
+  color: #ef542c; }
 
-/* line 6, /Users/lappy/Documents/Users/lappy/Sites/cpi_new-climate-economy/css/custom.scss */
+/* line 26, /Users/lappy/Documents/Users/lappy/Sites/cpi_new-climate-economy/css/custom.scss */
 h2 {
   font-size: 24px;
-  clear: both; }
+  clear: both;
+  color: #9C4722; }
 
-/* line 9, /Users/lappy/Documents/Users/lappy/Sites/cpi_new-climate-economy/css/custom.scss */
+/* line 29, /Users/lappy/Documents/Users/lappy/Sites/cpi_new-climate-economy/css/custom.scss */
 body {
   width: 100vw;
   background-color: #587891; }
 
-/* line 14, /Users/lappy/Documents/Users/lappy/Sites/cpi_new-climate-economy/css/custom.scss */
-.title {
+/* line 34, /Users/lappy/Documents/Users/lappy/Sites/cpi_new-climate-economy/css/custom.scss */
+#header {
+  height: 65px;
+  position: fixed;
+  width: 100vw;
+  background-color: #fff;
+  /*border-bottom: 2px red solid;*/
+  box-shadow: 0px 2px 8px rgba(40, 20, 20, 0.25); }
+  /* line 42, /Users/lappy/Documents/Users/lappy/Sites/cpi_new-climate-economy/css/custom.scss */
+  #header img {
+    height: 60px;
+    margin: 2px 0px 2px 5px; }
+  /* line 47, /Users/lappy/Documents/Users/lappy/Sites/cpi_new-climate-economy/css/custom.scss */
+  #header #story-title {
+    display: inline-block;
+    font-size: 26px;
+    color: #326b84;
+    width: 30%;
+    margin: 11px 20%;
+    font-family: "Cronos Pro", sans-serif;
+    text-align: center; }
+
+/* line 59, /Users/lappy/Documents/Users/lappy/Sites/cpi_new-climate-economy/css/custom.scss */
+h1.title {
   width: 860px;
   margin: auto;
   padding: 40px;
-  font-size: 40px; }
+  font-size: 40px;
+  color: #fff; }
 
-/* line 21, /Users/lappy/Documents/Users/lappy/Sites/cpi_new-climate-economy/css/custom.scss */
+/* line 67, /Users/lappy/Documents/Users/lappy/Sites/cpi_new-climate-economy/css/custom.scss */
 .intro {
   width: 860px;
   margin: auto;
   padding: 40px; }
-  /* line 26, /Users/lappy/Documents/Users/lappy/Sites/cpi_new-climate-economy/css/custom.scss */
+  /* line 72, /Users/lappy/Documents/Users/lappy/Sites/cpi_new-climate-economy/css/custom.scss */
   .intro .heading {
     font-size: 32px; }
-  /* line 29, /Users/lappy/Documents/Users/lappy/Sites/cpi_new-climate-economy/css/custom.scss */
+  /* line 75, /Users/lappy/Documents/Users/lappy/Sites/cpi_new-climate-economy/css/custom.scss */
   .intro .subhead {
     font-size: 18px; }
-  /* line 32, /Users/lappy/Documents/Users/lappy/Sites/cpi_new-climate-economy/css/custom.scss */
+  /* line 78, /Users/lappy/Documents/Users/lappy/Sites/cpi_new-climate-economy/css/custom.scss */
   .intro span {
     display: block; }
 
-/* line 38, /Users/lappy/Documents/Users/lappy/Sites/cpi_new-climate-economy/css/custom.scss */
+/* line 84, /Users/lappy/Documents/Users/lappy/Sites/cpi_new-climate-economy/css/custom.scss */
 #content {
   width: 860px;
   margin: auto;
   background-color: #F4F4F4;
-  padding: 40px; }
+  padding: 40px;
+  color: #656565;
+  font-size: 16px;
+  line-height: 32px;
+  box-shadow: 0px 1px 6px rgba(20, 20, 20, 0.5); }
+  /* line 94, /Users/lappy/Documents/Users/lappy/Sites/cpi_new-climate-economy/css/custom.scss */
+  #content p {
+    font-family: "Chaparral Pro", Georgia, serif; }
 
-/* line 45, /Users/lappy/Documents/Users/lappy/Sites/cpi_new-climate-economy/css/custom.scss */
+/* line 99, /Users/lappy/Documents/Users/lappy/Sites/cpi_new-climate-economy/css/custom.scss */
 .section, .slide {
   margin: 30px 0; }
 
-/* line 48, /Users/lappy/Documents/Users/lappy/Sites/cpi_new-climate-economy/css/custom.scss */
+/* line 102, /Users/lappy/Documents/Users/lappy/Sites/cpi_new-climate-economy/css/custom.scss */
 .section {
   margin-bottom: 100px;
   border-bottom: 1px solid #ccc; }
 
-/* line 53, /Users/lappy/Documents/Users/lappy/Sites/cpi_new-climate-economy/css/custom.scss */
+/* line 107, /Users/lappy/Documents/Users/lappy/Sites/cpi_new-climate-economy/css/custom.scss */
+.blockquote {
+  display: inline-block;
+  font-size: 26px;
+  padding: 20px 0px;
+  border-top: 1px solid #ef542c;
+  border-bottom: 1px solid #ef542c;
+  color: #ef542c;
+  width: 270px;
+  font-family: "Chaparral Pro", Georgia, serif;
+  margin: 40px 0px; }
+
+/* line 119, /Users/lappy/Documents/Users/lappy/Sites/cpi_new-climate-economy/css/custom.scss */
 .column-50 {
   display: inline-block;
   width: 48%;
   padding: 2%; }
 
-/* line 59, /Users/lappy/Documents/Users/lappy/Sites/cpi_new-climate-economy/css/custom.scss */
+/* line 125, /Users/lappy/Documents/Users/lappy/Sites/cpi_new-climate-economy/css/custom.scss */
 .chart-lg {
   width: 100%; }
 
-/* line 63, /Users/lappy/Documents/Users/lappy/Sites/cpi_new-climate-economy/css/custom.scss */
+/* line 129, /Users/lappy/Documents/Users/lappy/Sites/cpi_new-climate-economy/css/custom.scss */
 .chart-lg, .chart-sm {
   background-color: #fff;
   color: #ccc;
   margin: 20px 0px;
   text-align: center;
   vertical-align: middle;
-  box-shadow: 0px 1px 4px rgba(40, 20, 20, 0.2); }
+  box-shadow: 0px 1px 4px rgba(40, 20, 20, 0.2);
+  padding: 15px; }
 
-/* line 72, /Users/lappy/Documents/Users/lappy/Sites/cpi_new-climate-economy/css/custom.scss */
+/* line 139, /Users/lappy/Documents/Users/lappy/Sites/cpi_new-climate-economy/css/custom.scss */
 .chart-sm {
   width: 340px;
   float: right;
   margin-left: 30px; }
+
+/* line 145, /Users/lappy/Documents/Users/lappy/Sites/cpi_new-climate-economy/css/custom.scss */
+.chart-sm-title {
+  width: 340px;
+  margin-left: 30px;
+  font-size: 24px;
+  color: #656565;
+  font-family: "Chaparral Pro", Georgia, serif; }
+
+/* line 153, /Users/lappy/Documents/Users/lappy/Sites/cpi_new-climate-economy/css/custom.scss */
+.chart-sm-wrapper {
+  width: 370px;
+  float: right; }
