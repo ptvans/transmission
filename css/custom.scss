@@ -34,6 +34,8 @@ body {
 #header {
 	height: 65px;
 	position: fixed;
+	top: 0px;
+	left: 0px;
 	width: 100vw;
 	background-color: #fff;
 	/*border-bottom: 2px red solid;*/
@@ -62,7 +64,9 @@ h1.title {
 	padding: 40px;
 	font-size: 40px;
 	color: #fff;
+	margin-top: 200px;
 }
+
 
 .intro {
 	width: 860px;
