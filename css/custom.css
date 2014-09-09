@@ -29,13 +29,14 @@ body {
   left: 0px;
   width: 100vw;
   background-color: #fff;
+  z-index: 1000;
   /*border-bottom: 2px red solid;*/
   box-shadow: 0px 2px 8px rgba(40, 20, 20, 0.25); }
-  /* line 44, /Users/lappy/Documents/Users/lappy/Sites/cpi_new-climate-economy/css/custom.scss */
+  /* line 45, /Users/lappy/Documents/Users/lappy/Sites/cpi_new-climate-economy/css/custom.scss */
   #header img {
     height: 60px;
     margin: 2px 0px 2px 5px; }
-  /* line 49, /Users/lappy/Documents/Users/lappy/Sites/cpi_new-climate-economy/css/custom.scss */
+  /* line 50, /Users/lappy/Documents/Users/lappy/Sites/cpi_new-climate-economy/css/custom.scss */
   #header #story-title {
     display: inline-block;
     font-size: 26px;
@@ -45,7 +46,7 @@ body {
     font-family: "Cronos Pro", sans-serif;
     text-align: center; }
 
-/* line 61, /Users/lappy/Documents/Users/lappy/Sites/cpi_new-climate-economy/css/custom.scss */
+/* line 62, /Users/lappy/Documents/Users/lappy/Sites/cpi_new-climate-economy/css/custom.scss */
 h1.title {
   width: 860px;
   margin: auto;
@@ -54,22 +55,22 @@ h1.title {
   color: #fff;
   margin-top: 200px; }
 
-/* line 71, /Users/lappy/Documents/Users/lappy/Sites/cpi_new-climate-economy/css/custom.scss */
+/* line 72, /Users/lappy/Documents/Users/lappy/Sites/cpi_new-climate-economy/css/custom.scss */
 .intro {
   width: 860px;
   margin: auto;
   padding: 40px; }
-  /* line 76, /Users/lappy/Documents/Users/lappy/Sites/cpi_new-climate-economy/css/custom.scss */
+  /* line 77, /Users/lappy/Documents/Users/lappy/Sites/cpi_new-climate-economy/css/custom.scss */
   .intro .heading {
     font-size: 32px; }
-  /* line 79, /Users/lappy/Documents/Users/lappy/Sites/cpi_new-climate-economy/css/custom.scss */
+  /* line 80, /Users/lappy/Documents/Users/lappy/Sites/cpi_new-climate-economy/css/custom.scss */
   .intro .subhead {
     font-size: 18px; }
-  /* line 82, /Users/lappy/Documents/Users/lappy/Sites/cpi_new-climate-economy/css/custom.scss */
+  /* line 83, /Users/lappy/Documents/Users/lappy/Sites/cpi_new-climate-economy/css/custom.scss */
   .intro span {
     display: block; }
 
-/* line 88, /Users/lappy/Documents/Users/lappy/Sites/cpi_new-climate-economy/css/custom.scss */
+/* line 89, /Users/lappy/Documents/Users/lappy/Sites/cpi_new-climate-economy/css/custom.scss */
 #content {
   width: 860px;
   margin: auto;
@@ -79,20 +80,20 @@ h1.title {
   font-size: 16px;
   line-height: 32px;
   box-shadow: 0px 1px 6px rgba(20, 20, 20, 0.5); }
-  /* line 98, /Users/lappy/Documents/Users/lappy/Sites/cpi_new-climate-economy/css/custom.scss */
+  /* line 99, /Users/lappy/Documents/Users/lappy/Sites/cpi_new-climate-economy/css/custom.scss */
   #content p {
     font-family: "Chaparral Pro", Georgia, serif; }
 
-/* line 103, /Users/lappy/Documents/Users/lappy/Sites/cpi_new-climate-economy/css/custom.scss */
+/* line 104, /Users/lappy/Documents/Users/lappy/Sites/cpi_new-climate-economy/css/custom.scss */
 .section, .slide {
   margin: 30px 0; }
 
-/* line 106, /Users/lappy/Documents/Users/lappy/Sites/cpi_new-climate-economy/css/custom.scss */
+/* line 107, /Users/lappy/Documents/Users/lappy/Sites/cpi_new-climate-economy/css/custom.scss */
 .section {
   margin-bottom: 100px;
   border-bottom: 1px solid #ccc; }
 
-/* line 111, /Users/lappy/Documents/Users/lappy/Sites/cpi_new-climate-economy/css/custom.scss */
+/* line 112, /Users/lappy/Documents/Users/lappy/Sites/cpi_new-climate-economy/css/custom.scss */
 .blockquote {
   display: inline-block;
   font-size: 26px;
@@ -104,17 +105,44 @@ h1.title {
   font-family: "Chaparral Pro", Georgia, serif;
   margin: 40px 0px; }
 
-/* line 123, /Users/lappy/Documents/Users/lappy/Sites/cpi_new-climate-economy/css/custom.scss */
+/* line 124, /Users/lappy/Documents/Users/lappy/Sites/cpi_new-climate-economy/css/custom.scss */
 .column-50 {
   display: inline-block;
   width: 48%;
   padding: 2%; }
 
-/* line 129, /Users/lappy/Documents/Users/lappy/Sites/cpi_new-climate-economy/css/custom.scss */
+/* line 130, /Users/lappy/Documents/Users/lappy/Sites/cpi_new-climate-economy/css/custom.scss */
 .chart-lg {
-  width: 100%; }
+  width: 100%;
+  position: relative; }
+  /* line 134, /Users/lappy/Documents/Users/lappy/Sites/cpi_new-climate-economy/css/custom.scss */
+  .chart-lg .stage-next {
+    position: absolute;
+    top: 150px;
+    right: -29px;
+    height: 58px;
+    width: 58px;
+    font-size: 32px;
+    line-height: 60px;
+    background-color: #9C4722;
+    color: #fff;
+    border-radius: 100%;
+    -webkit-box-shadow: 0px 0px 6px rgba(20, 20, 20, 0.2); }
+  /* line 147, /Users/lappy/Documents/Users/lappy/Sites/cpi_new-climate-economy/css/custom.scss */
+  .chart-lg .stage-next::after {
+    content: 'NEXT';
+    position: absolute;
+    line-height: 24px;
+    top: -25px;
+    left: 13px;
+    color: #9C4722;
+    font-size: 12px;
+    text-shadow: 0px 2px 4px rgba(20, 20, 20, 0.4); }
+  /* line 157, /Users/lappy/Documents/Users/lappy/Sites/cpi_new-climate-economy/css/custom.scss */
+  .chart-lg .stage-next:hover {
+    opacity: 0.8; }
 
-/* line 133, /Users/lappy/Documents/Users/lappy/Sites/cpi_new-climate-economy/css/custom.scss */
+/* line 162, /Users/lappy/Documents/Users/lappy/Sites/cpi_new-climate-economy/css/custom.scss */
 .chart-lg, .chart-sm {
   background-color: #fff;
   color: #ccc;
@@ -124,13 +152,13 @@ h1.title {
   box-shadow: 0px 1px 4px rgba(40, 20, 20, 0.2);
   padding: 15px; }
 
-/* line 143, /Users/lappy/Documents/Users/lappy/Sites/cpi_new-climate-economy/css/custom.scss */
+/* line 172, /Users/lappy/Documents/Users/lappy/Sites/cpi_new-climate-economy/css/custom.scss */
 .chart-sm {
   width: 340px;
   float: right;
   margin-left: 30px; }
 
-/* line 149, /Users/lappy/Documents/Users/lappy/Sites/cpi_new-climate-economy/css/custom.scss */
+/* line 178, /Users/lappy/Documents/Users/lappy/Sites/cpi_new-climate-economy/css/custom.scss */
 .chart-sm-title {
   width: 340px;
   margin-left: 30px;
@@ -138,7 +166,7 @@ h1.title {
   color: #656565;
   font-family: "Chaparral Pro", Georgia, serif; }
 
-/* line 157, /Users/lappy/Documents/Users/lappy/Sites/cpi_new-climate-economy/css/custom.scss */
+/* line 186, /Users/lappy/Documents/Users/lappy/Sites/cpi_new-climate-economy/css/custom.scss */
 .chart-sm-wrapper {
   width: 370px;
   float: right; }

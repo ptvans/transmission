@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="750px" height="370px" viewBox="0 0 750 370" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.4 (8053) - http://www.bohemiancoding.com/sketch -->
+    <title>waterfall-renewable</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.35 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.35 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.35 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.35 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.35 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-6">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.35 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-7">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.35 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-8">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.35 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-9">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.35 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-10">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.35 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-11">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.35 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-12">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.35 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-13">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.35 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-14">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.35 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-15">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.35 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Artboard-5" sketch:type="MSArtboardGroup" transform="translate(-14.000000, -77.000000)">
+            <text id="Coal-Generated-Elect" fill="#EF542C" sketch:type="MSTextLayer" font-family="Cronos Pro" font-size="16" font-weight="260">
+                <tspan x="238" y="100">Coal Generated Electricity</tspan>
+            </text>
+            <text id="Renewable-Electricit" fill="#326B84" sketch:type="MSTextLayer" font-family="Cronos Pro" font-size="16" font-weight="260">
+                <tspan x="454" y="100">Renewable Electricity</tspan>
+            </text>
+            <g id="Group-3" sketch:type="MSLayerGroup" transform="translate(511.500000, 299.000000) rotate(-90.000000) translate(-511.500000, -299.000000) translate(463.000000, 92.500000)" stroke="#979797" stroke-linecap="square" stroke-dasharray="1,10">
+                <path d="M0.887195122,0.756410256 L0.887195122,412.288095" id="Line-2" sketch:type="MSShapeGroup"></path>
+                <path d="M24.1671951,0.756410256 L24.1671951,412.288095" id="Line-3" sketch:type="MSShapeGroup"></path>
+                <path d="M47.4471951,0.756410256 L47.4471951,412.288095" id="Line-5" sketch:type="MSShapeGroup"></path>
+                <path d="M70.7271951,0.756410256 L70.7271951,412.288095" id="Line-4" sketch:type="MSShapeGroup"></path>
+                <path d="M96.1128049,0.756410256 L96.1128049,412.288095" id="Line-5" sketch:type="MSShapeGroup"></path>
+            </g>
+            <g id="Oval-178-+-$-12" sketch:type="MSLayerGroup" transform="translate(205.000000, 83.000000)">
+                <circle id="Oval-178" fill="#EF542C" filter="url(#filter-1)" sketch:type="MSShapeGroup" cx="12" cy="12" r="12"></circle>
+                <text id="$" fill="#B23718" sketch:type="MSTextLayer" font-family="Helvetica" font-size="15" font-weight="bold">
+                    <tspan x="7.74193548" y="17.0967742">$</tspan>
+                </text>
+            </g>
+            <g id="Oval-178-+-$-11" sketch:type="MSLayerGroup" transform="translate(421.000000, 83.000000)">
+                <circle id="Oval-178" fill="#326B84" filter="url(#filter-2)" sketch:type="MSShapeGroup" cx="12" cy="12" r="12"></circle>
+                <text id="$" fill="#0C4057" sketch:type="MSTextLayer" font-family="Helvetica" font-size="15" font-weight="bold">
+                    <tspan x="7.74193548" y="17.0967742">$</tspan>
+                </text>
+            </g>
+            <g id=".stage-1" sketch:type="MSLayerGroup" transform="translate(22.000000, 124.000000)">
+                <rect id="Rectangle-594" fill="#EF542C" sketch:type="MSShapeGroup" x="13" y="206" width="30" height="42.9292929"></rect>
+                <rect id="Rectangle-595" fill="#326B84" sketch:type="MSShapeGroup" x="60" y="181" width="30" height="68.5"></rect>
+                <rect id="Rectangle-597" fill="#EF542C" sketch:type="MSShapeGroup" x="150.914591" y="180.818182" width="30" height="68.1818182"></rect>
+                <rect id="Rectangle-596" fill="#326B84" sketch:type="MSShapeGroup" x="201.295374" y="165.666667" width="30" height="83.3333333"></rect>
+                <text id="Amortization-2" sketch:type="MSTextLayer" font-family="Cronos Pro" font-size="16" font-weight="260" fill="#676767">
+                    <tspan x="2" y="265">Amortization</tspan>
+                </text>
+                <text id="Financing-Costs-2" sketch:type="MSTextLayer" font-family="Cronos Pro" font-size="16" font-weight="260" fill="#676767">
+                    <tspan x="141" y="265">Financing Costs</tspan>
+                </text>
+                <text id="desctiption-of-this--3" sketch:type="MSTextLayer" font-family="Cronos Pro" font-size="12" font-weight="260" fill="#676767">
+                    <tspan x="2" y="290">desctiption of this item. </tspan>
+                    <tspan x="2" y="304">description of this item</tspan>
+                </text>
+                <text id="desctiption-of-this--4" sketch:type="MSTextLayer" font-family="Cronos Pro" font-size="12" font-weight="260" fill="#676767">
+                    <tspan x="134.525391" y="290">desctiption of this item. </tspan>
+                    <tspan x="134.525391" y="304">description of this item</tspan>
+                </text>
+                <text id="Renewable-costs-more-2" sketch:type="MSTextLayer" font-family="Cronos Pro" font-size="16" font-weight="260" fill="#656565">
+                    <tspan x="0" y="37">Renewable costs more to </tspan>
+                    <tspan x="0" y="55">build…</tspan>
+                </text>
+                <rect id="Rectangle-614" fill="#D8D8D8" sketch:type="MSShapeGroup" x="0" y="0" width="245" height="10"></rect>
+                <g id="Group-2" transform="translate(128.612100, 175.000000) rotate(-90.000000) translate(-128.612100, -175.000000) translate(80.112100, 50.000000)" stroke="#979797" stroke-linecap="square" stroke-dasharray="1,10" sketch:type="MSShapeGroup">
+                    <path d="M0.887195122,0.457875458 L0.887195122,249.569065" id="Line-2"></path>
+                    <path d="M24.1671951,0.457875458 L24.1671951,249.569065" id="Line-3"></path>
+                    <path d="M47.4471951,0.457875458 L47.4471951,249.569065" id="Line-5"></path>
+                    <path d="M70.7271951,0.457875458 L70.7271951,249.569065" id="Line-4"></path>
+                    <path d="M96.1128049,0.457875458 L96.1128049,249.569065" id="Line-5"></path>
+                </g>
+                <text id="1.7T" fill="#EF542C" sketch:type="MSTextLayer" font-family="Cronos Pro" font-size="12" font-weight="260" sketch:alignment="middle">
+                    <tspan x="18.7275391" y="196.109375">1.7T</tspan>
+                </text>
+                <text id="2.8T" fill="#326B84" sketch:type="MSTextLayer" font-family="Cronos Pro" font-size="12" font-weight="260" sketch:alignment="middle">
+                    <tspan x="65.3289626" y="171.207031">2.8T</tspan>
+                </text>
+                <text id="2.7T" fill="#EF542C" sketch:type="MSTextLayer" font-family="Cronos Pro" font-size="12" font-weight="260" sketch:alignment="middle">
+                    <tspan x="156.64213" y="169.207031">2.7T</tspan>
+                </text>
+                <text id="3.3T" fill="#326B84" sketch:type="MSTextLayer" font-family="Cronos Pro" font-size="12" font-weight="260" sketch:alignment="middle">
+                    <tspan x="208.328963" y="155.207031">3.3T</tspan>
+                </text>
+                <path d="M2.5,249.5 L247.5,249.5" id="Line-2" stroke="#979797" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+                <g id="Oval-178-+-$" transform="translate(16.000000, 207.500000)">
+                    <circle id="Oval-178" fill="#EF542C" filter="url(#filter-3)" sketch:type="MSShapeGroup" cx="12" cy="12" r="12"></circle>
+                    <text id="$" fill="#B23718" sketch:type="MSTextLayer" font-family="Helvetica" font-size="15" font-weight="bold">
+                        <tspan x="7.74193548" y="17.0967742">$</tspan>
+                    </text>
+                </g>
+                <g id="Oval-178-+-$-5" transform="translate(62.601423, 182.500000)">
+                    <circle id="Oval-178" fill="#326B84" filter="url(#filter-4)" sketch:type="MSShapeGroup" cx="12" cy="12" r="12"></circle>
+                    <text id="$" fill="#0C4057" sketch:type="MSTextLayer" font-family="Helvetica" font-size="15" font-weight="bold">
+                        <tspan x="7.74193548" y="17.0967742">$</tspan>
+                    </text>
+                </g>
+                <g id="Oval-178-+-$-6" transform="translate(204.295374, 166.500000)">
+                    <circle id="Oval-178" fill="#326B84" filter="url(#filter-5)" sketch:type="MSShapeGroup" cx="12" cy="12" r="12"></circle>
+                    <text id="$" fill="#0C4057" sketch:type="MSTextLayer" font-family="Helvetica" font-size="15" font-weight="bold">
+                        <tspan x="7.74193548" y="17.0967742">$</tspan>
+                    </text>
+                </g>
+                <g id="Oval-178-+-$-2" transform="translate(153.914591, 181.500000)">
+                    <circle id="Oval-178" fill="#EF542C" filter="url(#filter-6)" sketch:type="MSShapeGroup" cx="12" cy="12" r="12"></circle>
+                    <text id="$" fill="#B23718" sketch:type="MSTextLayer" font-family="Helvetica" font-size="15" font-weight="bold">
+                        <tspan x="7.74193548" y="17.0967742">$</tspan>
+                    </text>
+                </g>
+            </g>
+            <g id=".stage-2" sketch:type="MSLayerGroup" transform="translate(303.000000, 123.000000)">
+                <rect id="Rectangle-599" fill="#EF542C" sketch:type="MSShapeGroup" x="11.9252669" y="111.111111" width="30" height="138.888889"></rect>
+                <rect id="Rectangle-603" fill="#EF542C" sketch:type="MSShapeGroup" x="11.9252669" y="111.111111" width="30" height="138.888889"></rect>
+                <rect id="Rectangle-601" stroke="#FFFFFF" fill="#EF542C" sketch:type="MSShapeGroup" x="326" y="0" width="30" height="250"></rect>
+                <rect id="Rectangle-607" stroke="#FFFFFF" fill="#EF542C" sketch:type="MSShapeGroup" x="326" y="0" width="30" height="138.888889"></rect>
+                <rect id="Rectangle-606" stroke="#FFFFFF" fill="#EF542C" sketch:type="MSShapeGroup" x="326" y="140" width="30" height="68.1818182"></rect>
+                <rect id="Rectangle-608" stroke="#FFFFFF" fill="#EF542C" sketch:type="MSShapeGroup" x="326" y="207" width="30" height="42.9292929"></rect>
+                <rect id="Rectangle-602" stroke="#FFFFFF" fill="#326B84" sketch:type="MSShapeGroup" x="384" y="44" width="30" height="205.808081"></rect>
+                <rect id="Rectangle-604" fill="#EF542C" sketch:type="MSShapeGroup" x="146" y="249" width="30" height="1"></rect>
+                <rect id="Rectangle-600" fill="#326B84" sketch:type="MSShapeGroup" x="197" y="222" width="30" height="27.7777778"></rect>
+                <rect id="Rectangle-598" fill="#326B84" sketch:type="MSShapeGroup" x="62.3060498" y="227.272727" width="30" height="22.7272727"></rect>
+                <rect id="Rectangle-612" stroke="#FFFFFF" fill="#326B84" sketch:type="MSShapeGroup" x="384" y="181.277778" width="30" height="68.5"></rect>
+                <rect id="Rectangle-609" stroke="#FFFFFF" fill="#326B84" sketch:type="MSShapeGroup" x="384" y="97" width="30" height="83.3333333"></rect>
+                <rect id="Rectangle-610" stroke="#FFFFFF" fill="#326B84" sketch:type="MSShapeGroup" x="384" y="45" width="30" height="27.7777778"></rect>
+                <rect id="Rectangle-611" stroke="#FFFFFF" fill="#326B84" sketch:type="MSShapeGroup" x="384" y="74" width="30" height="22.7272727"></rect>
+                <text id="…-but-renewable-cost" sketch:type="MSTextLayer" font-family="Cronos Pro" font-size="16" font-weight="260" fill="#656565">
+                    <tspan x="0" y="38">… but renewable </tspan>
+                    <tspan x="0" y="56">costs far less to </tspan>
+                    <tspan x="0" y="74">operate…</tspan>
+                </text>
+                <text id="….even-when-we-accou" sketch:type="MSTextLayer" font-family="Cronos Pro" font-size="16" font-weight="260" fill="#656565">
+                    <tspan x="146" y="38">….even when we </tspan>
+                    <tspan x="146" y="56">account for </tspan>
+                    <tspan x="146" y="74">stranded assets </tspan>
+                    <tspan x="146" y="92">from fossil fuels.</tspan>
+                </text>
+                <text id="Operating-Costs-2" sketch:type="MSTextLayer" font-family="Cronos Pro" font-size="16" font-weight="260" fill="#676767">
+                    <tspan x="0" y="266">Operating Costs</tspan>
+                </text>
+                <text id="Stranded-Fossil-" sketch:type="MSTextLayer" font-family="Cronos Pro" font-size="16" font-weight="260" fill="#676767">
+                    <tspan x="146" y="266">Stranded Fossil </tspan>
+                    <tspan x="146" y="284">Assets</tspan>
+                </text>
+                <text id="desctiption-of-this--5" sketch:type="MSTextLayer" font-family="Cronos Pro" font-size="12" font-weight="260" fill="#676767">
+                    <tspan x="146" y="301">desctiption of this item. </tspan>
+                    <tspan x="146" y="315">description of this item</tspan>
+                </text>
+                <text id="desctiption-of-this--6" sketch:type="MSTextLayer" font-family="Cronos Pro" font-size="12" font-weight="260" fill="#676767">
+                    <tspan x="0" y="291">desctiption of this item. </tspan>
+                    <tspan x="0" y="305">description of this item</tspan>
+                </text>
+                <rect id="Rectangle-149" stroke="#63D5D6" fill="#65EDF1" filter="url(#filter-7)" sketch:type="MSShapeGroup" x="384" y="0" width="30" height="44"></rect>
+                <path d="M289,302.5 L289,2.5" id="Line" stroke="#457B8F" stroke-width="2" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+                <rect id="Rectangle-615" fill="#D8D8D8" sketch:type="MSShapeGroup" x="0" y="1" width="110" height="10"></rect>
+                <rect id="Rectangle-616" fill="#D8D8D8" sketch:type="MSShapeGroup" x="146" y="1" width="110" height="10"></rect>
+                <path d="M0.46610412,250.5 L245.466104,250.5" id="Line" stroke="#979797" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+                <rect id="Rectangle-605" fill="#EF542C" sketch:type="MSShapeGroup" x="338" y="249" width="30" height="1"></rect>
+                <text id="TOTAL-IMPACT" sketch:type="MSTextLayer" font-family="Cronos Pro" font-size="16" font-weight="260" fill="#676767">
+                    <tspan x="326" y="266">TOTAL IMPACT</tspan>
+                </text>
+                <text id="desctiption-of-this--7" sketch:type="MSTextLayer" font-family="Cronos Pro" font-size="12" font-weight="260" fill="#676767">
+                    <tspan x="326" y="291">desctiption of this item. </tspan>
+                    <tspan x="326" y="305">description of this item</tspan>
+                </text>
+                <text id="5.5T" fill="#EF542C" sketch:type="MSTextLayer" font-family="Cronos Pro" font-size="12" font-weight="260" sketch:alignment="middle">
+                    <tspan x="17.7275391" y="103">5.5T</tspan>
+                </text>
+                <text id="0.9T" fill="#326B84" sketch:type="MSTextLayer" font-family="Cronos Pro" font-size="12" font-weight="260" sketch:alignment="middle">
+                    <tspan x="68.3289626" y="217.207031">0.9T</tspan>
+                </text>
+                <text id="0T" fill="#EF542C" sketch:type="MSTextLayer" font-family="Cronos Pro" font-size="12" font-weight="260" sketch:alignment="middle">
+                    <tspan x="155.228516" y="245">0T</tspan>
+                </text>
+                <text id="1.1T" fill="#326B84" sketch:type="MSTextLayer" font-family="Cronos Pro" font-size="12" font-weight="260" sketch:alignment="middle">
+                    <tspan x="202.727539" y="214.207031">1.1T</tspan>
+                </text>
+                <path d="M324.837576,249.5 L416.5,249.5" id="Line-3" stroke="#979797" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+                <g id="Oval-178-+-?" transform="translate(172.000000, 147.000000)">
+                    <circle id="Oval-178" stroke="#FFFFFF" stroke-width="4" fill="#797979" filter="url(#filter-8)" sketch:type="MSShapeGroup" cx="15.5" cy="15.5" r="15.5"></circle>
+                    <text id="?" sketch:type="MSTextLayer" font-family="Helvetica" font-size="18" font-weight="bold" fill="#FAFAFA">
+                        <tspan x="10" y="22">?</tspan>
+                    </text>
+                </g>
+                <g id="Oval-178-+-$-7" transform="translate(65.306050, 225.500000)">
+                    <circle id="Oval-178" fill="#326B84" filter="url(#filter-9)" sketch:type="MSShapeGroup" cx="12" cy="12" r="12"></circle>
+                    <text id="$" fill="#0C4057" sketch:type="MSTextLayer" font-family="Helvetica" font-size="15" font-weight="bold">
+                        <tspan x="7.74193548" y="17.0967742">$</tspan>
+                    </text>
+                </g>
+                <g id="Oval-178-+-$-8" transform="translate(200.000000, 223.000000)">
+                    <circle id="Oval-178" fill="#326B84" filter="url(#filter-10)" sketch:type="MSShapeGroup" cx="12" cy="12" r="12"></circle>
+                    <text id="$" fill="#0C4057" sketch:type="MSTextLayer" font-family="Helvetica" font-size="15" font-weight="bold">
+                        <tspan x="7.74193548" y="17.0967742">$</tspan>
+                    </text>
+                </g>
+                <g id="Oval-178-+-$-9" transform="translate(387.000000, 47.000000)">
+                    <circle id="Oval-178" fill="#326B84" filter="url(#filter-11)" sketch:type="MSShapeGroup" cx="12" cy="12" r="12"></circle>
+                    <text id="$" fill="#0C4057" sketch:type="MSTextLayer" font-family="Helvetica" font-size="15" font-weight="bold">
+                        <tspan x="7.74193548" y="17.0967742">$</tspan>
+                    </text>
+                </g>
+                <g id="Oval-178-+-$-10" transform="translate(387.000000, 2.000000)">
+                    <circle id="Oval-178" fill="#65EDF1" filter="url(#filter-12)" sketch:type="MSShapeGroup" cx="12" cy="12" r="12"></circle>
+                    <text id="$" fill="#1FAEB1" sketch:type="MSTextLayer" font-family="Helvetica" font-size="15" font-weight="bold">
+                        <tspan x="7.74193548" y="17.0967742">$</tspan>
+                    </text>
+                </g>
+                <g id="Oval-178-+-$-3" transform="translate(15.500000, 112.000000)">
+                    <circle id="Oval-178" fill="#EF542C" filter="url(#filter-13)" sketch:type="MSShapeGroup" cx="12" cy="12" r="12"></circle>
+                    <text id="$" fill="#B23718" sketch:type="MSTextLayer" font-family="Helvetica" font-size="15" font-weight="bold">
+                        <tspan x="7.74193548" y="17.0967742">$</tspan>
+                    </text>
+                </g>
+                <g id="Oval-178-+-$-4" transform="translate(329.480427, 1.000000)">
+                    <circle id="Oval-178" fill="#EF542C" filter="url(#filter-14)" sketch:type="MSShapeGroup" cx="12" cy="12" r="12"></circle>
+                    <text id="$" fill="#B23718" sketch:type="MSTextLayer" font-family="Helvetica" font-size="15" font-weight="bold">
+                        <tspan x="7.74193548" y="17.0967742">$</tspan>
+                    </text>
+                </g>
+            </g>
+            <g id=".annotate" sketch:type="MSLayerGroup" transform="translate(733.000000, 227.000000)">
+                <rect id="Rectangle-628" fill="#FFFFFF" filter="url(#filter-15)" sketch:type="MSShapeGroup" x="0" y="0" width="140" height="105" rx="4"></rect>
+                <text id="Potential-net-saving" sketch:type="MSTextLayer" font-family="Cronos Pro" font-size="20" font-weight="260" fill="#656565">
+                    <tspan x="7.27522978" y="63">Potential net </tspan>
+                    <tspan x="7.27522978" y="86">savings</tspan>
+                </text>
+                <text id="$1.8-Trillion" fill="#07D5DA" sketch:type="MSTextLayer" font-family="Proxima Nova" font-size="24" font-weight="bold">
+                    <tspan x="7.27522978" y="35">$1.8 Trillion</tspan>
+                </text>
+            </g>
+            <text id="Costs-over-a-20-year" sketch:type="MSTextLayer" font-family="Cronos Pro" font-size="16" font-weight="260" fill="#676767">
+                <tspan x="22" y="100">Costs over a 20 year period:</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
