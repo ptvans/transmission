@@ -1,3 +1,5 @@
+@import 'fonts';
+
 $font-sans: 'Cronos Pro', sans-serif;
 $font-serif: 'Chaparral Pro', Georgia, serif;
 $font-detail: Verdana, Arial, sans-serif;
@@ -18,7 +20,7 @@ $orange: #dd6a34;
 
 
 h1, h2, h3, h4, h5 {
-	font-family: 'Proxima Nova';
+	font-family: $font-sans;
 	font-weight: bold;
 }
 
