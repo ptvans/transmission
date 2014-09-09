@@ -1,0 +1,12 @@
+{% layout "prototype" %}
+{% block content %}
+<div id="low-hanging-fruit">
+	<svg>
+	</svg>
+
+</div>
+{% endblock %}
+
+{% block custom_scripts %}
+    {{ "js/src/low-hanging-fruit.js" | asset_url | script_tag }}
+{% endblock %}

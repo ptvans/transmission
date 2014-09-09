@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        {{ "css/normalize.min.css" | asset_url | stylesheet_tag }}
+        {{ "css/bootstrap.min.css" | asset_url | stylesheet_tag }}
+        {{ "css/bootstrap.min.css" | asset_url | stylesheet_tag }}
+        {{ "css/styles.css" | asset_url | stylesheet_tag }}
+
+        <script src="js/vendor/modernizr.min.js"></script>
+    </head>
+    <body> 
+        <div id="header">
+            <img id="logo" src="/img/logo.png"/>
+            <div id="story-title">The Title of This Story</div>
+        </div>
+
+        <h1 class="title">A Low-Carbon Energy Transition Can Save the Global Economy Trillions</h1>
+        <h2 class="title">It may be easier than you think</h2>
+
+        <div id="intro" class="intro">
+            <span class="heading">Slowing down the freight train</span>
+            <span class="subhead">We need to get CO2 emissions under control, and it may be easier than you think. To keep global warming within a 2 degree increase, we need to halt the rapid growth of emissions to stablize at our target of 450ppm atmospheric CO2 by 2035.</span>
+            <p>A reduction in emissions of XX Gigatons is required to stabilze at 450ppm as determined by who???</p>
+            <div class="chart-lg"><img class="img-responsive" src="/img/carbon-ppm.png" /></div>
+        </div>
+
+        <div id="content">
+            {% block content %}
+            {% endblock %}
+        </div>        
+        {{ "js/vendor/jquery.min.js" | asset_url | script_tag }}
+        {{ "js/vendor/underscore.min.js" | asset_url | script_tag }}
+        {{ "js/vendor/backbone.min.js" | asset_url | script_tag }}
+        {{ "js/main.js" | asset_url | script_tag }}
+    </body>
+</html>
