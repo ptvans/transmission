@@ -159,7 +159,7 @@ h1.title {
 	}
 }
 
-.chart-lg, .chart-sm {
+.chart-lg, .chart-md, .chart-sm {
 	background-color: #fff;
 	color: #ccc;
 	margin: 20px 0px;
@@ -188,3 +188,55 @@ h1.title {
 	float: right;
 }
 
+.chart-md {
+	width: 560px;
+}
+
+//TAXATION + INNOVATION CALCULATORS
+.stakeholders, .definitions {
+	display: inline-block;
+	width: 160px;
+	text-align: left;
+}
+.definitions {
+	font-size: 10px;
+	line-height: 12px;
+}
+.calculator {
+	img { 
+		width: 200px;
+	}
+	.stakeholder {
+		margin-bottom: 10px;
+	}
+	.glyphicon {
+		background-color: $red !important;
+		color: #fff;
+		border-radius: 100%;
+		font-size: 2rem;
+		height: 3rem;
+		width: 3rem;
+		line-height: 2rem;
+		text-align: center;
+		margin-right: 5px;
+	}
+}
+
+
+// WATERFALL CHART - COAL
+.waterfall-coal {
+	.annotate {
+		transition: all 1s;
+	}
+	.stage-2 {
+		opacity: 0;
+		transition: opacity 0.5s;
+	}
+	.stage-next:hover {
+		opacity: 0.8;
+		.stage-2 {
+			opacity: 1;
+		}
+	}
+}
+//WATERFALL CHART - OIL

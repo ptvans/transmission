@@ -167,7 +167,7 @@
                     <tspan x="7.74193548" y="17.0967742">$</tspan>
                 </text>
             </g>
-            <g id=".stage-1" sketch:type="MSLayerGroup" transform="translate(22.000000, 124.000000)">
+            <g id=".stage-1" class="stage-1" sketch:type="MSLayerGroup" transform="translate(22.000000, 124.000000)">
                 <rect id="Rectangle-594" fill="#EF542C" sketch:type="MSShapeGroup" x="13" y="206" width="30" height="42.9292929"></rect>
                 <rect id="Rectangle-595" fill="#326B84" sketch:type="MSShapeGroup" x="60" y="181" width="30" height="68.5"></rect>
                 <rect id="Rectangle-597" fill="#EF542C" sketch:type="MSShapeGroup" x="150.914591" y="180.818182" width="30" height="68.1818182"></rect>
@@ -236,7 +236,7 @@
                     </text>
                 </g>
             </g>
-            <g id=".stage-2" sketch:type="MSLayerGroup" transform="translate(303.000000, 123.000000)">
+            <g id=".stage-2" class="stage-2" sketch:type="MSLayerGroup" transform="translate(303.000000, 123.000000)">
                 <rect id="Rectangle-599" fill="#EF542C" sketch:type="MSShapeGroup" x="11.9252669" y="111.111111" width="30" height="138.888889"></rect>
                 <rect id="Rectangle-603" fill="#EF542C" sketch:type="MSShapeGroup" x="11.9252669" y="111.111111" width="30" height="138.888889"></rect>
                 <rect id="Rectangle-601" stroke="#FFFFFF" fill="#EF542C" sketch:type="MSShapeGroup" x="326" y="0" width="30" height="250"></rect>
@@ -346,7 +346,7 @@
                     </text>
                 </g>
             </g>
-            <g id=".annotate" sketch:type="MSLayerGroup" transform="translate(733.000000, 227.000000)">
+            <g id=".annotate" class="annotate" sketch:type="MSLayerGroup" transform="translate(733.000000, 227.000000)">
                 <rect id="Rectangle-628" fill="#FFFFFF" filter="url(#filter-15)" sketch:type="MSShapeGroup" x="0" y="0" width="140" height="105" rx="4"></rect>
                 <text id="Potential-net-saving" sketch:type="MSTextLayer" font-family="Cronos Pro" font-size="20" font-weight="260" fill="#656565">
                     <tspan x="7.27522978" y="63">Potential net </tspan>
