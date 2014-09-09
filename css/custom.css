@@ -1,7 +1,7 @@
 /* [sass, css, custom.scss] */
 /* line 20, /Users/michael/dev/clients/cpi/new-climate-economy/css/custom.scss */
 h1, h2, h3, h4, h5 {
-  font-family: "Cronos Pro", sans-serif;
+  font-family: "cronos-pro", sans-serif;
   font-weight: bold; }
 
 /* line 25, /Users/michael/dev/clients/cpi/new-climate-economy/css/custom.scss */
@@ -43,7 +43,7 @@ body {
     color: #326b84;
     width: 30%;
     margin: 11px 20%;
-    font-family: "Cronos Pro", sans-serif;
+    font-family: "cronos-pro", sans-serif;
     text-align: center; }
 
 /* line 62, /Users/michael/dev/clients/cpi/new-climate-economy/css/custom.scss */
@@ -90,7 +90,7 @@ h2.title {
   box-shadow: 0px 1px 6px rgba(20, 20, 20, 0.5); }
   /* line 106, /Users/michael/dev/clients/cpi/new-climate-economy/css/custom.scss */
   #content p {
-    font-family: "Chaparral Pro", Georgia, serif; }
+    font-family: "chaparral-pro", Georgia, serif; }
 
 /* line 111, /Users/michael/dev/clients/cpi/new-climate-economy/css/custom.scss */
 .section, .slide {
@@ -110,7 +110,7 @@ h2.title {
   border-bottom: 1px solid #ef542c;
   color: #ef542c;
   width: 270px;
-  font-family: "Chaparral Pro", Georgia, serif;
+  font-family: "chaparral-pro", Georgia, serif;
   margin: 40px 0px; }
 
 /* line 131, /Users/michael/dev/clients/cpi/new-climate-economy/css/custom.scss */
@@ -172,7 +172,7 @@ h2.title {
   margin-left: 30px;
   font-size: 24px;
   color: #656565;
-  font-family: "Chaparral Pro", Georgia, serif; }
+  font-family: "chaparral-pro", Georgia, serif; }
 
 /* line 193, /Users/michael/dev/clients/cpi/new-climate-economy/css/custom.scss */
 .chart-sm-wrapper {
