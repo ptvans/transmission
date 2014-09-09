@@ -57,7 +57,13 @@ var LowHangingFruitView = Backbone.View.extend({
             .attr("cy", function(d) { return d.y; });            
         }
         
-        var i = 0;
+        var i = 500;
+
+        _.each(d3.range(500), function(d) {
+            var idx = Math.floor(scale(Math.random() * 100));
+            nodes.push({id: idx, x: start[idx].x + Math.random()*100, y: height, idx: i});
+            i++;
+        })
         setInterval(function() {
             var dt = new Date();
             console.log(dt);
