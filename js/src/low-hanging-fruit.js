@@ -3,8 +3,17 @@ var LowHangingFruitView = Backbone.View.extend({
     height: 300,
     interval: 1000,
 
+    events:  {
+        "click .stage-next": "next"
+    },
+
     initialize: function() {
-        _.bindAll(this, "render");
+        _.bindAll(this, "render", "next");
+    },
+
+    next: function() {
+        this.$el.addClass("stage2");
+        return false;
     },
 
     render: function() {

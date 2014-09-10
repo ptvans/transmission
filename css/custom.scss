@@ -251,6 +251,13 @@ h2.title {
 
 // LOW HANGING FRUIT CHART
 #low-hanging-fruit {
+	position: relative;
+
+	.bottom-section {
+		top: -50px;
+		position: relative; 
+	}
+
 	.particle {
 		opacity: 0.15
 	}
@@ -265,6 +272,23 @@ h2.title {
 
 	.particle.coal {
 		fill: rgba(239, 84, 44, 1);
+	}
+
+	.annotation {
+		font-family: $font-sans; 
+		font-size: 20px;
+		color: #797979; 
+		position: absolute;
+		right: 20px;
+		top: 250px;  
+		display: none;
+	}
+
+}
+
+#low-hanging-fruit.stage2 {
+	.annotation {
+		display: inline;
 	}
 }
 
