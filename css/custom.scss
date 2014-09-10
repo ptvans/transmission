@@ -1,6 +1,7 @@
-$font-sans: 'cronos-pro', sans-serif;
-$font-serif: 'chaparral-pro', Georgia, serif;
+$font-sans: 'cronos pro', sans-serif;
+$font-serif: 'chaparral pro', Georgia, serif;
 $font-detail: Verdana, Arial, sans-serif;
+$font-heading: Lato, Verdana, Arial, sans-serif;
 
 $cpi-orange: #E96D34;
 $cpi-dk-orange: #B95727;
@@ -18,7 +19,7 @@ $orange: #dd6a34;
 
 
 h1, h2, h3, h4, h5 {
-	font-family: $font-sans;
+	font-family: $font-heading;
 	font-weight: bold;
 }
 
@@ -169,7 +170,7 @@ h2.title {
 
 .chart-lg, .chart-md, .chart-sm {
 	background-color: #fff;
-	color: #ccc;
+	color: $body-grey;
 	margin: 20px 0px;
 	text-align: center;
 	vertical-align: middle;
@@ -203,31 +204,43 @@ h2.title {
 
 //TAXATION + INNOVATION CALCULATORS
 .calculator {
+	* {
+		vertical-align: top;
+	}
+
+	font-family: $font-sans;
+
 	img { 
 		width: 200px;
+		vertical-align: top;
 	}
 	.stakeholder {
 		margin-bottom: 10px;
+		line-height: 50px;
 	}
-	.glyphicon {
-		background-color: $red !important;
-		color: #fff;
-		border-radius: 100%;
-		font-size: 2rem;
-		height: 3rem;
-		width: 3rem;
-		line-height: 2rem;
-		text-align: center;
+	.icon-user {
+		height: 50px;
+		width: 50px;
 		margin-right: 5px;
+
+		img {
+			height: 50px;
+			width: 50px;
+		}
 	}
 	.stakeholders, .definitions {
-	display: inline-block;
-	width: 160px;
-	text-align: left;
+		display: inline-block;
+		width: 160px;
+		text-align: left;
+		margin-top: 50px;
 	}
 	.definitions {
 		font-size: 10px;
 		line-height: 12px;
+		
+		.definition {
+			margin-bottom: 35px;
+		}
 	}
 }
 
