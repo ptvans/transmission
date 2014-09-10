@@ -249,6 +249,25 @@ h2.title {
 }
 //WATERFALL CHART - OIL
 
+// LOW HANGING FRUIT CHART
+#low-hanging-fruit {
+	.particle {
+		opacity: 0.15
+	}
+
+	.particle.oil {
+		fill: rgba(50, 107, 132, 1);
+	}
+
+	.particle.gas {
+		fill: rgba(113, 75, 121, 1);
+	}
+
+	.particle.coal {
+		fill: rgba(239, 84, 44, 1);
+	}
+}
+
 
 //FINANCING 
 .financing {

@@ -1,6 +1,6 @@
 var LowHangingFruitView = Backbone.View.extend({
-    width: 780,
-    height: 450,
+    width: 750,
+    height: 300,
     interval: 1000,
 
     initialize: function() {
@@ -17,20 +17,24 @@ var LowHangingFruitView = Backbone.View.extend({
             start = [{x: 100, y: height}, {x: 500, y: height}, {x: 600, y: height}];
 
         var scale = d3.scale.linear()
-        .domain([0, 15, 45, 100])
+        .domain([0, 14.01, 22.01, 100])
         .range([0, 1, 2, 3]);
 
         var scaleTargetX = [
-            d3.scale.linear().domain([0, 1]).range([0, 400]),
-            d3.scale.linear().domain([0, 1]).range([450, 480]),
-            d3.scale.linear().domain([0, 1]).range([530, 730])
+            d3.scale.linear().domain([0, 1]).range([0, 98]),
+            d3.scale.linear().domain([0, 1]).range([125, 181]),
+            d3.scale.linear().domain([0, 1]).range([204, 750])
+        ];
+
+        var scaleSourceX = [
+            d3.scale.linear().domain([0, 1]).range([0, 546]),
+            d3.scale.linear().domain([0, 1]).range([572, 632]),
+            d3.scale.linear().domain([0, 1]).range([650, 750])
         ];
 
         var scaleTargetY = d3.scale.linear()
         .domain([0, 1])
-        .range([50, 90]);
-
-        var fill = d3.scale.category10();
+        .range([0, 40]);
 
         var g = d3.select(this.el).select("svg")
         .attr({
@@ -42,12 +46,14 @@ var LowHangingFruitView = Backbone.View.extend({
         
         var particles = g.selectAll("circle");
 
+        var classes = ["oil", "gas", "coal"];
+
         setInterval(function() {
             var dt = new Date();
 
             var idx = Math.floor(scale(Math.random() * 100));
 
-            var newNode = {id: idx, x: start[idx].x + Math.random()*100, y: height, idx: i};
+            var newNode = {id: idx, x: scaleSourceX[idx](Math.random()), y: height, idx: i};
             nodes.push(newNode);
 
             if (nodes.length > 1000) {
@@ -59,7 +65,7 @@ var LowHangingFruitView = Backbone.View.extend({
             
             particles.enter().append("circle")
             .attr({
-                "class": "node",
+                "class": function(d) { return "particle " + classes[d.id] },
                 "transform": function(d, i) {
                     var tx = d.x,
                         ty = height;
@@ -69,8 +75,6 @@ var LowHangingFruitView = Backbone.View.extend({
                 "cy": 0,
                 "r": 20
             })
-            .style("fill", function(d) { return fill(d.id); })
-            .style("opacity", 0.1)
             .transition()
             .ease("cubic-out")
             .duration(5500)
