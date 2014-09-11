@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="170px" height="200px" viewBox="0 0 170 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.4 (8053) - http://www.bohemiancoding.com/sketch -->
+    <title>calc-country-summary</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <path d="M77.5,1.5 L77.5,194.5" id="Line-9" stroke="#E5E5E5" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+        <g id="net-country-1" sketch:type="MSLayerGroup" transform="translate(-1.000000, 9.000000)">
+            <text id="United-States" sketch:type="MSTextLayer" font-family="Cronos Pro" font-size="14" font-weight="260" fill="#797979">
+                <tspan x="0" y="13">United States</tspan>
+            </text>
+            <text id="+0.3" fill="#326B84" sketch:type="MSTextLayer" font-family="Cronos Pro" font-size="12" font-weight="260">
+                <tspan x="98" y="12" fill="#797979">+0.3</tspan>
+            </text>
+            <rect id="Rectangle-146" fill="#326B84" sketch:type="MSShapeGroup" x="78.2972991" y="0" width="14.7555448" height="15"></rect>
+        </g>
+        <g id="net-country-2" sketch:type="MSLayerGroup" transform="translate(0.000000, 41.000000)">
+            <g id="Europe-28-+-+1.5-+-Rectangle-147">
+                <text id="Europe-28" sketch:type="MSTextLayer" font-family="Cronos Pro" font-size="14" font-weight="260" fill="#797979">
+                    <tspan x="0" y="13">Europe 28</tspan>
+                </text>
+                <text id="+1.5" fill="#326B84" sketch:type="MSTextLayer" font-family="Cronos Pro" font-size="12" font-weight="260">
+                    <tspan x="151" y="12" fill="#797979">+1.5</tspan>
+                </text>
+                <rect id="Rectangle-147" fill="#326B84" sketch:type="MSShapeGroup" x="77.2972991" y="0" width="71.7667832" height="15"></rect>
+            </g>
+        </g>
+        <g id="net-country-3" sketch:type="MSLayerGroup" transform="translate(0.000000, 73.000000)">
+            <text id="China" sketch:type="MSTextLayer" font-family="Cronos Pro" font-size="14" font-weight="260" fill="#797979">
+                <tspan x="0" y="13">China</tspan>
+            </text>
+            <text id="+1.4" fill="#326B84" sketch:type="MSTextLayer" font-family="Cronos Pro" font-size="12" font-weight="260">
+                <tspan x="146" y="12" fill="#797979">+1.4</tspan>
+            </text>
+            <rect id="Rectangle-148" fill="#326B84" sketch:type="MSShapeGroup" x="77.2972991" y="0" width="66.5670026" height="15"></rect>
+        </g>
+        <g id="net-country-4" sketch:type="MSLayerGroup" transform="translate(0.000000, 105.000000)">
+            <text id="Japan" sketch:type="MSTextLayer" font-family="Cronos Pro" font-size="14" font-weight="260" fill="#797979">
+                <tspan x="0" y="13">Japan</tspan>
+            </text>
+            <text id="+0.7" fill="#326B84" sketch:type="MSTextLayer" font-family="Cronos Pro" font-size="12" font-weight="260">
+                <tspan x="117" y="12" fill="#797979">+0.7</tspan>
+            </text>
+            <rect id="Rectangle-149" fill="#326B84" sketch:type="MSShapeGroup" x="77.2972991" y="0" width="35.5154826" height="15"></rect>
+        </g>
+        <g id="net-country-5" sketch:type="MSLayerGroup" transform="translate(0.000000, 137.000000)">
+            <text id="India" sketch:type="MSTextLayer" font-family="Cronos Pro" font-size="14" font-weight="260" fill="#797979">
+                <tspan x="0" y="13">India</tspan>
+            </text>
+            <text id="+0.6" fill="#326B84" sketch:type="MSTextLayer" font-family="Cronos Pro" font-size="12" font-weight="260">
+                <tspan x="107" y="12" fill="#797979">+0.6</tspan>
+            </text>
+            <rect id="Rectangle-150" fill="#326B84" sketch:type="MSShapeGroup" x="77.2972991" y="0" width="27.0290482" height="15"></rect>
+        </g>
+        <g id="net-country-6" sketch:type="MSLayerGroup" transform="translate(0.000000, 164.000000)">
+            <text id="Developed" sketch:type="MSTextLayer" font-family="Cronos Pro" font-size="14" font-weight="260" line-spacing="14" fill="#797979">
+                <tspan x="0" y="12">Developed</tspan>
+                <tspan x="0" y="26">Asia</tspan>
+            </text>
+            <text id="+0.4" fill="#326B84" sketch:type="MSTextLayer" font-family="Cronos Pro" font-size="12" font-weight="260">
+                <tspan x="99" y="19" fill="#797979">+0.4</tspan>
+            </text>
+            <rect id="Rectangle-151" fill="#326B84" sketch:type="MSShapeGroup" x="77.2972991" y="6.73913043" width="17.7577413" height="15"></rect>
+        </g>
+    </g>
+</svg>

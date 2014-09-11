@@ -224,8 +224,26 @@ h2.title {
 		width: 200px;
 		vertical-align: top;
 	}
+		#country-name {
+		width: 540px;
+		float: right;
+		border-bottom: 1px #949494 solid;
+		font-size: 24px;
+		color: $dk-marine-blue;
+	}
+	.svg-detail, .svg-countries {
+		display: inline-block;
+	}
+	.svg-countries {
+		margin-right: 25px;
+		margin-top: 10px;
+		padding-top: 10px;
+		padding-right: 15px;
+		border-right: solid #e4e4e4 1px;
+		height: 320px;
+	}
 	.stakeholder {
-		margin-bottom: 10px;
+		margin-bottom: 30px;
 		line-height: 50px;
 	}
 	.icon-user {
@@ -238,18 +256,23 @@ h2.title {
 			width: 50px;
 		}
 	}
+	.title {
+		font-size: 16px;
+		font-weight: 600;
+		margin-bottom: 5px;
+	}
 	.stakeholders, .definitions {
 		display: inline-block;
 		width: 160px;
 		text-align: left;
-		margin-top: 50px;
 	}
 	.definitions {
-		font-size: 10px;
-		line-height: 12px;
-		
+
 		.definition {
-			margin-bottom: 35px;
+			font-size: 13px;
+			margin-bottom: 30px;
+			height: 50px;
+			line-height: 12px;
 		}
 	}
 }
