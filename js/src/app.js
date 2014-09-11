@@ -4,7 +4,7 @@ $(document).ready(function() {
 	var lowHangingFruitView = new LowHangingFruitView({ el: "#low-hanging-fruit" });
 	lowHangingFruitView.render();
 
-	d3.json("../data/scenarios.json", function(data) {
+	d3.json("data/scenarios.json", function(data) {
 		var dataTaxes = data.taxes;
 		var dataInnovation = data.innovation;
 		var dataCountries = data.countries;
