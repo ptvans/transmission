@@ -17,6 +17,9 @@ $green: #028b00;
 $dk-blue: #174190;
 $orange: #dd6a34;
 
+svg {
+	text { font-family: $font-sans;}
+}
 
 h1, h2, h3, h4, h5 {
 	font-family: $font-heading;
