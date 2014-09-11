@@ -10,7 +10,7 @@ var TitleAnimationView = Backbone.View.extend({
 
         this.i = 0;
         this.nodes = [];
-        var g = d3.select(this.el).select("svg");
+        var g = d3.select(this.el).select("#intro-smoke-particles svg");
         this.particles = g.selectAll("circle");
     },
 
@@ -71,4 +71,42 @@ var TitleAnimationView = Backbone.View.extend({
 
         setTimeout(this.render, intervalLength);
     }
+});
+
+TitleAnimationChartView = Backbone.View.extend({
+
+    initialize: function() {
+        _.bindAll(this, "render", "update");
+        this.intervalScale = d3.scale.linear()
+        .domain([0, 25, 50, 75, 100])
+        .range([100, 20, 5, 2, 1]);
+
+        this.model.on("change:progress", this.update);
+        this.g = d3.select(this.el).select("#intro-chart svg");
+    },
+
+    update: function() {
+        var g = this.g;
+        var l = g.select("#timeseries-past").node().getTotalLength();
+        var progress = this.model.get("progress");
+        var d = progress/100 * l;
+
+        g.select("#timeseries-past").attr("stroke-dasharray", "0," + d + "," + d);
+
+    },
+
+    render: function() {
+        var g = this.g;
+
+        g.select("#target-scenario").attr("stroke-dasharray", "0,1500,0");
+        g.select("#timeseries-past").attr("stroke-dasharray", "0,1500,0");
+        g.select("#timeseries-projection").attr("stroke-dasharray", "0,1500,0");
+        g.select("#timeseries-projection-decoration-1").attr("opacity", 0);
+  // var l = this.getTotalLength(),
+  //     i = d3.interpolateString("0," + l, l + "," + l);
+
+
+      // g.select("")
+    }
+
 });

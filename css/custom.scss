@@ -107,6 +107,34 @@ h2.title {
 	padding-top: 100px;
 }
 
+#intro-chart {
+	position: relative;
+	top: 0px;
+	width: 780px;
+	margin: 0px auto;
+
+	#timeseries-past {
+		stroke-width: 3;
+		stroke: #F8E71C;
+	}
+
+	#timeseries-projection, #timeseries-projection-decoration-1 {
+		stroke-width: 3;
+		stroke: #F5A623;
+	}
+
+	#target-scenario {
+		stroke-width: 3;
+		stroke: #50E3C2;
+	}
+
+	#intro-x-axis path, #intro-y-axis path {
+		stroke: #FFF;
+	}
+	#intro-x-axis text, #intro-y-axis text {
+		fill: #FFF;
+	}
+}
 
 #content {
 	position: relative;

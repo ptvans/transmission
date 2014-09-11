@@ -9,6 +9,9 @@ $(document).ready(function() {
 	var titleAnimation = new TitleAnimationView({ el: "#intro", model: model });
 	titleAnimation.render();
 
+	var titleAnimationChart = new TitleAnimationChartView({ el: "#intro-chart", model: model });
+	titleAnimationChart.render();
+
 	d3.json("data/scenarios.json", function(data) {
 		var dataTaxes = data.taxes;
 		var dataInnovation = data.innovation;
