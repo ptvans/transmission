@@ -1,5 +1,5 @@
-$font-sans: 'cronos pro', sans-serif;
-$font-serif: 'chaparral pro', Georgia, serif;
+$font-sans: 'cronos-pro', sans-serif;
+$font-serif: 'chaparral-pro', Georgia, serif;
 $font-detail: Verdana, Arial, sans-serif;
 $font-heading: Lato, Verdana, Arial, sans-serif;
 
@@ -275,7 +275,25 @@ h2.title {
 			line-height: 16px;
 		}
 	}
+
+	.bar {
+		fill: #326B84;
+	}
+
 }
+#net-country-1, 
+#net-country-2, 
+#net-country-3, 
+#net-country-4, 
+#net-country-5, 
+#net-country-6 {
+	cursor: pointer;
+
+	rect:hover {
+		fill-opacity: 0.5;
+	}
+} 
+
 
 // WATERFALL CHART - COAL
 .waterfall-coal {
