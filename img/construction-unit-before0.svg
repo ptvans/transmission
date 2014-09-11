@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="560px" height="400px" viewBox="0 0 560 400" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.4 (8053) - http://www.bohemiancoding.com/sketch -->
+    <title>construction-unit-before0</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="148" y="80.7929688" width="411.296875" height="315.023568"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <rect id="Rectangle-152" opacity="0.800000012" fill="#F9DA47" sketch:type="MSShapeGroup" x="148" y="80.7929688" width="411.296875" height="315.023568"></rect>
+        <g id="Rectangle-151" opacity="0.800000012">
+            <use sketch:type="MSShapeGroup" xlink:href="#path-1"></use>
+            <use fill-opacity="0.5" fill-rule="evenodd" xlink:href="#path-1"></use>
+            <use xlink:href="#path-1"></use>
+        </g>
+        <path d="M147,14.5413387 L147,395" id="Line-3" stroke="#979797" stroke-width="2" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+        <text id="South-Africa-2" fill="#326B84" sketch:type="MSTextLayer" font-family="Cronos Pro" font-size="14" font-weight="260">
+            <tspan x="41" y="108">South Africa</tspan>
+        </text>
+        <text id="Australia-2" fill="#326B84" sketch:type="MSTextLayer" font-family="Cronos Pro" font-size="14" font-weight="260">
+            <tspan x="68" y="176.283803">Australia</tspan>
+        </text>
+        <text id="South-Korea" fill="#326B84" sketch:type="MSTextLayer" font-family="Cronos Pro" font-size="14" font-weight="260">
+            <tspan x="53" y="210">South Korea</tspan>
+        </text>
+        <text id="Indonesia" fill="#326B84" sketch:type="MSTextLayer" font-family="Cronos Pro" font-size="14" font-weight="260">
+            <tspan x="55" y="142">Indonesia</tspan>
+        </text>
+        <text id="Europe-29" fill="#326B84" sketch:type="MSTextLayer" font-family="Cronos Pro" font-size="14" font-weight="260" sketch:alignment="right">
+            <tspan x="85.8896484" y="312">Europe 28</tspan>
+        </text>
+        <text id="Ukraine" fill="#326B84" sketch:type="MSTextLayer" font-family="Cronos Pro" font-size="14" font-weight="260" sketch:alignment="right">
+            <tspan x="97.4628906" y="278">Ukraine</tspan>
+        </text>
+        <path d="M132.5,63.5 L48.4916673,63.5" id="Line-4" stroke="#979797" stroke-width="3" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+        <path id="Line-4-decoration-1" d="M59.3,60.5 C55.52,61.55 52.28,62.45 48.5,63.5 C52.28,64.55 55.52,65.45 59.3,66.5" stroke="#979797" stroke-width="3" stroke-linecap="square"></path>
+        <text id="Construction-within-" sketch:type="MSTextLayer" font-family="Cronos Pro" font-size="16" font-weight="260" sketch:alignment="right" fill="#545454">
+            <tspan x="0.5625" y="27">Construction within </tspan>
+            <tspan x="36.5546875" y="45">450 ppm limit</tspan>
+        </text>
+        <path d="M238.5,63.5 L161.5,63.5" id="Line-5" stroke="#979797" stroke-width="3" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+        <path id="Line-5-decoration-1" d="M226.9,60.5 C230.68,61.55 233.92,62.45 237.7,63.5 C233.92,64.55 230.68,65.45 226.9,66.5" stroke="#979797" stroke-width="3" stroke-linecap="square"></path>
+        <text id="Construction-exceedi" sketch:type="MSTextLayer" font-family="Cronos Pro" font-size="16" font-weight="260" fill="#545454">
+            <tspan x="168" y="27">Construction exceeding</tspan>
+            <tspan x="168" y="45"> 450 ppm limit</tspan>
+        </text>
+        <text id="Japan-2" fill="#326B84" sketch:type="MSTextLayer" font-family="Cronos Pro" font-size="14" font-weight="260">
+            <tspan x="107" y="244">Japan</tspan>
+        </text>
+        <text id="Countries-must-halt" sketch:type="MSTextLayer" font-family="Cronos Pro" font-size="16" font-weight="260" fill="#484848">
+            <tspan x="400" y="106.5">Countries must halt</tspan>
+            <tspan x="400" y="124.5">development that </tspan>
+            <tspan x="400" y="142.5">exceeds their allowance </tspan>
+            <tspan x="400" y="160.5">within the 450ppm limit</tspan>
+        </text>
+        <text id="Russia-2" fill="#326B84" sketch:type="MSTextLayer" font-family="Cronos Pro" font-size="14" font-weight="260" sketch:alignment="right">
+            <tspan x="106.554688" y="346">Russia</tspan>
+        </text>
+        <text id="United-States-2" fill="#326B84" sketch:type="MSTextLayer" font-family="Cronos Pro" font-size="14" font-weight="260" sketch:alignment="right">
+            <tspan x="68.4306641" y="382">United States</tspan>
+        </text>
+        <g id="Rectangle-path-+-Rectangle-path-+-Rectangle-path" sketch:type="MSLayerGroup" transform="translate(157.000000, 374.000000)" fill="#000000">
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="0.130434783" y="-0.0247933884" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="0.130434783" y="5.16392605" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="0.130434783" y="10.3526455" width="3.51363652" height="3.51103348"></rect>
+        </g>
+        <g id="Group" sketch:type="MSLayerGroup" transform="translate(157.000000, 332.000000)" fill="#000000">
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="0.130434783" y="-0.107438017" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="0.130434783" y="5.08128142" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="0.130434783" y="10.2700009" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="0.130434783" y="15.4587203" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="0.130434783" y="20.6474397" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="5.32300107" y="-0.107438017" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="5.32300107" y="5.08128142" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="5.32300107" y="10.2700009" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="5.32300107" y="15.4587203" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="5.32300107" y="20.6474397" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="10.5155674" y="-0.107438017" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="10.5155674" y="5.08128142" width="3.51363652" height="3.51103348"></rect>
+        </g>
+        <g id="Group" sketch:type="MSLayerGroup" transform="translate(157.000000, 296.000000)" fill="#000000">
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="0.130434783" y="-0.190082645" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="0.130434783" y="4.99863679" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="0.130434783" y="10.1873562" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="0.130434783" y="15.3760757" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="0.130434783" y="20.5647951" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="5.32300107" y="-0.190082645" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="5.32300107" y="4.99863679" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="5.32300107" y="10.1873562" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="5.32300107" y="15.3760757" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="5.32300107" y="20.5647951" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="10.5155674" y="-0.190082645" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="10.5155674" y="4.99863679" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="10.5155674" y="10.1873562" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="10.5155674" y="15.3760757" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="10.5155674" y="20.5647951" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="15.7081336" y="-0.190082645" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="15.7081336" y="4.99863679" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="15.7081336" y="10.1873562" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="15.7081336" y="15.3760757" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="15.7081336" y="20.5647951" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="20.9006999" y="-0.190082645" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="20.9006999" y="4.99863679" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="20.9006999" y="10.1873562" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="20.9006999" y="15.3760757" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="20.9006999" y="20.5647951" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="26.0932662" y="-0.190082645" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="26.0932662" y="4.99863679" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="26.0932662" y="10.1873562" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="26.0932662" y="15.3760757" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="26.0932662" y="20.5647951" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="31.2858325" y="-0.190082645" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="31.2858325" y="4.99863679" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="31.2858325" y="10.1873562" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="31.2858325" y="15.3760757" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="31.2858325" y="20.5647951" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="36.4783988" y="-0.190082645" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="36.4783988" y="4.99863679" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="36.4783988" y="10.1873562" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="36.4783988" y="15.3760757" width="3.51363652" height="3.51103348"></rect>
+        </g>
+        <g id="Rectangle-path-+-Rectangle-path-+-Rectangle-path" sketch:type="MSLayerGroup" transform="translate(157.000000, 266.000000)" fill="#000000">
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="0.130434783" y="-0.272727273" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="0.130434783" y="4.91599216" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="0.130434783" y="10.1047116" width="3.51363652" height="3.51103348"></rect>
+        </g>
+        <g id="Group" sketch:type="MSLayerGroup" transform="translate(157.000000, 230.000000)" fill="#000000">
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="0.130434783" y="-0.355371901" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="0.130434783" y="4.83334753" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="0.130434783" y="10.022067" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="0.130434783" y="15.2107864" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="0.130434783" y="20.3995058" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="5.32300107" y="-0.355371901" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="5.32300107" y="4.83334753" width="3.51363652" height="3.51103348"></rect>
+        </g>
+        <g id="Group" sketch:type="MSLayerGroup" transform="translate(134.000000, 194.000000)" fill="#000000">
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="-0.227424749" y="-0.104711596" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="-0.227424749" y="5.08400784" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="-0.227424749" y="10.2727273" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="-0.227424749" y="15.4614467" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="-0.227424749" y="20.6501661" width="3.51363652" height="3.51103348"></rect>
+        </g>
+        <g id="Group" sketch:type="MSLayerGroup" transform="translate(157.000000, 194.000000)" fill="#000000">
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="-0.0348584629" y="-0.104711596" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="-0.0348584629" y="5.08400784" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="-0.0348584629" y="10.2727273" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="-0.0348584629" y="15.4614467" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="-0.0348584629" y="20.6501661" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="5.15770782" y="-0.104711596" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="5.15770782" y="5.08400784" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="5.15770782" y="10.2727273" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="5.15770782" y="15.4614467" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="5.15770782" y="20.6501661" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="10.3502741" y="-0.104711596" width="3.51363652" height="3.51103348"></rect>
+        </g>
+        <g id="Group" sketch:type="MSLayerGroup" transform="translate(134.000000, 159.000000)" fill="#000000">
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="0.0936454849" y="0.479338843" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="0.0936454849" y="5.66805828" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="0.0936454849" y="10.8567777" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="0.0936454849" y="16.0454971" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="0.0936454849" y="21.2342166" width="3.51363652" height="3.51103348"></rect>
+        </g>
+        <g id="Group" sketch:type="MSLayerGroup" transform="translate(129.000000, 125.000000)" fill="#000000">
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="-0.264214047" y="0.396694215" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="-0.264214047" y="5.58541365" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="-0.264214047" y="10.7741331" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="-0.264214047" y="15.9628525" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="-0.264214047" y="21.151572" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="4.92835224" y="0.396694215" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="4.92835224" y="5.58541365" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="4.92835224" y="10.7741331" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="4.92835224" y="15.9628525" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="4.92835224" y="21.151572" width="3.51363652" height="3.51103348"></rect>
+        </g>
+        <g id="Group" sketch:type="MSLayerGroup" transform="translate(157.000000, 125.000000)" fill="#000000">
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="0.120918526" y="0.396694215" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="0.120918526" y="5.58541365" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="0.120918526" y="10.7741331" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="0.120918526" y="15.9628525" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="0.120918526" y="21.151572" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="5.31348481" y="0.396694215" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="5.31348481" y="5.58541365" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="5.31348481" y="10.7741331" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="5.31348481" y="15.9628525" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="5.31348481" y="21.151572" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="10.5060511" y="0.396694215" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="10.5060511" y="5.58541365" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="10.5060511" y="10.7741331" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="10.5060511" y="15.9628525" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="10.5060511" y="21.151572" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="15.6986174" y="0.396694215" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="15.6986174" y="5.58541365" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="15.6986174" y="10.7741331" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="15.6986174" y="15.9628525" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="15.6986174" y="21.151572" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="20.8911837" y="0.396694215" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="20.8911837" y="5.58541365" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="20.8911837" y="10.7741331" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="20.8911837" y="15.9628525" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="20.8911837" y="21.151572" width="3.51363652" height="3.51103348"></rect>
+        </g>
+        <g id="Group-2" sketch:type="MSLayerGroup" transform="translate(124.000000, 92.000000)" fill="#000000">
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="-0.301003344" y="0.314049587" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="-0.301003344" y="5.50276902" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="-0.301003344" y="10.6914885" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="-0.301003344" y="15.8802079" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="-0.301003344" y="21.0689273" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="4.89156294" y="0.314049587" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="4.89156294" y="5.50276902" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="4.89156294" y="10.6914885" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="4.89156294" y="15.8802079" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="4.89156294" y="21.0689273" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="10.0841292" y="0.314049587" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="10.0841292" y="5.50276902" width="3.51363652" height="3.51103348"></rect>
+            <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="10.0841292" y="10.6914885" width="3.51363652" height="3.51103348"></rect>
+        </g>
+        <text id="Under-" fill="#457B8F" sketch:type="MSTextLayer" font-family="Cronos Pro" font-size="8" font-weight="260">
+            <tspan x="481" y="34">Under </tspan>
+            <tspan x="481" y="43">construction</tspan>
+        </text>
+        <text id="Planned" fill="#59ADCD" sketch:type="MSTextLayer" font-family="Cronos Pro" font-size="8" font-weight="260">
+            <tspan x="536" y="44">Planned</tspan>
+        </text>
+        <rect id="Rectangle-161" fill="#326B84" sketch:type="MSShapeGroup" x="481" y="49" width="8.55555556" height="8.5"></rect>
+        <rect id="Rectangle-162" fill="#326B84" sketch:type="MSShapeGroup" x="491" y="49" width="8.55555556" height="8.5"></rect>
+        <rect id="Rectangle-164" fill="#326B84" sketch:type="MSShapeGroup" x="501" y="49" width="8.55555556" height="8.5"></rect>
+        <rect id="Rectangle-163" fill="#326B84" sketch:type="MSShapeGroup" x="511" y="49" width="8.55555556" height="8.5"></rect>
+        <rect id="Rectangle-168" fill="#326B84" sketch:type="MSShapeGroup" x="521" y="49" width="8.55555556" height="8.5"></rect>
+        <rect id="Rectangle-165" fill="#59ADCD" sketch:type="MSShapeGroup" x="531" y="49" width="8.55555556" height="8.5"></rect>
+        <rect id="Rectangle-166" fill="#59ADCD" sketch:type="MSShapeGroup" x="541" y="49" width="8.55555556" height="8.5"></rect>
+        <rect id="Rectangle-167" fill="#59ADCD" sketch:type="MSShapeGroup" x="551" y="49" width="8.55555556" height="8.5"></rect>
+        <rect id="Rectangle-176" fill="#326B84" sketch:type="MSShapeGroup" x="481" y="59" width="8.55555556" height="8.5"></rect>
+        <rect id="Rectangle-169" fill="#326B84" sketch:type="MSShapeGroup" x="491" y="59" width="8.55555556" height="8.5"></rect>
+        <rect id="Rectangle-170" fill="#326B84" sketch:type="MSShapeGroup" x="501" y="59" width="8.55555556" height="8.5"></rect>
+        <rect id="Rectangle-171" fill="#326B84" sketch:type="MSShapeGroup" x="511" y="59" width="8.55555556" height="8.5"></rect>
+        <rect id="Rectangle-172" fill="#59ADCD" sketch:type="MSShapeGroup" x="521" y="59" width="8.55555556" height="8.5"></rect>
+        <rect id="Rectangle-173" fill="#59ADCD" sketch:type="MSShapeGroup" x="531" y="59" width="8.55555556" height="8.5"></rect>
+        <rect id="Rectangle-174" fill="#59ADCD" sketch:type="MSShapeGroup" x="541" y="59" width="8.55555556" height="8.5"></rect>
+        <rect id="Rectangle-175" fill="#59ADCD" sketch:type="MSShapeGroup" x="551" y="59" width="8.55555556" height="8.5"></rect>
+        <text id="=-1-gW" fill="#59ADCD" sketch:type="MSTextLayer" font-family="Cronos Pro" font-size="10" font-weight="260">
+            <tspan x="494" y="11">= 1 gW</tspan>
+        </text>
+        <rect id="Rectangle-190" fill="#59ADCD" sketch:type="MSShapeGroup" x="482" y="4" width="8.55555556" height="8.5"></rect>
+    </g>
+</svg>
