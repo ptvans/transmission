@@ -164,7 +164,7 @@ var LowHangingFruitView = Backbone.View.extend({
             })
             .transition()
             .ease("cubic-out")
-            .duration(5500)
+            .duration(20000)
             .attr({
                 "transform": function(d, i) {
                     var tx = scaleTargetX[d.id](Math.random()),
