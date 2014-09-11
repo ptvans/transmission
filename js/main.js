@@ -48,16 +48,22 @@ var TitleAnimationView = Backbone.View.extend({
                 "cy": 0,
                 "r": 2
             })
+            .style({
+            	"fill": "#cc545b"
+            })
             .transition()
             .ease("cubic-out")
-            .duration(5500)
+            .duration(10500)
             .attr({
                 "transform": function(d, i) {
                     var tx = start[idx].x + (Math.random() - 0.5) * 50,
-                        ty = -20;
+                        ty = 0;
                     return "translate(" + [tx, ty].join(" ") + ")";
                 },
                 "r": 10
+            })
+            .style({
+            	"fill": "#333"
             })
             
             i++;
