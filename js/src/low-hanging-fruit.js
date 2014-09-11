@@ -1,7 +1,8 @@
 var LowHangingFruitView = Backbone.View.extend({
     width: 750,
     height: 300,
-    interval: 1000,
+    interval: 5,
+    numBubbles: 750,
 
     events:  {
         "click .stage-next": "next"
@@ -29,10 +30,13 @@ var LowHangingFruitView = Backbone.View.extend({
         .domain([0, 14.01, 22.01, 100])
         .range([0, 1, 2, 3]);
 
+        var radiusStart = 2,
+            radiusEnd   = 8;
+
         var scaleTargetX = [
-            d3.scale.linear().domain([0, 1]).range([0, 98]),
-            d3.scale.linear().domain([0, 1]).range([125, 181]),
-            d3.scale.linear().domain([0, 1]).range([204, 750])
+            d3.scale.linear().domain([0, 1]).range([radiusEnd, 98-radiusEnd]),
+            d3.scale.linear().domain([0, 1]).range([125+radiusEnd, 181-radiusEnd]),
+            d3.scale.linear().domain([0, 1]).range([204+radiusEnd, 750-radiusEnd])
         ];
 
         var scaleSourceX = [
@@ -56,6 +60,8 @@ var LowHangingFruitView = Backbone.View.extend({
         var particles = g.selectAll("circle");
 
         var classes = ["oil", "gas", "coal"];
+        var numBubbles = this.numBubbles;
+        var interval = this.interval;
 
         setInterval(function() {
             var dt = new Date();
@@ -65,7 +71,7 @@ var LowHangingFruitView = Backbone.View.extend({
             var newNode = {id: idx, x: scaleSourceX[idx](Math.random()), y: height, idx: i};
             nodes.push(newNode);
 
-            if (nodes.length > 1000) {
+            if (nodes.length > numBubbles) {
               nodes.shift(); 
             }
 
@@ -82,7 +88,7 @@ var LowHangingFruitView = Backbone.View.extend({
                 },
                 "cx": 0,
                 "cy": 0,
-                "r": 20
+                "r": radiusStart
             })
             .transition()
             .ease("cubic-out")
@@ -93,10 +99,10 @@ var LowHangingFruitView = Backbone.View.extend({
                         ty = scaleTargetY(Math.random());
                     return "translate(" + [tx, ty].join(" ") + ")";
                 },
-                "r": 4
+                "r": radiusEnd
             })
             
             i++;
-        }, 10);
+        }, interval);
     }
 });
