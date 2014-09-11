@@ -4,6 +4,9 @@ $(document).ready(function() {
 	var lowHangingFruitView = new LowHangingFruitView({ el: "#low-hanging-fruit" });
 	lowHangingFruitView.render();
 
+	var titleAnimation = new TitleAnimationView({ el: "#intro" });
+	titleAnimation.render();
+
 	d3.json("data/scenarios.json", function(data) {
 		var dataTaxes = data.taxes;
 		var dataInnovation = data.innovation;

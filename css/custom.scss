@@ -99,6 +99,7 @@ h2.title {
 }
 
 #intro {
+	position: relative;
 	background-image: url('../img/intro-bg.jpg');
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -387,5 +388,16 @@ h2.title {
 	}
 	img.EU {
 		opacity: 0;
+	}
+}
+
+#title-animation {
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	circle {
+		fill: #cc545b;
+		opacity: 0.5;
 	}
 }
