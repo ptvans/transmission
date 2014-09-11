@@ -5,8 +5,8 @@ var TitleAnimationView = Backbone.View.extend({
     initialize: function() {
         _.bindAll(this, "render");
         this.intervalScale = d3.scale.linear()
-        .domain([0, 20, 40, 60, 80, 100])
-        .range([1000, 200, 50, 10, 5, 1]);
+        .domain([0, 25, 50, 75, 100])
+        .range([100, 20, 5, 2, 1]);
 
         this.i = 0;
         this.nodes = [];
