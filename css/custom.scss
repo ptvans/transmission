@@ -66,7 +66,7 @@ h1.title {
 	padding: 40px;
 	font-size: 40px;
 	color: #fff;
-	margin-top: 200px;
+	margin-top: 100px;
 }
 h2.title {
 	width: 860px;
@@ -77,10 +77,12 @@ h2.title {
 }
 
 
-.intro {
+.intro-content {
 	width: 860px;
 	margin: auto;
 	padding: 40px;
+	margin-top: 300px;
+	color: white;
 
 	.heading {
 		font-size: 32px;
@@ -91,6 +93,14 @@ h2.title {
 	span {
 		display: block;
 	}
+}
+
+#intro {
+	background-image: url('../img/intro-bg.jpg');
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 100vw;
+	padding-top: 100px;
 }
 
 
