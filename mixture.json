@@ -1,6 +1,21 @@
 {
   "convertHtml": {
-    "relativePaths": false
+    "default": "index",
+    "relativePaths": true,
+    "ignoreUrls": [
+      "fabfile.py",
+      "fabfile.pyc",
+      "Makefile",
+      "dist",
+      "models",
+      "node_modules",
+      "package.json",
+      "scripts",
+      "source-data",
+      "templates",
+      "tmp",
+      "converted-html"
+    ]
   },
   "debug": true,
   "ignoreDir": [
