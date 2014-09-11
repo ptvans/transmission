@@ -4,7 +4,9 @@ $(document).ready(function() {
 	var lowHangingFruitView = new LowHangingFruitView({ el: "#low-hanging-fruit" });
 	lowHangingFruitView.render();
 
-	var titleAnimation = new TitleAnimationView({ el: "#intro" });
+	var model = new Model({ progress: 0 });
+
+	var titleAnimation = new TitleAnimationView({ el: "#intro", model: model });
 	titleAnimation.render();
 
 	d3.json("data/scenarios.json", function(data) {
@@ -22,5 +24,19 @@ $(document).ready(function() {
 		countryScenarioView.render();
 
 	});
+
+	var introScrollHeight = 1500;
+	$(window).scroll(function() {
+		var currentPos = $(this).scrollTop();
+		var progress = 100/introScrollHeight * currentPos;
+		
+		// stop if we're past the intro screen
+		if (progress > 100) {
+			return;
+		}
+
+		model.set("progress", progress);
+	});
 });
+
  

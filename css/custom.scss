@@ -99,7 +99,7 @@ h2.title {
 }
 
 #intro {
-	position: relative;
+	position: fixed;
 	background-image: url('../img/intro-bg.jpg');
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -109,6 +109,9 @@ h2.title {
 
 
 #content {
+	position: relative;
+	top: 2000px;
+	z-index: 100;
 	width: 860px;
 	margin: auto;
 	background-color: #F4F4F4;
