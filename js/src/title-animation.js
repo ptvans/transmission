@@ -1,72 +1,74 @@
 var TitleAnimationView = Backbone.View.extend({
     width: 350,
     height: 224,
-    interval: 1000,
 
     initialize: function() {
         _.bindAll(this, "render");
+        this.intervalScale = d3.scale.linear()
+        .domain([0, 20, 40, 60, 80, 100])
+        .range([1000, 200, 50, 10, 5, 1]);
+
+        this.i = 0;
+        this.nodes = [];
+        var g = d3.select(this.el).select("svg");
+        this.particles = g.selectAll("circle");
     },
 
     render: function() {
         var height = this.height,
-            width = this.width,
-            interval = this.interval;
+            width = this.width;
 
-        var nodes = [],
-            start = [{x: 116, y: 124}, {x: 150, y: 126}, {x: 161, y: 140}, {x: 183, y: 147}, {x: 203, y: 148}, {x: 225, y: 151}];
+        var start = [{x: 116, y: 124}, {x: 150, y: 126}, {x: 161, y: 140}, {x: 183, y: 147}, {x: 203, y: 148}, {x: 225, y: 151}];
 
-        var g = d3.select(this.el).select("svg");
 
-        var i = 0;
+
+        var idx = Math.floor(Math.random() * start.length);
+
+        var newNode = {id: idx, x: start[idx].x, y: start[idx].y, idx: this.i};
+        this.nodes.push(newNode);
+
+        if (this.nodes.length > 300) {
+            this.nodes.shift(); 
+        }
+
+        this.particles = this.particles.data(this.nodes, function(d) { return d.idx; });
+        this.particles.exit().remove();
         
-        var particles = g.selectAll("circle");
+        this.particles.enter().append("circle")
+        .attr({
+            "class": "particle",
+            "transform": function(d, i) {
+                var tx = d.x,
+                    ty = d.y;
+                return "translate(" + [tx, ty].join(" ") + ")";
+            },
+            "cx": 0,
+            "cy": 0,
+            "r": 2
+        })
+        .style({
+            "fill": "#cc545b"
+        })
+        .transition()
+        .ease("cubic-out")
+        .duration(10500)
+        .attr({
+            "transform": function(d, i) {
+                var tx = start[idx].x + (Math.random() - 0.5) * 50,
+                    ty = 0;
+                return "translate(" + [tx, ty].join(" ") + ")";
+            },
+            "r": 10
+        })
+        .style({
+            "fill": "#333"
+        })
+        
+        this.i++;
 
-        var classes = ["oil", "gas", "coal"];
+        var intervalLength = this.intervalScale(this.model.get("progress"));
+        console.log(intervalLength);
 
-        setInterval(function() {
-            var idx = Math.floor(Math.random() * start.length);
-
-            var newNode = {id: idx, x: start[idx].x, y: start[idx].y, idx: i};
-            nodes.push(newNode);
-
-            if (nodes.length > 300) {
-              nodes.shift(); 
-            }
-
-            particles = particles.data(nodes, function(d) { return d.idx; });
-            particles.exit().remove();
-            
-            particles.enter().append("circle")
-            .attr({
-                "class": function(d) { return "particle " + classes[d.id] },
-                "transform": function(d, i) {
-                    var tx = d.x,
-                        ty = d.y;
-                    return "translate(" + [tx, ty].join(" ") + ")";
-                },
-                "cx": 0,
-                "cy": 0,
-                "r": 2
-            })
-            .style({
-            	"fill": "#cc545b"
-            })
-            .transition()
-            .ease("cubic-out")
-            .duration(10500)
-            .attr({
-                "transform": function(d, i) {
-                    var tx = start[idx].x + (Math.random() - 0.5) * 50,
-                        ty = 0;
-                    return "translate(" + [tx, ty].join(" ") + ")";
-                },
-                "r": 10
-            })
-            .style({
-            	"fill": "#333"
-            })
-            
-            i++;
-        }, 10);
+        setTimeout(this.render, intervalLength);
     }
 });
