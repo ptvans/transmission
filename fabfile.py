@@ -13,9 +13,9 @@ def server() :
 
 def install() :
     # path to the directory on the server where your vhost is set up
-    path   = "/var/www/{FILLINTHEBLANK}"
+    path   = "/var/www/clients/cpi/new-climate-economy"
     domain = "halftone.co"
-    repo   = "git@bitbucket.org:halftoneinc/{FILLINTHEBLANK}.git"
+    repo   = "git@bitbucket.org:halftoneinc/cpi_new-climate-economy.git"
     folder_name = "alcatel-lucent"
     # name of the application process
     process = "staging"
@@ -26,15 +26,11 @@ def install() :
     run("sudo chown %s %s" % (env.user, path))
     run("sudo chgrp %s %s" % (env.user, path))
 
-    with cd("%s" % (path)) :
-        run("pwd")
-        print(green("Pulling master from GitHub..."))
-        run("git clone %s %s" % (repo, folder_name))
     print(red("DONE!"))
 
 def staging() :
     # path to the directory on the server where your vhost is set up
-    path   = "/var/www/clients/{FILLINTHEBLANK}"
+    path   = "/var/www/clients/cpi/new-climate-economy"
     domain = ""
     # name of the application process
     process = "staging"
