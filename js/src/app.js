@@ -9,6 +9,10 @@ $(document).ready(function() {
 	var titleAnimation = new TitleAnimationView({ el: "#intro", model: model });
 	titleAnimation.render();
 
+
+	var retirementChart = new RetirementsChartView({ el: "#chart-retirements", model: new Model({ stage: 0, toggle: "US"})});
+	retirementChart.render();
+
 	d3.json("data/scenarios.json", function(data) {
 		var dataTaxes = data.taxes;
 		var dataInnovation = data.innovation;
@@ -22,7 +26,6 @@ $(document).ready(function() {
 
 		var countryScenarioView = new PolicyScenarioCountries({ "model": new Model({ index: 0 }), "data": dataCountries, el: "#scenario-taxes-consumer-benefit"});
 		countryScenarioView.render();
-
 	});
 
 	var introScrollHeight = 1500;
