@@ -406,6 +406,7 @@ h2.title {
 	svg.US.stage-1 {
 		#US-A, #US-B, #US-C, #US-D, #US-E {
 			fill: rgb(221, 106, 52) !important;
+			fill-opacity: 0.5;
 			}
 		#US-labels-1 {
 			opacity: 1 !important;
@@ -434,6 +435,7 @@ h2.title {
 	svg.EU.stage-1 {
 		#EU-A, #EU-B, #EU-C, #EU-D, #EU-E {
 			fill: rgb(221, 106, 52) !important;
+			fill-opacity: 0.5;
 			}
 		#EU-labels-1 {
 			opacity: 1 !important;
