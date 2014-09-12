@@ -118,7 +118,7 @@ var WaterfallCoalView = Backbone.View.extend({
 
     update: function() {
     	var stage = this.model.get("stage") || 1;
-    	d3.select(this.el).attr("class", "chart-lg " + toggle + " stage-" + stage);
+    	d3.select(this.el).attr("class", "chart-lg stage-" + stage);
     },
 
     render: function() {
@@ -407,6 +407,9 @@ $(document).ready(function() {
 
 	var waterfallCoal = new WaterfallCoalView({ el: "#waterfall-coal", model: new Model({ stage: 1 })});
 	waterfallCoal.render();
+
+	var waterfallTransport = new WaterfallCoalView({ el: "#waterfall-transport", model: new Model({ stage: 1 })});
+	waterfallTransport.render();
 
 	d3.json("data/scenarios.json", function(data) {
 		var dataTaxes = data.taxes;

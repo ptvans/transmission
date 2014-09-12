@@ -313,9 +313,13 @@ h2.title {
 
 
 // WATERFALL CHART - COAL
-#waterfall-coal {
-	.annotate {
+#waterfall-coal, #waterfall-transport {
+	.annotation-savings {
 		transition: all 1s;
+		pointer-events: none;
+	}
+	.annotation-savings * {
+		pointer-events: none;
 	}
 	.stage-2 {
 		opacity: 0;
@@ -330,7 +334,7 @@ h2.title {
 		pointer-events: none;
 	}
 }
-#waterfall-coal.stage-2 {
+#waterfall-coal.stage-2, #waterfall-transport.stage-2 {
 	.stage-2 {
 		pointer-events: all;
 		opacity: 1;

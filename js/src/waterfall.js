@@ -44,7 +44,7 @@ var WaterfallCoalView = Backbone.View.extend({
 
     update: function() {
     	var stage = this.model.get("stage") || 1;
-    	d3.select(this.el).attr("class", "chart-lg " + toggle + " stage-" + stage);
+    	d3.select(this.el).attr("class", "chart-lg stage-" + stage);
     },
 
     render: function() {

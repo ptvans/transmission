@@ -16,6 +16,9 @@ $(document).ready(function() {
 	var waterfallCoal = new WaterfallCoalView({ el: "#waterfall-coal", model: new Model({ stage: 1 })});
 	waterfallCoal.render();
 
+	var waterfallTransport = new WaterfallCoalView({ el: "#waterfall-transport", model: new Model({ stage: 1 })});
+	waterfallTransport.render();
+
 	d3.json("data/scenarios.json", function(data) {
 		var dataTaxes = data.taxes;
 		var dataInnovation = data.innovation;
