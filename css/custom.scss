@@ -319,6 +319,7 @@ h2.title {
 	}
 	.stage-2 {
 		opacity: 0;
+		pointer-events: none;
 		transition: opacity 0.5s;
 	}
 	.stage-next:hover {
@@ -331,6 +332,7 @@ h2.title {
 }
 #waterfall-coal.stage-2 {
 	.stage-2 {
+		pointer-events: all;
 		opacity: 1;
 	}
 }
