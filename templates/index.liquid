@@ -24,14 +24,14 @@
             <p>Renewable costs more to build…</p>
             <p>… but renewable costs far less to operate</p>
             <p>even when we account for the cost of stranded assets</p>
-            <div class="chart-lg waterfall-coal">
+            <div class="chart-lg" id="waterfall-coal">
                 <a href="#"><div class="stage-next">
                     <span class="glyphicon glyphicon-chevron-right"></span>
                 </div></a>
                 <a href="#"><div class="stage-prev">
                     <span class="glyphicon glyphicon-chevron-left"></span>
                 </div></a>
-                <object type="image/svg+xml" data="/img/waterfall-renewable.svg" class="waterfall-renewable"></object>
+                {% include "waterfall-renewable" %}
             </div>
         </div>
          <div class="slide">

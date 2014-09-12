@@ -1,4 +1,5 @@
 @import "src/title-animation.js";
+@import "src/waterfall.js";
 @import "src/retirements.js";
 @import "src/low-hanging-fruit.js";
 @import "src/policy-scenario.js";

@@ -13,6 +13,9 @@ $(document).ready(function() {
 	var retirementChart = new RetirementsChartView({ el: "#chart-retirements", model: new Model({ stage: 0, toggle: "US"})});
 	retirementChart.render();
 
+	var waterfallCoal = new WaterfallCoalView({ el: "#waterfall-coal", model: new Model({ stage: 1 })});
+	waterfallCoal.render();
+
 	d3.json("data/scenarios.json", function(data) {
 		var dataTaxes = data.taxes;
 		var dataInnovation = data.innovation;

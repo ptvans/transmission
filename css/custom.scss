@@ -313,7 +313,7 @@ h2.title {
 
 
 // WATERFALL CHART - COAL
-.waterfall-coal {
+#waterfall-coal {
 	.annotate {
 		transition: all 1s;
 	}
@@ -323,11 +323,18 @@ h2.title {
 	}
 	.stage-next:hover {
 		opacity: 0.8;
-		.stage-2 {
-			opacity: 1;
-		}
+	}
+
+	.dollar {
+		pointer-events: none;
 	}
 }
+#waterfall-coal.stage-2 {
+	.stage-2 {
+		opacity: 1;
+	}
+}
+
 //WATERFALL CHART - OIL
 
 // LOW HANGING FRUIT CHART
