@@ -181,10 +181,15 @@ h2.title {
 }
 
 .stage-next {
+	right: -29px;
+}
+.stage-prev {
+	left: -29px;
+}
+.stage-next, .stage-prev {
 	position: absolute;
 	z-index: 900;
 	top: 150px;
-	right: -29px;
 	height: 58px;
 	width: 58px;
 	font-size: 32px;
@@ -194,8 +199,13 @@ h2.title {
 	border-radius: 100%;
 	-webkit-box-shadow: 0px 0px 6px rgba(20,20,20,0.2);
 }
+.stage-prev::after {
+	content: 'BACK';
+}
 .stage-next::after {
 	content: 'NEXT';
+}
+.stage-next::after, .stage-prev::after {
 	position: absolute;
 	line-height: 24px;
 	top: -25px;
@@ -204,7 +214,7 @@ h2.title {
 	font-size: 12px;
 	text-shadow: 0px 2px 4px rgba(20,20,20,0.4);
 }
-.stage-next:hover {
+.stage-next:hover, .stage-prev:hover {
 	opacity: 0.8;
 }
 
@@ -331,21 +341,34 @@ h2.title {
 
 
 // WATERFALL CHART - COAL
-.waterfall-coal {
-	.annotate {
+#waterfall-coal, #waterfall-transport {
+	.annotation-savings {
 		transition: all 1s;
+		pointer-events: none;
+	}
+	.annotation-savings * {
+		pointer-events: none;
 	}
 	.stage-2 {
 		opacity: 0;
+		pointer-events: none;
 		transition: opacity 0.5s;
 	}
 	.stage-next:hover {
 		opacity: 0.8;
-		.stage-2 {
-			opacity: 1;
-		}
+	}
+
+	.dollar {
+		pointer-events: none;
 	}
 }
+#waterfall-coal.stage-2, #waterfall-transport.stage-2 {
+	.stage-2 {
+		pointer-events: all;
+		opacity: 1;
+	}
+}
+
 //WATERFALL CHART - OIL
 
 // LOW HANGING FRUIT CHART
@@ -391,6 +414,89 @@ h2.title {
 	}
 }
 
+//RETIREMENTS
+.retirements {
+	height: 350px;
+	* {
+		transition: all 0.5s;
+	}
+	svg.US , svg.EU{
+		opacity: 0;
+		position: absolute;
+		top: 40px;
+		left: 0px;
+	}
+}
+.retirements.US {
+	svg.US {
+		opacity: 1;
+	}
+}
+.retirements.EU {
+	svg.EU {
+		opacity: 1;
+	}
+}
+.retirements {
+	/*Stages for United States*/
+	svg.US {
+		#US-labels-1, #US-labels-2, #US-labels-3 { 
+			opacity: 0;
+		}
+	}
+	svg.US.stage-1 {
+		#US-A, #US-B, #US-C, #US-D, #US-E {
+			fill: rgb(221, 106, 52) !important;
+			fill-opacity: 0.5;
+			}
+		#US-labels-1 {
+			opacity: 1 !important;
+			}
+		}
+	svg.US.stage-2 {
+		#US-C, #US-D, #US-E {
+			fill: rgb(90, 186, 210) !important;
+			}
+		#US-labels-2 {
+			opacity: 1 !important;
+			}
+		}
+	svg.US.stage-3 {
+		/*show all default colors*/	
+		#US-labels-3 {
+			opacity: 1 !important;
+			}
+	}
+	/*Stages for Europe*/
+	svg.EU {
+		#EU-labels-1, #EU-labels-2, #EU-labels-3 { 
+			opacity: 0;
+		}
+	}
+	svg.EU.stage-1 {
+		#EU-A, #EU-B, #EU-C, #EU-D, #EU-E {
+			fill: rgb(221, 106, 52) !important;
+			fill-opacity: 0.5;
+			}
+		#EU-labels-1 {
+			opacity: 1 !important;
+			}
+		}
+	svg.EU.stage-2 {
+		#EU-C, #EU-D, #EU-E {
+			fill: rgb(90, 186, 210) !important;
+			}
+		#EU-labels-2 {
+			opacity: 1 !important;
+			}
+		}
+	svg.EU.stage-3 {
+		/*show all default colors*/	
+		#EU-labels-3 {
+			opacity: 1 !important;
+			}
+	}
+}
 
 //FINANCING 
 .financing {

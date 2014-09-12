@@ -110,6 +110,112 @@ TitleAnimationChartView = Backbone.View.extend({
     }
 
 });
+var WaterfallCoalView = Backbone.View.extend({
+
+    events:  {
+        "click .stage-next": "next",
+        "click .stage-prev": "back",
+        "mouseover .toggle-annotation-savings": "toggleAnnotationSavings",
+        "mouseout .toggle-annotation-savings": "toggleAnnotationSavings",
+        "mouseover .costs": "toggleCosts",
+        "mouseout .costs": "toggleCosts"
+    },
+
+    initialize: function() {
+        _.bindAll(this, "render", "next", "back", "update", "toggleAnnotationSavings", "toggleCosts");
+        this.model.on("change", this.update);
+    },
+
+    toggleAnnotationSavings: function(ev) {
+    	d3.select(this.el).select(".annotation-savings").classed("hidden", ev.type == "mouseout");
+    },
+
+    toggleCosts: function(ev) {
+    	var className = d3.select(ev.currentTarget).attr("class");
+    	d3.select(this.el).selectAll(".costs").style("opacity", function() {
+    		if (ev.type == "mouseout") { 
+    			return "";
+    		}
+    		return d3.select(this).attr("class") == className ? "" : 0.5;
+    	});
+    },
+
+    next: function() {
+    	var stage = this.model.get("stage") || 1;
+    	stage = Math.min(2, stage + 1);
+    	this.model.set("stage", stage);
+    	return false;
+    },
+
+    back: function() {
+    	var stage = this.model.get("stage") || 1;
+    	stage = Math.max(1, stage - 1);
+    	this.model.set("stage", stage);
+    	return false;
+    },
+
+    update: function() {
+    	var stage = this.model.get("stage") || 1;
+    	d3.select(this.el).attr("class", "chart-lg stage-" + stage);
+    },
+
+    render: function() {
+    	this.update();
+    }
+});
+
+
+
+var RetirementsChartView = Backbone.View.extend({
+
+    events:  {
+        "click .stage-next": "next",
+        "click .stage-prev": "back",
+        "click .toggle-US": "toggle",
+        "click .toggle-EU": "toggle" 
+    },
+
+    initialize: function() {
+        _.bindAll(this, "render", "next", "back", "update", "toggle");
+        this.model.on("change", this.update);
+    },
+
+    next: function() {
+    	var stage = this.model.get("stage") || 1;
+    	stage = Math.min(3, stage + 1);
+    	this.model.set("stage", stage);
+    	return false;
+    },
+
+    back: function() {
+    	var stage = this.model.get("stage") || 1;
+    	stage = Math.max(1, stage - 1);
+    	this.model.set("stage", stage);
+    	return false;
+    },
+
+    toggle: function(ev) {
+    	var id = $(ev.currentTarget).attr("class");
+    	var toggle = id.split("-")[1];
+    	this.model.set({
+    		"stage": 1,
+    		"toggle": toggle
+    	});
+    	return false;
+    },
+
+    update: function() {
+    	var stage = this.model.get("stage") || 1;
+    	var toggle = this.model.get("toggle") || "US";
+    	d3.select(this.el).attr("class", "chart-lg retirements " + toggle + " stage-" + stage);
+    	d3.select(this.el).select("svg." + toggle).attr("class", toggle + " stage-" + stage);
+    },
+
+    render: function() {
+    	this.update();
+    }
+});
+
 var LowHangingFruitView = Backbone.View.extend({
     width: 750,
     height: 300,
@@ -118,7 +224,7 @@ var LowHangingFruitView = Backbone.View.extend({
 
     events:  {
         "click .stage-next": "next"
-    },
+    }, 
 
     initialize: function() {
         _.bindAll(this, "render", "next");
@@ -334,6 +440,15 @@ $(document).ready(function() {
 	var titleAnimationChart = new TitleAnimationChartView({ el: "#intro-chart", model: model });
 	titleAnimationChart.render();
 
+	var retirementChart = new RetirementsChartView({ el: "#chart-retirements", model: new Model({ stage: 0, toggle: "US"})});
+	retirementChart.render();
+
+	var waterfallCoal = new WaterfallCoalView({ el: "#waterfall-coal", model: new Model({ stage: 1 })});
+	waterfallCoal.render();
+
+	var waterfallTransport = new WaterfallCoalView({ el: "#waterfall-transport", model: new Model({ stage: 1 })});
+	waterfallTransport.render();
+
 	d3.json("data/scenarios.json", function(data) {
 		var dataTaxes = data.taxes;
 		var dataInnovation = data.innovation;
@@ -347,7 +462,6 @@ $(document).ready(function() {
 
 		var countryScenarioView = new PolicyScenarioCountries({ "model": new Model({ index: 0 }), "data": dataCountries, el: "#scenario-taxes-consumer-benefit"});
 		countryScenarioView.render();
-
 	});
 
 	var introScrollHeight = 1500;

@@ -24,11 +24,14 @@
             <p>Renewable costs more to build…</p>
             <p>… but renewable costs far less to operate</p>
             <p>even when we account for the cost of stranded assets</p>
-            <div class="chart-lg waterfall-coal">
+            <div class="chart-lg" id="waterfall-coal">
                 <a href="#"><div class="stage-next">
                     <span class="glyphicon glyphicon-chevron-right"></span>
                 </div></a>
-                <object type="image/svg+xml" data="/img/waterfall-renewable.svg" class="waterfall-renewable"></object>
+                <a href="#"><div class="stage-prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </div></a>
+                {% include "waterfall-renewable" %}
             </div>
         </div>
          <div class="slide">
@@ -37,11 +40,14 @@
             <p>Renewable costs more to build…</p>
             <p>… but renewable costs far less to operate</p>
             <p>there’s a range of possible outcomes when we account for stranded assets from fossil fuels, depending on policy pathway chosen</p>
-            <div class="chart-lg">
+            <div class="chart-lg" id="waterfall-transport">
                 <a href="#"><div class="stage-next">
                     <span class="glyphicon glyphicon-chevron-right"></span>
                 </div></a>
-                <img class="img-responsive" src="/img/waterfall-transport.svg" />
+                <a href="#"><div class="stage-prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </div></a>
+                {% include "waterfall-transport" %}
             </div>
             <p> Regions that import more oil than they produce — including the United States, Europe, China, and India — can see trillions in gains to their economies over the next 20 years from reducing their oil consumption in favor of low-carbon alternatives. They can benefit by transitioning to a low-carbon economy together even if net oil producing countries do not.</p>
         </div> 
@@ -238,6 +244,9 @@
                 <a href="#"><div class="stage-next">
                     <span class="glyphicon glyphicon-chevron-right"></span>
                 </div></a>
+                <a href="#"><div class="stage-prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </div></a>
                 <img class="img-responsive" src="/img/top-section.png" />
                 <div style="height: 300px; width: 100%;">
                     <svg>
@@ -256,18 +265,20 @@
             <h2>Coal-fired power plants are critical energy assets today, but by retiring plants on schedule, and halting new development, future losses will be minimal.</h2>
             <p>Developed countries can reduce their coal-fired plants with minimal costs, simply by letting their 40 and 60 year old plants retire naturally  rather than refurbishing them.</p>
             <p>(Toggle: United States)</p>
-            <div class="chart-lg">
+            <div id="chart-retirements" class="chart-lg retirements US">
+                <div id="toggle">
+                    <a class="toggle-US" href="#">United States</a>
+                    <a class="toggle-EU" href="#">Europe</a>
+                </div>
                 <a href="#"><div class="stage-next">
                     <span class="glyphicon glyphicon-chevron-right"></span>
+                </div></a>
+                <a href="#"><div class="stage-prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
                 </div></a>
                 {% include "retirement-US" %}
                 {% include "retirement-EU" %}
             </div>
-            <div class="chart-lg"><img class="img-responsive" src="/img/retirement-1.png" /></div>
-            <div class="chart-lg"><img class="img-responsive" src="/img/retirement-2.png" /></div>
-            <div class="chart-lg"><img class="img-responsive" src="/img/retirement-3.png" /></div>
-            <p>(Toggle: United States)</p>
-            <p>TO COME</p>
         </div>
         <div class="slide">
             <h1></h1>
