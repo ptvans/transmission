@@ -67,7 +67,6 @@ var TitleAnimationView = Backbone.View.extend({
         this.i++;
 
         var intervalLength = this.intervalScale(this.model.get("progress"));
-        console.log(intervalLength);
 
         setTimeout(this.render, intervalLength);
     }
@@ -83,29 +82,51 @@ TitleAnimationChartView = Backbone.View.extend({
 
         this.model.on("change:progress", this.update);
         this.g = d3.select(this.el).select("#intro-chart svg");
+
+        this.timeScales = {
+            "past": d3.time.scale().domain([new Date(1980, 0, 1), new Date(2014, 0, 1)]).range([0, 100]),
+            "projection": d3.time.scale().domain([new Date(2014, 0, 1), new Date(2035, 0, 1)]).range([0, 100]),
+            "scenario": d3.time.scale().domain([new Date(2014, 0, 1), new Date(2100, 0, 1)]).range([0, 100]),
+            "axis": d3.time.scale().domain([new Date(1980, 0, 1), new Date(2100, 0, 1)]).range([0, 678])
+        }
     },
 
     update: function() {
         var g = this.g;
-        var l = g.select("#timeseries-past").node().getTotalLength();
+
         var progress = this.model.get("progress");
-        var d = progress/100 * l;
+        var dt = this.model.get("date");
 
-        g.select("#timeseries-past").attr("stroke-dasharray", "0," + d + "," + d);
+        var lPast       = g.select(".timeseries-past").node().getTotalLength();
+        var lProjection = g.select(".timeseries-projection").node().getTotalLength();
+        var lScenario   = g.select(".target-scenario").node().getTotalLength();
+        var visiblePast       = lPast / 100 * Math.max(0, Math.min(100, this.timeScales.past(dt)));
+        var visibleProjection = lProjection / 100 * Math.max(0, Math.min(100, this.timeScales.projection(dt)));
+        var visibleScenario   = lScenario / 100 * Math.max(0, Math.min(100, this.timeScales.scenario(dt)));
 
+        var dashArrayPast = visiblePast + "," + (lPast-visiblePast);
+        var dashArrayProjection = visibleProjection + "," + (lProjection-visibleProjection);
+        var dashArrayScenario = visibleScenario + "," + (lScenario-visibleScenario);
+        g.select(".timeseries-past").attr("stroke-dasharray", dashArrayPast);
+        g.select(".timeseries-projection").attr("stroke-dasharray", dashArrayProjection);
+        g.select(".target-scenario").attr("stroke-dasharray", dashArrayScenario);
+
+        g.select(".timeseries-projection-decoration-1").attr("opacity", visibleProjection >= lProjection ? 1 : 0);
+        g.select(".target-scenario-decoration-1").attr("opacity", visibleScenario >= lScenario*.98 ? 1 : 0);
+
+        var currentYear = g.select(".current-year");
+        currentYear.attr("transform", "translate(" + (19 + this.timeScales.axis(dt)) + " 389)");
+        currentYear.select("tspan").text(dt.getFullYear());
     },
 
     render: function() {
         var g = this.g;
 
-        g.select("#target-scenario").attr("stroke-dasharray", "0,1500,0");
-        g.select("#timeseries-past").attr("stroke-dasharray", "0,1500,0");
-        g.select("#timeseries-projection").attr("stroke-dasharray", "0,1500,0");
-        g.select("#timeseries-projection-decoration-1").attr("opacity", 0);
-  // var l = this.getTotalLength(),
-  //     i = d3.interpolateString("0," + l, l + "," + l);
-
-
+        g.select(".target-scenario").attr("stroke-dasharray", "0,1500,0");
+        g.select(".timeseries-past").attr("stroke-dasharray", "0,1500,0");
+        g.select(".timeseries-projection").attr("stroke-dasharray", "0,1500,0");
+        g.select(".timeseries-projection-decoration-1").attr("opacity", 0);
+        g.select(".target-scenario-decoration-1").attr("opacity", 0);
       // g.select("")
     }
 
@@ -464,7 +485,12 @@ $(document).ready(function() {
 		countryScenarioView.render();
 	});
 
-	var introScrollHeight = 1500;
+	var introScrollHeight = 1000;
+
+	var timeScale = d3.scale.linear()
+	.domain([0, 100])
+	.range([1980, 2100]);
+
 	$(window).scroll(function() {
 		var currentPos = $(this).scrollTop();
 		var progress = 100/introScrollHeight * currentPos;
@@ -474,7 +500,10 @@ $(document).ready(function() {
 			return;
 		}
 
-		model.set("progress", progress);
+		model.set({
+			"progress": progress,
+			"date": new Date(Math.round(timeScale(progress)), 0, 1)
+		});
 	});
 });
 

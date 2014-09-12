@@ -113,26 +113,32 @@ h2.title {
 	width: 780px;
 	margin: 0px auto;
 
-	#timeseries-past {
+	.timeseries-past {
 		stroke-width: 3;
 		stroke: #F8E71C;
 	}
 
-	#timeseries-projection, #timeseries-projection-decoration-1 {
+	.timeseries-projection, .timeseries-projection-decoration-1 {
 		stroke-width: 3;
 		stroke: #F5A623;
 	}
 
-	#target-scenario {
+	.target-scenario, .target-scenario-decoration-1 {
 		stroke-width: 3;
 		stroke: #50E3C2;
 	}
 
-	#intro-x-axis path, #intro-y-axis path {
+	.axis path {
 		stroke: #FFF;
 	}
-	#intro-x-axis text, #intro-y-axis text {
+	.axis text {
 		fill: #FFF;
+	}
+
+	.current-year {
+		path, text, tspan {
+			fill: #FEFEFE;	
+		} 
 	}
 }
 

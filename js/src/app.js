@@ -36,7 +36,12 @@ $(document).ready(function() {
 		countryScenarioView.render();
 	});
 
-	var introScrollHeight = 1500;
+	var introScrollHeight = 1000;
+
+	var timeScale = d3.scale.linear()
+	.domain([0, 100])
+	.range([1980, 2100]);
+
 	$(window).scroll(function() {
 		var currentPos = $(this).scrollTop();
 		var progress = 100/introScrollHeight * currentPos;
@@ -46,7 +51,10 @@ $(document).ready(function() {
 			return;
 		}
 
-		model.set("progress", progress);
+		model.set({
+			"progress": progress,
+			"date": new Date(Math.round(timeScale(progress)), 0, 1)
+		});
 	});
 });
 
