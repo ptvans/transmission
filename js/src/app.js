@@ -42,7 +42,7 @@ $(document).ready(function() {
 	.domain([0, 100])
 	.range([1980, 2100]);
 
-	$(window).scroll(function() {
+	var updateScrolling = function() {
 		var currentPos = $(this).scrollTop();
 		var progress = 100/introScrollHeight * currentPos;
 		
@@ -55,7 +55,10 @@ $(document).ready(function() {
 			"progress": progress,
 			"date": new Date(Math.round(timeScale(progress)), 0, 1)
 		});
-	});
+	};
+
+	$(window).scroll(updateScrolling);
+	$(window).on("touchmove", updateScrolling);
 });
 
  
