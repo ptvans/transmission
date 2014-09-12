@@ -107,6 +107,40 @@ h2.title {
 	padding-top: 100px;
 }
 
+#intro-chart {
+	position: relative;
+	top: 0px;
+	width: 780px;
+	margin: 0px auto;
+
+	.timeseries-past {
+		stroke-width: 3;
+		stroke: #F8E71C;
+	}
+
+	.timeseries-projection, .timeseries-projection-decoration-1 {
+		stroke-width: 3;
+		stroke: #F5A623;
+	}
+
+	.target-scenario, .target-scenario-decoration-1 {
+		stroke-width: 3;
+		stroke: #50E3C2;
+	}
+
+	.axis path {
+		stroke: #FFF;
+	}
+	.axis text {
+		fill: #FFF;
+	}
+
+	.current-year {
+		path, text, tspan {
+			fill: #FEFEFE;	
+		} 
+	}
+}
 
 #content {
 	position: relative;

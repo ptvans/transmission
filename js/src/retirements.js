@@ -47,5 +47,3 @@ var RetirementsChartView = Backbone.View.extend({
     	this.update();
     }
 });
-
-
