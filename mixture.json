@@ -3,8 +3,6 @@
     "default": "index",
     "relativePaths": true,
     "ignoreUrls": [
-      "fabfile.py",
-      "fabfile.pyc",
       "Makefile",
       "dist",
       "models",
@@ -31,7 +29,7 @@
     "js"
   ],
   "projectDescription": "",
-  "projectName": "cpi",
+  "projectName": "transmission",
   "simpleModeFileTypes": [
     ".js",
     ".html",

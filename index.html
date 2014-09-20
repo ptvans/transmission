@@ -2,7 +2,7 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" ng-app="transmission"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -10,204 +10,51 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
 
-        <link rel="stylesheet" href="css/normalize.min.css">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/styles.min.css">
+        <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
+
+        <link href="/css/normalize.min.css" rel="stylesheet" type="text/css" media="all">
+        <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+        <link href="/css/styles.css" rel="stylesheet" type="text/css" media="all">
 
         <script src="js/vendor/modernizr.min.js"></script>
+
+
     </head>
-    <body>
+    <body> 
 
         <div id="header">
-            <img id="logo" src="/img/logo.png"/>
-            <div id="story-title">The Title of This Story</div>
+            <div id="story-title">How to Operate a Manual Transmission</div>
         </div>
 
-        <h1 class="title">A Low-Carbon Energy Transition Can Save the Global Economy Trillions</h1>
-        <h2 class="title">It may be easier than you think</h2>
+      
+<div id="content">
 
-        <div id="intro" class="intro">
-            <span class="heading">Slowing down the freight train</span>
-            <span class="subhead">We need to get CO2 emissions under control, and it may be easier than you think. To keep global warming within a 2 degree increase, we need to halt the rapid growth of emissions to stablize at our target of 450ppm atmospheric CO2 by 2035.</span>
-            <p>A reduction in emissions of XX Gigatons is required to stabilze at 450ppm as determined by who???</p>
-            <div class="chart-lg"><img class="img-responsive" src="/img/carbon-ppm.png" /></div>
-        </div>
-
-        <div id="content">
-        <div class="section">
-            <div class="slide">
-                <h1>The incredible economic growth of the last 150 years has been built on fossil fuels, and their emissions</h1>
-                <p>To avoid dangerous warming, we need to keep atmospheric concentrations of CO2 below 450 ppm. That requires major reductions in greenhouse gas emissions. 2/3rds of these reductions will need to come from the Energy sectors.</p>
-                <div class="chart-sm-wrapper">
-                    <div class="chart-sm-title">
-                        Required Reduction by Sector, Worldwide
-                    </div>
-                    <div class="chart-sm">
-                        <img class="img-responsive" src="/img/energy-sectors.png" />
-                    </div>
-                </div>
-                <div class="blockquote">Two thirds of these reductions will need to come from the energy-related sectors.</div>
-            </div>  
-            <div class="slide">
-                <p>Looking at these energy sectors (?),  let’s see how we can reduce the costs and increase benefits of transitioning to renewable energy so we can reach our 450 ppm goal. (This article summarizes our research in our detailed report. LINK )</p>
-                <p>Power: The transition to a low-carbon electricity system alone can save the global economy $1.8 trillion over the next 20 years.</p>
-                <p>Transport: Transitioning from an oil-based to a low-carbon transportation system could save up to $3.5 trillion depending on policy choices; a combination of innovation and policies that reduce demand work better than policies that restrict supply.</p>
-            </div>  
-            <div class="slide">
-                <h1>The Low-Carbon Transition: Electricity</h1>
-                <p>Renewable costs more to build…</p>
-                <p>… but renewable costs far less to operate</p>
-                <p>even when we account for the cost of stranded assets</p>
-                <div class="chart-lg waterfall-coal">
-                    <a href="#"><div class="stage-next">
-                        <span class="glyphicon glyphicon-chevron-right"></span>
-                    </div></a>
-                    <object type="image/svg+xml" data="/img/waterfall-renewable.svg" class="waterfall-renewable"></object>
-                </div>
-            </div>
-             <div class="slide">
-                <h1>The Low-Carbon Transition: Oil Transport</h1>
-                <p>Financial impact of reducing oil in transport depends on policy decisions that affect asset values </p>
-                <p>Renewable costs more to build…</p>
-                <p>… but renewable costs far less to operate</p>
-                <p>there’s a range of possible outcomes when we account for stranded assets from fossil fuels, depending on policy pathway chosen</p>
-                <div class="chart-lg">
-                    <a href="#"><div class="stage-next">
-                        <span class="glyphicon glyphicon-chevron-right"></span>
-                    </div></a>
-                    <img class="img-responsive" src="/img/costs-oil-transport.png" />
-                </div>
-                <p> Regions that import more oil than they produce — including the United States, Europe, China, and India — can see trillions in gains to their economies over the next 20 years from reducing their oil consumption in favor of low-carbon alternatives. They can benefit by transitioning to a low-carbon economy together even if net oil producing countries do not.</p>
-            </div> 
-        </div>
-        <div class="section">
-             <div class="slide">
-                <h1>Governments, not private investors, own most of the fossil-fuel assets at risk.</h1>
-                <h2>Global control of fossil-fuel production</h2>
-                <div class="chart-sm"><img class="img-responsive" src="/img/govt-share.png" /></div>
-                <p>The fossil-fuel value at risk from a low-carbon transition represents only 2-3% of the total value held by the owners of potentially stranded assets. Further, the largest share belongs to governments, who own over half of global fossil fuel production and control as much as 70% of oil and gas production through companies that are wholly or majority owned by governments. As governments control much of the policy that may lead to stranding, they can reduce impact and recover lost value through policy.</p>
-                <!--<p>But innovation is a phenomenon that is difficult to predict and influence.  If innovation doesn’t pull us toward a renewable future by making the technology more viable, then we may resort to taxation. It turns out that the government is a huge stakeholder.  They own and invest in much fossil production capacity around the world, meaning that their decisions will largely influence how we make this transition. As major stakeholders, national governments simultaneously wield enormous influence and high exposure to risks.
-                </p>-->
-                <p>Their choices determine who wins and loses in the transition.</p>
-                
-                <div style="clear: both;"></div>
-                <div class="column-50">
-                    <h2>Innovation</h2>
-                    <p>Innovation is the development of technologies and funding schemes that allow renewable energy options to become cheaper and more practical over time through research, economies of scalle, and new business models. (Hypothetical scenario where government focuses entirely on innovation)</p>
-                </div>
-                <div class="column-50">    
-                    <h2>Taxation</h2>
-                    <p>Taxation is a tax on the consumption of fossil fuel products, making it more expensive and thus increasing the competitiveness of renewable energy sources. (Hypothetical scenario where government focuses entirely on taxation)</p>
-                </div>
-            </div> 
-            <div class="slide">
-                <h1>What it costs depends on how it's done</h1>
-                <h2>Policies that reduce demand for oil through innovation can greatly benefit consumers.</h2>
-                <div class="chart-md calculator">
-                    <div class="stakeholders">
-                        <div class="stakeholder"><span class="glyphicon glyphicon-user"></span>Oil Producers</div>
-                        <div class="stakeholder"><span class="glyphicon glyphicon-user"></span>Oil Consumers</div>
-                        <div class="stakeholder"><span class="glyphicon glyphicon-user"></span>Governments</div>
-                    </div>
-                    <img src="/img/taxation-benefit-EU.png" />
-                    <div class="definitions">
-                        <div class="stakeholder">Insert description here. Insert description here. Insert description here.</div>
-                        <div class="stakeholder">Insert description here. Insert description here. Insert description here.</div>
-                        <div class="stakeholder">Insert description here. Insert description here. Insert description here.</div>
-                    </div>
-                </div>
-                <div class="chart-sm"><img class="img-responsive" src="/img/innovation.png" /></div>
-            </div> 
-            <div class="slide">
-                <h2>Reliance on consumption taxes may result in a net cost to the global economy.</h2>
-                <div class="chart-sm"><img class="img-responsive" src="/img/taxation.png" /></div>
-            </div> 
-            <div class="slide">
-                <h2>However, countries that are net oil consumers can see an overall benefit by taxing consumption</h2>
-                <p>Oil consumers can act independently of oil producers to tax oil consumption.  Countries that consume more oil than they produce could see an economic boost because increased tax revenue would more than offset lost oil revenue due to higher prices.  If consumers do act alone, producers are better off joining them.</p>
-                <div class="chart-sm"><img class="img-responsive" src="/img/taxation.png" /></div>
-            </div>
-            <div style="clear: both;"></div>
-        </div>
-        <div class="section">
-            <div class="slide">
-                <p>Low hanging fruit</p>
-                <h1>Transitioning away from coal offers the most cost-effective opportunity for a low-carbon transition</h1>
-                <p>the global community can achieve approximately 80% of necessary carbon reductions by transitioning away from coal for 12% of global economic value at risk. In the power sector, the U.S. and EU are already on track for a transition with minimal economic value loss; China and India would have to find alternatives to new coal plants to minimize the cost of transition to a low-carbon economy.</p>
-                <div class="chart-lg">
-                    <a href="#"><div class="stage-next">
-                        <span class="glyphicon glyphicon-chevron-right"></span>
-                    </div></a>
-                    <img class="img-responsive" src="/img/top-section.png" />
-                    <img class="img-responsive" src="/img/emissions.png" />
-                    <img class="img-responsive" src="/img/bottom-section.png" />
-                </div>
-            </div>
-            <div class="slide">
-                <h2>Coal fired power generation has slowed in the developed world</h2>
-                <p>To be consistent with a 450ppm limit, these develop countries need to halt their development beyond the threshold.  In these mature economies, it woun’t be a big cost to stop. To meet the global goal, they can simply allow existing plants to retire naturally, and stop building new ones.</p>
-                <div class="chart-lg"><img class="img-responsive" src="/img/coal-plan-developed.png" /></div>
-            </div>
-            <div class="slide">
-                <h2>Coal-fired power plants are critical energy assets today, but by retiring plants on schedule, and halting new development, future losses will be minimal.</h2>
-                <p>Developed countries can reduce their coal-fired plants with minimal costs, simply by letting their 40 and 60 year old plants retire naturally  rather than refurbishing them.</p>
-                <div class="chart-lg"><img class="img-responsive" src="/img/retirements.png" /></div>
-            </div>
-            <div class="slide">
-                <h1></h1>
-                <h2>Coal fired power generation is still the defacto growth model in the developing world.</h2>
-                <p>To be consistent with a 450ppm limit, these developing countries need to halt their development beyond the threshold.  These growing economies have a tremendous opportunity to get energy development right the first time and then reap the benefits for decades to come. Continuing on a path of Coal will result in wasteful invesment, as new coal plants will simply be competing for emissions quotas with existing plants. Current investment will be future stranded asset costs that need to be written off as plants are shut down.  Those investment dollars could be used much more efficiently in alternative renewables.</p>
-                <div class="chart-sm"><img class="img-responsive" src="/img/coal-plan-developing.png" /></div>
-                <div class="chart-sm"><img class="img-responsive" src="/img/gapminder.png" /></div>
-                <div style="clear: both;"></div>
-            </div>
-        </div>
-        <div class="section">
-            <div class="slide">
-                <p>Financial Innovation in the developing world</p>
-                <h1> Policies can further build on these gains by reducing financing costs of low-carbon energy.</h1>
-                <h2>Simply achieving longer loan terms will have a large impact</h2>
-                <p> In emerging economies with high debt costs, concessional debt or indexing renewable energy support to foreign currency could reduce costs by as much as 30%. Here are a few things that work to improve things. Debt costs and terms are the main driver of higher finance costs in the developing world.</p>
-                <div class="chart-lg"><img class="img-responsive" src="/img/finance-dev.png" /></div>
-            </div>
-            <div class="slide">
-                <p>Financial Innovation in the developed world</p>
-                <h2>Improving financing with business model innovation can lower the cost of renewable projects by 20%</h2>
-                <p>In the U.S. and EU, investment vehicles such as YieldCos that can efficiently channel low-cost institutional investment into low-carbon energy infrastructure have the potential to reduce the cost of low-carbon power by 20%.</p>
-                <div class="chart-md financing">
-                    <a href="#"><div class="stage-next">
-                        <span class="glyphicon glyphicon-chevron-right"></span>
-                    </div></a>
-                    <div class="definitions">
-                        <div class="definition"><span class="title">Current Project Finance</span>Insert description</div>
-                        <div class="definition"><span class="title">Balance Sheet Financing</span>Insert description</div>
-                        <div class="definition"><span class="title">New Financing Models</span>Insert description</div>
-                    </div>
-                    <img class="img-responsive US" src="/img/finance-devd-US.png" />
-                    <img class="img-responsive EU" src="/img/finance-devd-EU.png" />
-                </div>
-            </div>
-        </div>                  
-        <div id="overview">
-            <div id="key-points">
-                <h2>Key Points</h2>
-                <div class="chart-lg"><img class="img-responsive" src="/img/key-points.png" /></div>
-            </div>
-            <div id="bio">
-            <h2>About CPI</h2>
-                <p>If you are interested in more information, we can provide interviews as well as the full reports from our contributing organization Climate Policy Initiative, “Moving to a Low Carbon Economy: The Financial Impact of the Low-Carbon Transition” and “Moving to a Low Carbon Economy: The Impact of Different Transition Policy Pathways on the Owners of Fossil Fuel Resources and Assets.”</p>
-            </div>
-            <div id="sharing">(Social sharing)</div>
-        </div>
+            <div>
+    <img class="top-bar" src="/img/top-bar.png" />
 
 
+    <div ng-controller="TransController as trans">
+        <h2>{{{trans.product.name}}}</h2>
+        <h2>{{{trans.product.price}}}</h2>
+    </div>
 
-        </div>
+    <p>
+        I am {{{ 4 + 6 }}}
+        I am {{{ "hello"  }}}
+    </p>
 
 
-        <script src="js/vendor/jquery.min.js"></script>
+        {% include "controls" %}
+        {% include "gauges" %}
+        {% include "model" %}
+      
+    </div>
 
-        <script src="js/main.js"></script>
+</div> 
+       
+        <script src="/js/vendor/jquery.min.js"></script>       
+        <script src="/js/vendor/angular.min.js"></script>
+        <script src="/js/vendor/d3.min.js"></script>
+        <script src="/js/main.js"></script>    
     </body>
 </html>
