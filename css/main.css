@@ -83,3 +83,7 @@ h2.title {
 .top-bar {
 	width: 100%;
 }
+.slider {
+	width: 200px;
+	display: inline-block;
+}
