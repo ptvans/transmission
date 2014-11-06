@@ -19,7 +19,6 @@
 
         <script src="js/vendor/modernizr.min.js"></script>
 
-
     </head>
     <body> 
 
@@ -30,20 +29,23 @@
       
 <div id="content">
 
-            <div>
-    <img class="top-bar" src="img/top-bar.png" />
+    <div id="control-panel">
+        <div id="push-start">
+            <div class="engine-start">start engine</div>
+        </div>
+        <div id="throttle">
+            <h2>THROTTLE</h2>
+            <div class="slider-wrapper">
+                Min <div class="slider"></div> Full Throttle
+            </div>
+        </div>
 
-
-    <div >
-        <p>put stuff here</p>
     </div>
 
-
-
-    <div class="slider-wrapper">
-        Min<div class="slider"></div>Full Throttle
-    </div>
-
+<div id="controls" style="display: inline-block;">
+    <div id="controls-shifter">
+        <div id="gear-selector"></div>
+    </div> 
 
         <svg width="526px" height="275px" viewBox="0 0 526 275" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
     <!-- Generator: Sketch 3.0.4 (8053) - http://www.bohemiancoding.com/sketch -->
@@ -75,12 +77,7 @@
             <rect id="Rectangle-14" sketch:type="MSShapeGroup" x="49.4859047" y="0" width="8.24765079" height="57.7335555" rx="4"></rect>
             <rect id="Rectangle-15" sketch:type="MSShapeGroup" transform="translate(28.866778, 28.866778) rotate(-90.000000) translate(-28.866778, -28.866778) " x="24.7429524" y="0" width="8.24765079" height="57.7335555" rx="4"></rect>
         </g>
-        <g id="Oval-3-+-2" sketch:type="MSLayerGroup" transform="translate(360.894968, 187.462686)">
-            <ellipse id="Oval-3" fill-opacity="0.799999952" fill="#E92222" sketch:type="MSShapeGroup" cx="12.3714762" cy="13.1962413" rx="12.3714762" ry="12.3714762"></ellipse>
-            <text id="2" sketch:type="MSTextLayer" font-family=".Lucida Grande UI" font-size="19.0344828" font-weight="normal" fill="#FFFFFF">
-                <tspan x="7.42288571" y="18">2</tspan>
-            </text>
-        </g>
+        
         <text id="clutch" sketch:type="MSTextLayer" font-family="Raleway" font-size="18" font-weight="normal" fill="#9B9B9B">
             <tspan x="76.0005463" y="122.058594">clutch</tspan>
         </text>
@@ -96,12 +93,13 @@
         <path d="M521.5,20.9869258 L521.5,260.013382" id="Line" stroke="#E4E4E4" stroke-width="2" stroke-linecap="round" stroke-dasharray="1,4" sketch:type="MSShapeGroup"></path>
     </g>
 </svg>
+</div>
 
 
 
-
+<div id="gauges" style="display: inline-block;">
 <svg width="556px" height="276px" viewBox="0 0 556 276" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
-    <!-- Generator: Sketch 3.0.4 (8053) - http://www.bohemiancoding.com/sketch -->
+    <!-- Generator: Sketch 3.1 (8751) - http://www.bohemiancoding.com/sketch -->
     <title>gauges</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
@@ -301,13 +299,17 @@
         <g id="arc0" sketch:type="MSLayerGroup" transform="translate(59.822285, 35.574218)" fill="#FFFFFF" opacity="0">
             <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="0" y="1.42108547e-14" width="201.261097" height="201.261097"></rect>
         </g>
-        <g id="needle-mph" sketch:type="MSLayerGroup" transform="translate(341.800204, 48.989279)">
-            <rect id="Rectangle-path" opacity="0" fill="#FFFFFF" sketch:type="MSShapeGroup" x="0" y="0" width="174.975722" height="174.975722"></rect>
-            <path d="M101.039668,77.4512979 L40.5453149,134.751987 L39.2764715,133.448772 L98.0767032,74.4155114 L100.647597,74.8722484 L101.039668,77.4512979 Z" id="NeedleMph" opacity="0.5" fill="#F03B3B" sketch:type="MSShapeGroup"></path>
+        <g id="needle-mph-group" sketch:type="MSLayerGroup" transform="translate(341.800204, 48.989279)">
+            <g id="needle-mph" sketch:type="MSShapeGroup">
+                <rect id="Rectangle-path" opacity="0" fill="#FFFFFF" x="0" y="0" width="174.975722" height="174.975722"></rect>
+                <path d="M101.039668,77.4512979 L40.5453149,134.751987 L39.2764715,133.448772 L98.0767032,74.4155114 L100.647597,74.8722484 L101.039668,77.4512979 Z" id="NeedleMph" opacity="0.5" fill="#F03B3B"></path>
+            </g>
         </g>
-        <g id="needle-rpm" sketch:type="MSLayerGroup" transform="translate(59.822285, 35.574218)">
-            <rect id="Rectangle-path" opacity="0" fill="#FFFFFF" sketch:type="MSShapeGroup" x="0" y="0" width="201.261097" height="201.261097"></rect>
-            <path d="M114.266068,97.9715558 L36.3329452,128.839407 L35.4480854,126.721775 L112.202867,93.0301693 L114.64708,94.9102205 L114.266068,97.9715558 Z" id="NeedleRpm" opacity="0.5" fill="#F03B3B" sketch:type="MSShapeGroup"></path>
+        <g id="needle-rpm-group" sketch:type="MSLayerGroup" transform="translate(59.822285, 35.574218)">
+            <g id="needle-rpm" sketch:type="MSShapeGroup">
+                <rect id="Rectangle-path" opacity="0" fill="#FFFFFF" x="0" y="0" width="201.261097" height="201.261097"></rect>
+                <path d="M114.266068,97.9715558 L36.3329452,128.839407 L35.4480854,126.721775 L112.202867,93.0301693 L114.64708,94.9102205 L114.266068,97.9715558 Z" id="NeedleRpm" opacity="0.5" fill="#F03B3B"></path>
+            </g>
         </g>
         <text id="RPM" sketch:type="MSTextLayer" font-family="Raleway" font-size="24" font-weight="normal" sketch:alignment="middle" fill="#9B9B9B">
             <tspan x="135.092" y="177">RPM</tspan>
@@ -323,12 +325,13 @@
         </text>
     </g>
 </svg>
+</div>
 
 
 
 
-
-<svg width="1081px" height="410px" viewBox="0 0 1081 410" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+<div id="model">
+<svg id="svg-model" width="1081px" height="410px" viewBox="0 0 1081 410" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
     <!-- Generator: Sketch 3.0.4 (8053) - http://www.bohemiancoding.com/sketch -->
     <title>model</title>
     <desc>Created with Sketch.</desc>
@@ -382,7 +385,7 @@
         <text id="RPM-2" sketch:type="MSTextLayer" font-family="Raleway" font-size="18" font-weight="normal" sketch:alignment="middle" fill="#9B9B9B">
             <tspan x="812.569" y="351">RPM</tspan>
         </text>
-        <text id="2,500" sketch:type="MSTextLayer" font-family="Raleway" font-size="46" font-weight="normal" sketch:alignment="middle" fill="#F2A8A8">
+        <text id="model-engine-speed" sketch:type="MSTextLayer" font-family="Raleway" font-size="46" font-weight="normal" sketch:alignment="middle" fill="#F2A8A8">
             <tspan x="169.063" y="276">2,500</tspan>
         </text>
         <text id="RPM" sketch:type="MSTextLayer" font-family="Raleway" font-size="18" font-weight="normal" sketch:alignment="middle" fill="#9B9B9B">
@@ -419,13 +422,15 @@
         <text id="ratio" sketch:type="MSTextLayer" font-family="Raleway" font-size="18" font-weight="normal" fill="#9B9B9B">
             <tspan x="432" y="374">ratio</tspan>
         </text>
-        <text id="0.8:1" sketch:type="MSTextLayer" font-family="Raleway" font-size="42" font-weight="normal">
+        <text id="model-gear-ratio" sketch:type="MSTextLayer" font-family="Raleway" font-size="42" font-weight="normal">
             <tspan x="392" y="353" fill="#F2A8A8">0.8</tspan>
             <tspan x="450.8" y="353" fill="#A5D8EE">:1</tspan>
         </text>
         <path d="M1.5,2.5 L1077.51672,2.5" id="Line" stroke="#E4E4E4" stroke-width="2" stroke-linecap="round" stroke-dasharray="1,4" sketch:type="MSShapeGroup"></path>
     </g>
 </svg>      
+</div>
+    
     </div>
 
 </div> 
