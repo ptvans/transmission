@@ -5,7 +5,9 @@
 $("#model-engine-speed").attr({
 	"transform":"translate(175,270)"
 });
-
+$("#model-road-speed").attr({
+	"transform":"translate(795,320)"
+});
 $("#model-gear-ratio").attr({
 	"transform":"translate(400,-125)"
 });
@@ -95,7 +97,7 @@ console.log("app js is loading")
 	//GAUGE ROTATION SCALES
 	var rpmScale = d3.scale.linear()
 	    .domain([0, maxRPM])
-	    .range([0, 160]);
+	    .range([0, 185]);
 
 	var mphScale = d3.scale.linear()
 	    .domain([0, maxMPH])
@@ -162,7 +164,6 @@ console.log("app js is loading")
 		//console.log('do this every 1 seconds');
 		//console.log(now);
 		if (gas > 0) {
-			//timer += 1;
 			//maintain engine speed
 			if (rpm > gas * maxRPM - 0.1) {
 				rpm = gas * maxRPM - 0.11;
@@ -190,7 +191,7 @@ console.log("app js is loading")
 			console.log("timer "+timer);
 			//ROTATE THE RPM NEEDLE
 			$("#needle-rpm").attr({
-				"transform":"rotate("+ (25+rpmScale(rpm)) +" 100 100)"
+				"transform":"rotate("+ rpmScale(rpm) +" 100 100)"
 			});
 			//ROTATE THE MPH NEEDLE
 			$("#needle-mph").attr({
@@ -198,6 +199,8 @@ console.log("app js is loading")
 			});
 			$("#model-engine-speed").text(1000*rpm.toPrecision(4));
 			$("#model-gear-ratio").text(tratios[gear-1]+":1");
+			$("#model-road-speed").text((1000*rpm/tratios[gear-1]).toPrecision(4));
+			$("#drive-wheel").attr({"style":"-webkit-animation-duration:"+(1000/rpm)+"ms;"});
 		}
 	}
 	
