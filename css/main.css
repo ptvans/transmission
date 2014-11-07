@@ -1,4 +1,4 @@
-$font-sans: 'raleway', sans-serif;
+$font-sans: 'Lato', sans-serif;
 $font-serif: 'chaparral-pro', Georgia, serif;
 $font-detail: Verdana, Arial, sans-serif;
 $font-heading: Lato, Verdana, Arial, sans-serif;
@@ -83,7 +83,188 @@ h2.title {
 .top-bar {
 	width: 100%;
 }
+
+#control-panel {
+	width: 100%;
+	background: #eee;
+	padding: 20px;
+	margin-top: 20px;
+}
+#push-start {
+	width: 30%;
+	display: inline-block;
+}
+.engine-start {
+	height: 132px;
+	width: 132px;
+	border-radius: 100%;
+	opacity: 0.9;
+	cursor: pointer;
+	text-align: center;
+	color: #fff;
+	padding: 20px 20px;
+	border: 12px solid #555;
+	font-size: 22px;
+	box-shadow: 0px 4px 9px rgba(20,20,20,0.5) inset;
+	background: -webkit-radial-gradient(#cfcfcf 5%, #ccc 15%, #888 60%); /* Safari 5.1-6.0 */
+  background: -o-radial-gradient(#cfcfcf 5%, #ccc 15%, #888 60%); /* For Opera 11.6-12.0 */
+  background: -moz-radial-gradient(#cfcfcf 5%, #ccc 15%, #888 60%); /* For Firefox 3.6-15 */
+  background: radial-gradient(#cfcfcf 5%, #ccc 15%, #888 60%); /* Standard syntax */
+}
+.engine-start:hover {
+	opacity: 1.0;
+}
+#throttle {
+	width: 60%;
+	display: inline-block;
+}
+
 .slider {
 	width: 200px;
 	display: inline-block;
+}
+
+
+#controls, #model, #gauges {
+	position: relative;
+}
+
+#controls-shifter {
+	position: absolute;
+	top: 132px;
+	left: 360px;
+	border: 1px solid #eee;
+	width: 80px;
+	height: 80px;
+}
+
+#gear-selector {
+	position: absolute;
+	transform: translate(26px,26px);
+	width: 24px;
+	height: 24px;
+	background-color: #F03B3B;
+	opacity: 0.9;
+	border-radius: 100%;
+	transition: all 1s;
+}
+#gear-selector::after {
+	content: "N";
+	position: absolute;
+	top: 3px;
+	left: 7px;
+	color: #fff;
+}
+#gear-selector.01::after {
+	content: "1";
+}
+#gear-selector.02::after {
+	content: "2";
+}
+#gear-selector.03::after {
+	content: "3";
+}
+#gear-selector.04::after {
+	content: "4";
+}
+#gear-selector.05::after {
+	content: "5";
+}
+
+
+.noUi-connect {
+	background: #F03B3B;
+}
+.noUi-handle {
+	border-radius: 100%;
+}
+
+.noUi-horizontal .noUi-handle {
+	width: 48px;
+	height: 48px;
+	left: -25px;
+	top: -17px;
+	opacity: 0.8;
+}
+.noUi-handle:after, .noUi-handle:before {
+	display: none;
+}
+
+
+/* MODEL */
+#gears rect {
+	transition: all 500ms;
+}
+
+#gears .active {
+	fill: #F03B3B;
+}
+
+#drive-wheel {
+	position: absolute;
+	left: 760px;
+	top: 231px;
+	height: 160px;
+	width: 160px;
+	-webkit-animation: wheel-spin linear infinite;
+  	-webkit-animation-duration: 5000ms;
+}
+#flywheel, #clutch {
+	position: absolute;
+	width:10px;
+	height: 90px;
+}
+#flywheel {
+	top: 214px;
+	left: 337px;
+}
+#clutch {
+	top: 214px;
+	left: 354px;
+}
+
+#drive-dot, #clutch-dot, #engine-dot {
+	position: absolute;
+	height: 8px;
+	width: 8px;
+	border-radius: 100%;
+	background-color: #333;
+}
+#drive-dot {
+	top: 20px;
+	left: 20px;
+}
+#clutch-dot, #engine-dot {
+	top: -1px;
+	left: 1px;
+	-webkit-animation: disk-revolve linear infinite;
+  	-webkit-animation-duration: 500ms;
+}
+@-webkit-keyframes wheel-spin {
+    from {
+    	transform: rotateZ(360deg);}
+    to {
+    	transform: rotateZ(0deg);}
+}
+@-webkit-keyframes disk-revolve {
+    0% {
+    	opacity: 0;
+    	height: 4px;
+    	transform: translate(0px,0px) rotateZ(0deg);}
+    25% {
+    	opacity: 1.0;
+    	height: 8px;
+    	transform: translate(0px,45px) rotateZ(0deg);}
+    50% {
+    	opacity: 0;
+    	height: 4px;
+    	transform: translate(0px,90px) rotateZ(0deg);}
+    75% {
+    	opacity: 0.;
+    	height: 8px;
+    	transform: translate(0px,45px) rotateZ(0deg);}
+    100% {
+    	opacity: 0;
+    	height: 4px;
+    	transform: translate(0px,0px) rotateZ(0deg);}
 }
