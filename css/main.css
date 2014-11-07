@@ -250,21 +250,21 @@ h2.title {
     0% {
     	opacity: 0;
     	height: 4px;
-    	transform: translate(0px,0px);}
+    	transform: translate(0px,0px) rotateZ(0deg);}
     25% {
     	opacity: 1.0;
     	height: 8px;
-    	transform: translate(0px,45px);}
+    	transform: translate(0px,45px) rotateZ(0deg);}
     50% {
     	opacity: 0;
     	height: 4px;
-    	transform: translate(0px,90px);}
+    	transform: translate(0px,90px) rotateZ(0deg);}
     75% {
     	opacity: 0.;
     	height: 8px;
-    	transform: translate(0px,45px);}
+    	transform: translate(0px,45px) rotateZ(0deg);}
     100% {
     	opacity: 0;
     	height: 4px;
-    	transform: translate(0px,0px);}
+    	transform: translate(0px,0px) rotateZ(0deg);}
 }
