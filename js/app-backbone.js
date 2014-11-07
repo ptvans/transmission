@@ -78,6 +78,9 @@ console.log("app js is loading")
 	var gas = 0;
 	var idle = 0.9;
 
+	var lowerRPM = $("#slider-shifts").val()[0]/1000;
+	var upperRPM = $("#slider-shifts").val()[1]/1000;
+
 	function calcRPM(t){
 		rpm = gas * ( maxRPM - Math.pow((tcoeffs[gear-1] * t - 2.25 ),2) );
 		speed = (rpm * 1000 * diam)/(axle * tratios[gear-1] * convert);
@@ -191,6 +194,12 @@ console.log("app js is loading")
 		}
 	}	
 
+	function depressClutch(){
+		$("#pedal-clutch").attr({
+			"class":"animate"
+		});
+	}
+
 	//THE BIG LOOP THAT DOES ALL THE STUFF
 	setInterval(dothis, 100);
 	
@@ -213,12 +222,15 @@ console.log("app js is loading")
 				gear += 1;
 				timer = gear-1;
 				setGearPos();
+				depressClutch();
 			}
 			//Shift down if RPM dips below 1500
 			if (gear > 1 && timer > 5 && rpm < 1.5) {
 				rpm += 1.5;
 				gear -= 1;
+				timer = 1;
 				setGearPos();
+				depressClutch();
 			}
 			console.log("gear "+gear);
 			console.log("MPH "+speed);
@@ -264,7 +276,7 @@ console.log("app js is loading")
 		}
 	}
 
-	$(".slider").noUiSlider({
+	$("#slider-gas").noUiSlider({
 		start: 0,
 		connect: "lower",
 		range: {
@@ -273,26 +285,35 @@ console.log("app js is loading")
 		}
 	});
 
-	var sliderVal = $(".slider").val();
+	$("#slider-shifts").noUiSlider({
+		start: [2000,4000],
+		connect: true,
+		range: {
+			'min': 1000,
+			'max': 5900
+		}
+	});
+
+	var sliderVal = $("#slider-gas").val();
 	console.log(sliderVal);
 
-	$(".slider").on({
+	$("#slider-gas").on({
 		slide: function(){
-			console.log("slide "+$(".slider").val());
-			gas = $(".slider").val();
+			console.log("slide "+$("#slider-gas").val());
+			gas = $("#slider-gas").val();
 			$("#pedal-gas").attr({
-				"transform":"translate(0,"+ ( 94 - 94 * $(".slider").val() ) +")"
+				"transform":"translate(0,"+ ( 94 - 94 * $("#slider-gas").val() ) +")"
 			});
 			setGearPos();
 		},
 		set: function(){
-			console.log("set "+$(".slider").val());
-			gas = $(".slider").val();
+			console.log("set "+$("#slider-gas").val());
+			gas = $("#slider-gas").val();
 			setGearPos();
 		},
 		change: function(){
-			console.log("change "+$(".slider").val());
-			gas = $(".slider").val();
+			console.log("change "+$("#slider-gas").val());
+			gas = $("#slider-gas").val();
 			setGearPos();
 		}
 	});
