@@ -107,9 +107,9 @@ h2.title {
 	font-size: 22px;
 	box-shadow: 0px 4px 9px rgba(20,20,20,0.5) inset;
 	background: -webkit-radial-gradient(#cfcfcf 5%, #ccc 15%, #888 60%); /* Safari 5.1-6.0 */
-  background: -o-radial-gradient(#cfcfcf 5%, #ccc 15%, #888 60%); /* For Opera 11.6-12.0 */
-  background: -moz-radial-gradient(#cfcfcf 5%, #ccc 15%, #888 60%); /* For Firefox 3.6-15 */
-  background: radial-gradient(#cfcfcf 5%, #ccc 15%, #888 60%); /* Standard syntax */
+	background: -o-radial-gradient(#cfcfcf 5%, #ccc 15%, #888 60%); /* For Opera 11.6-12.0 */
+	background: -moz-radial-gradient(#cfcfcf 5%, #ccc 15%, #888 60%); /* For Firefox 3.6-15 */
+	background: radial-gradient(#cfcfcf 5%, #ccc 15%, #888 60%); /* Standard syntax */
 }
 .engine-start:hover {
 	opacity: 1.0;
@@ -120,15 +120,33 @@ h2.title {
 }
 
 .slider {
-	width: 200px;
+	width: 250px;
 	display: inline-block;
 }
 
+.noUi-connect {
+	background: #F03B3B;
+}
+.noUi-handle {
+	border-radius: 100%;
+}
+
+.noUi-horizontal .noUi-handle {
+	width: 48px;
+	height: 48px;
+	left: -25px;
+	top: -17px;
+	opacity: 0.8;
+}
+.noUi-handle:after, .noUi-handle:before {
+	display: none;
+}
 
 #controls, #model, #gauges {
 	position: relative;
 }
 
+/* CONTROLS */
 #controls-shifter {
 	position: absolute;
 	top: 132px;
@@ -172,23 +190,31 @@ h2.title {
 }
 
 
-.noUi-connect {
-	background: #F03B3B;
+/* GAUGES */
+#stroke-rpm {
+	stroke-dasharray: 295;
+	/*stroke-dashoffset: 295px;*/
 }
-.noUi-handle {
-	border-radius: 100%;
+#stroke-mph-1, 
+#stroke-mph-2,
+#stroke-mph-3,
+#stroke-mph-4,
+#stroke-mph-5 {
+	opacity: 0;
+	transition: all 250ms;
 }
-
-.noUi-horizontal .noUi-handle {
-	width: 48px;
-	height: 48px;
-	left: -25px;
-	top: -17px;
-	opacity: 0.8;
+#stroke-mph-1.active, 
+#stroke-mph-2.active,
+#stroke-mph-3.active,
+#stroke-mph-4.active,
+#stroke-mph-5.active {
+	opacity: 1;
 }
-.noUi-handle:after, .noUi-handle:before {
-	display: none;
-}
+#stroke-mph-1 { stroke-dasharray: 100; }
+#stroke-mph-2 { stroke-dasharray: 144; }
+#stroke-mph-3 { stroke-dasharray: 247; }
+#stroke-mph-4 { stroke-dasharray: 310; }
+#stroke-mph-5 { stroke-dasharray: 386; }
 
 
 /* MODEL */
@@ -206,6 +232,8 @@ h2.title {
 	top: 231px;
 	height: 160px;
 	width: 160px;
+	animation: wheel-spin linear infinite;
+  	animation-duration: 5000ms;
 	-webkit-animation: wheel-spin linear infinite;
   	-webkit-animation-duration: 5000ms;
 }
@@ -239,6 +267,12 @@ h2.title {
 	left: 1px;
 	-webkit-animation: disk-revolve linear infinite;
   	-webkit-animation-duration: 500ms;
+}
+@keyframes wheel-spin {
+    from {
+    	transform: rotateZ(360deg);}
+    to {
+    	transform: rotateZ(0deg);}
 }
 @-webkit-keyframes wheel-spin {
     from {

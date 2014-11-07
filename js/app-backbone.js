@@ -98,13 +98,38 @@ console.log("app js is loading")
 	var rpmScale = d3.scale.linear()
 	    .domain([0, maxRPM])
 	    .range([0, 185]);
-
+	var rpmStrokeScale = d3.scale.linear()
+	    .domain([0, maxRPM])
+	    .range([295, 0]);
 	var mphScale = d3.scale.linear()
 	    .domain([0, maxMPH])
 	    .range([0, 335]);
+	var mphStrokeScale01 = d3.scale.linear()
+	    .domain([0, 35])
+	    .range([100, 0]);
+	var mphStrokeScale02 = d3.scale.linear()
+	    .domain([12, 55])
+	    .range([144, 0]);
+	var mphStrokeScale03 = d3.scale.linear()
+	    .domain([25, 90])
+	    .range([247, 0]);
+	var mphStrokeScale04 = d3.scale.linear()
+	    .domain([37, 123])
+	    .range([310, 0]);
+	var mphStrokeScale05 = d3.scale.linear()
+	    .domain([50, maxMPH])
+	    .range([386, 0]);
 
-	console.log(mphScale(10));
-		
+
+	var arcs = d3.selectAll("#arcs>g");
+	console.log(arcs);
+	var arc01 = d3.select("#stroke-mph-1");
+	var arc02 = d3.select("#stroke-mph-2");
+	var arc03 = d3.select("#stroke-mph-3");
+	var arc04 = d3.select("#stroke-mph-4");
+	var arc05 = d3.select("#stroke-mph-5");
+
+	// CONTROLS - GEAR POSITION
 	function setGearPos() {
 		console.log("gear pos called!");
 		switch(gear) {
@@ -115,6 +140,8 @@ console.log("app js is loading")
 				});
 				gears.classed('active',false);
 				gear01.classed('active',true);
+				arcs.classed('active',false);
+				arc01.classed('active',true);
 				break;
 			case 2:
 				$("#gear-selector").attr({
@@ -123,6 +150,8 @@ console.log("app js is loading")
 				});
 				gears.classed('active',false);
 				gear02.classed('active',true);
+				arcs.classed('active',false);
+				arc02.classed('active',true);
 				break;
 			case 3:
 				$("#gear-selector").attr({
@@ -131,6 +160,8 @@ console.log("app js is loading")
 				});
 				gears.classed('active',false);
 				gear03.classed('active',true);
+				arcs.classed('active',false);
+				arc03.classed('active',true);
 				break;
 			case 4:
 				$("#gear-selector").attr({
@@ -139,6 +170,8 @@ console.log("app js is loading")
 				});
 				gears.classed('active',false);
 				gear04.classed('active',true);
+				arcs.classed('active',false);
+				arc04.classed('active',true);
 				break;
 			case 5:
 				$("#gear-selector").attr({
@@ -147,6 +180,8 @@ console.log("app js is loading")
 				});
 				gears.classed('active',false);
 				gear05.classed('active',true);
+				arcs.classed('active',false);
+				arc05.classed('active',true);
 				break;
 			default:
 				$("#gear-selector").attr({
@@ -193,17 +228,41 @@ console.log("app js is loading")
 			$("#needle-rpm").attr({
 				"transform":"rotate("+ rpmScale(rpm) +" 100 100)"
 			});
+			$("#stroke-rpm").attr({
+				"stroke-dashoffset": rpmStrokeScale(rpm)
+			});
 			//ROTATE THE MPH NEEDLE
 			$("#needle-mph").attr({
 				"transform":"rotate("+ mphScale(speed) +" 90 90)"
 			});
+			if (gear == 1) {
+				$("#stroke-mph-1").attr({
+					"stroke-dashoffset": mphStrokeScale01(speed)
+				}); }
+			if (gear == 2) {
+			$("#stroke-mph-2").attr({
+				"stroke-dashoffset": mphStrokeScale02(speed)
+			}); }
+			if (gear == 3) {
+			$("#stroke-mph-3").attr({
+				"stroke-dashoffset": mphStrokeScale03(speed)
+			}); }
+			if (gear == 4) {
+			$("#stroke-mph-4").attr({
+				"stroke-dashoffset": mphStrokeScale04(speed)
+			}); }
+			if (gear == 5) {
+			$("#stroke-mph-5").attr({
+				"stroke-dashoffset": mphStrokeScale05(speed)
+			}); }
 			$("#model-engine-speed").text(1000*rpm.toPrecision(4));
 			$("#model-gear-ratio").text(tratios[gear-1]+":1");
 			$("#model-road-speed").text((1000*rpm/tratios[gear-1]).toPrecision(4));
-			$("#drive-wheel").attr({"style":"-webkit-animation-duration:"+(1000/rpm)+"ms;"});
+			$("#drive-wheel").attr({
+				"style":"-webkit-animation: wheel-spin linear infinite; -webkit-animation-duration:"+(1000/rpm)+"ms; animation: wheel-spin linear infinite; animation-duration:"+(1000/rpm)+"ms;"
+			});
 		}
 	}
-	
 
 	$(".slider").noUiSlider({
 		start: 0,
@@ -221,8 +280,10 @@ console.log("app js is loading")
 		slide: function(){
 			console.log("slide "+$(".slider").val());
 			gas = $(".slider").val();
+			$("#pedal-gas").attr({
+				"transform":"translate(0,"+ ( 94 - 94 * $(".slider").val() ) +")"
+			});
 			setGearPos();
-
 		},
 		set: function(){
 			console.log("set "+$(".slider").val());
