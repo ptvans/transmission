@@ -3,37 +3,40 @@
 
 //LAYOUT SVG
 $("#model-engine-speed").attr({
-	"transform":"translate(175,270)"
+	"transform":"translate(100,250)"
 });
 $("#model-road-speed").attr({
-	"transform":"translate(795,320)"
+	"transform":"translate(715,300)"
 });
 $("#model-gear-ratio").attr({
 	"transform":"translate(400,-125)"
 });
 
-//Code School stuff
-	var TodoItem = Backbone.Model.extend({});
-
-	var todoItem = new TodoItem (
-		{ description: 'pick up milk', status: 'incomplete', id:1 }
-	);
-
-	var TodoView = Backbone.View.extend({
-		render: function(){
-			var html = '<h3>' + this.model.get('description') + '</h3>';
-			$(this.el).html(html);
+//SLIDERS
+	$("#slider-gas").noUiSlider({
+		start: 0,
+		connect: "lower",
+		range: {
+			'min': 0,
+			'max': 1
 		}
 	});
 
-	var todoView = new TodoView({model: todoItem});
-	todoView.render();
+	$("#slider-shifts").noUiSlider({
+		start: [1600,4000],
+		connect: true,
+		range: {
+			'min': 1000,
+			'max': 5900
+		}
+	});
 
-	console.log(todoView.el);
+	var lowerRPM = $("#slider-shifts").val()[0]/1000;
+	var upperRPM = $("#slider-shifts").val()[1]/1000;
 
-
-//Paul Stuff
-console.log("app js is loading")
+	$("#slider-shifts .noUi-handle.noUi-handle-lower").attr("data-content",(lowerRPM*1000).toFixed(0)+" rpm");
+	$("#slider-shifts .noUi-handle.noUi-handle-upper").attr("data-content",(upperRPM*1000).toFixed(0)+" rpm");
+		
 
 	var now = new Date();
 	var startTime = now.getTime();
@@ -77,9 +80,6 @@ console.log("app js is loading")
 	var rotateMPH = 0;
 	var gas = 0;
 	var idle = 0.9;
-
-	var lowerRPM = $("#slider-shifts").val()[0]/1000;
-	var upperRPM = $("#slider-shifts").val()[1]/1000;
 
 	function calcRPM(t){
 		rpm = gas * ( maxRPM - Math.pow((tcoeffs[gear-1] * t - 2.25 ),2) );
@@ -139,7 +139,8 @@ console.log("app js is loading")
 			case 1:
 				$("#gear-selector").attr({
 					"style":"transform: translate(1px,1px)",
-					"class":"01"
+					"class":"01",
+					"data-content":gear
 				});
 				gears.classed('active',false);
 				gear01.classed('active',true);
@@ -149,7 +150,8 @@ console.log("app js is loading")
 			case 2:
 				$("#gear-selector").attr({
 					"style":"transform: translate(1px,52px)",
-					"class":"02"
+					"class":"02",
+					"data-content":gear
 				});
 				gears.classed('active',false);
 				gear02.classed('active',true);
@@ -159,7 +161,8 @@ console.log("app js is loading")
 			case 3:
 				$("#gear-selector").attr({
 					"style":"transform: translate(26px,1px)",
-					"class":"03"
+					"class":"03",
+					"data-content":gear
 				});
 				gears.classed('active',false);
 				gear03.classed('active',true);
@@ -169,7 +172,8 @@ console.log("app js is loading")
 			case 4:
 				$("#gear-selector").attr({
 					"style":"transform: translate(26px,52px)",
-					"class":"04"
+					"class":"04",
+					"data-content":gear
 				});
 				gears.classed('active',false);
 				gear04.classed('active',true);
@@ -179,7 +183,8 @@ console.log("app js is loading")
 			case 5:
 				$("#gear-selector").attr({
 					"style":"transform: translate(52px,1px)",
-					"class":"05"
+					"class":"05",
+					"data-content":gear
 				});
 				gears.classed('active',false);
 				gear05.classed('active',true);
@@ -188,7 +193,8 @@ console.log("app js is loading")
 				break;
 			default:
 				$("#gear-selector").attr({
-					"style":"transform: translate(26px,26px)"
+					"style":"transform: translate(26px,26px)",
+					"data-content":"N"
 				});
 				gears.classed('active',false);
 		}
@@ -216,16 +222,16 @@ console.log("app js is loading")
 				timer += 0.1;
 				calcRPM(timer);
 			}
-			//Shift up if RPM exceeds 5900
-			if (rpm > 5.9) {
+			//Shift up if RPM exceeds upper shift point
+			if (rpm > upperRPM) {
 				rpm -= (4*tcoeffs[gear-1]);
 				gear += 1;
 				timer = gear-1;
 				setGearPos();
 				depressClutch();
 			}
-			//Shift down if RPM dips below 1500
-			if (gear > 1 && timer > 5 && rpm < 1.5) {
+			//Shift down if RPM dips below lower shift point
+			if (gear > 1 && timer > 5 && rpm < lowerRPM) {
 				rpm += 1.5;
 				gear -= 1;
 				timer = 1;
@@ -267,35 +273,14 @@ console.log("app js is loading")
 			$("#stroke-mph-5").attr({
 				"stroke-dashoffset": mphStrokeScale05(speed)
 			}); }
-			$("#model-engine-speed").text(1000*rpm.toPrecision(4));
+			$("#model-engine-speed").text((1000*rpm).toFixed(0));
 			$("#model-gear-ratio").text(tratios[gear-1]+":1");
-			$("#model-road-speed").text((1000*rpm/tratios[gear-1]).toPrecision(4));
+			$("#model-road-speed").text((1000*rpm/tratios[gear-1]).toFixed(0));
 			$("#drive-wheel").attr({
 				"style":"-webkit-animation: wheel-spin linear infinite; -webkit-animation-duration:"+(1000/rpm)+"ms; animation: wheel-spin linear infinite; animation-duration:"+(1000/rpm)+"ms;"
 			});
 		}
 	}
-
-	$("#slider-gas").noUiSlider({
-		start: 0,
-		connect: "lower",
-		range: {
-			'min': 0,
-			'max': 1
-		}
-	});
-
-	$("#slider-shifts").noUiSlider({
-		start: [2000,4000],
-		connect: true,
-		range: {
-			'min': 1000,
-			'max': 5900
-		}
-	});
-
-	var sliderVal = $("#slider-gas").val();
-	console.log(sliderVal);
 
 	$("#slider-gas").on({
 		slide: function(){
@@ -304,6 +289,7 @@ console.log("app js is loading")
 			$("#pedal-gas").attr({
 				"transform":"translate(0,"+ ( 94 - 94 * $("#slider-gas").val() ) +")"
 			});
+			$("#slider-gas .noUi-handle.noUi-handle-lower").attr("data-content",(gas*100).toFixed(0)+"%");
 			setGearPos();
 		},
 		set: function(){
@@ -318,7 +304,22 @@ console.log("app js is loading")
 		}
 	});
 
-
+	$("#slider-shifts").on({
+		slide: function(){
+			lowerRPM = $("#slider-shifts").val()[0]/1000;
+			upperRPM = $("#slider-shifts").val()[1]/1000;
+			$("#slider-shifts .noUi-handle.noUi-handle-lower").attr("data-content",(lowerRPM*1000).toFixed(0)+" rpm");
+			$("#slider-shifts .noUi-handle.noUi-handle-upper").attr("data-content",(upperRPM*1000).toFixed(0)+" rpm");
+		},
+		set: function(){
+			lowerRPM = $("#slider-shifts").val()[0]/1000;
+			upperRPM = $("#slider-shifts").val()[1]/1000;
+		},
+		change: function(){
+			lowerRPM = $("#slider-shifts").val()[0]/1000;
+			upperRPM = $("#slider-shifts").val()[1]/1000;
+		}
+	});
 
 
 

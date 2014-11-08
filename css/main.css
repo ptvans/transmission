@@ -143,8 +143,15 @@ h2.title {
 	top: -17px;
 	opacity: 0.8;
 }
-.noUi-handle:after, .noUi-handle:before {
+.noUi-handle:before {
 	display: none;
+}
+
+.noUi-handle:after {
+	content: attr(data-content);
+	top: 48px;
+	left: 5px;
+	font-size: 20px;
 }
 
 #controls, #model, #gauges {
@@ -156,7 +163,6 @@ h2.title {
 	position: absolute;
 	top: 132px;
 	left: 360px;
-	border: 1px solid #eee;
 	width: 80px;
 	height: 80px;
 }
@@ -172,7 +178,7 @@ h2.title {
 	transition: all 1s;
 }
 #gear-selector::after {
-	content: "N";
+	content: attr(data-content);
 	position: absolute;
 	top: 3px;
 	left: 7px;
@@ -244,8 +250,8 @@ h2.title {
 
 #drive-wheel {
 	position: absolute;
-	left: 760px;
-	top: 231px;
+	left: 681px;
+	top: 210px;
 	height: 160px;
 	width: 160px;
 	animation: wheel-spin linear infinite;
@@ -259,12 +265,12 @@ h2.title {
 	height: 90px;
 }
 #flywheel {
-	top: 213px;
-	left: 336px;
+	top: 193px;
+	left: 258px;
 }
 #clutch {
-	top: 213px;
-	left: 353px;
+	top: 193px;
+	left: 277px;
 }
 
 #drive-dot, #clutch-dot, #engine-dot {
