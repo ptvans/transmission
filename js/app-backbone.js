@@ -122,6 +122,9 @@ $("#model-gear-ratio").attr({
 	var mphStrokeScale05 = d3.scale.linear()
 	    .domain([50, maxMPH])
 	    .range([386, 0]);
+	var rpmScaleDeg = d3.scale.linear()
+	    .domain([0, maxRPM])
+	    .range([360, 0]);
 
 
 	var arcs = d3.selectAll("#arcs>g");
@@ -200,6 +203,42 @@ $("#model-gear-ratio").attr({
 		}
 	}	
 
+	// function animationEndCallback() {
+
+	// 	var $driveWheel = $(this);
+
+	// 	$driveWheel.removeClass("spinning");
+
+	// 	//Next step: Update class
+	// 	var duration = 500/rpm;
+	// 	console.error("animationEndCallback()", "New RPM value", rpm, "duration", duration);
+
+
+
+	// 	if(duration >= 0 ){
+
+	// 		console.error("animationEndCallback()", "if: duration not zero!");
+
+	// 		$driveWheel.attr({
+	// 			"style":"-webkit-animation-duration:"+(duration)+"ms; animation-duration:"+(duration)+"ms;"
+	// 		});
+
+	// 		console.error("animationEndCallback()", "if: CSS element", $(this));
+
+
+	// 		setTimeout(function(){
+	// 			$driveWheel.addClass("spinning");
+	// 		}, 1);
+			
+
+	// 	}
+		
+
+
+	// }
+
+	// $("#drive-wheel").bind('oanimationend animationend webkitAnimationEnd', animationEndCallback);
+
 	function depressClutch(){
 		$("#pedal-clutch").attr({
 			"class":"animate"
@@ -207,7 +246,14 @@ $("#model-gear-ratio").attr({
 	}
 
 	//THE BIG LOOP THAT DOES ALL THE STUFF
-	setInterval(dothis, 100);
+
+	var intervalSpeed = 10;
+	var timerValue = intervalSpeed/100;
+
+	setInterval(dothis, intervalSpeed);
+
+
+	var index = 0;
 	
 	function dothis() {
 		//now = Date();
@@ -217,9 +263,9 @@ $("#model-gear-ratio").attr({
 			//maintain engine speed
 			if (rpm > gas * maxRPM - 0.1) {
 				rpm = gas * maxRPM - 0.11;
-				timer -= 0.1;
+				timer -= timerValue;
 			} else {
-				timer += 0.1;
+				timer += timerValue;
 				calcRPM(timer);
 			}
 			//Shift up if RPM exceeds upper shift point
@@ -238,10 +284,10 @@ $("#model-gear-ratio").attr({
 				setGearPos();
 				depressClutch();
 			}
-			console.log("gear "+gear);
-			console.log("MPH "+speed);
-			console.log("RPM "+rpm*1000);
-			console.log("timer "+timer);
+			// console.log("gear "+gear);
+			// console.log("MPH "+speed);
+			// console.log("RPM "+rpm*1000);
+			// console.log("timer "+timer);
 			//ROTATE THE RPM NEEDLE
 			$("#needle-rpm").attr({
 				"transform":"rotate("+ rpmScale(rpm) +" 100 100)"
@@ -275,30 +321,67 @@ $("#model-gear-ratio").attr({
 			}); }
 			$("#model-engine-speed").text((1000*rpm).toFixed(0));
 			$("#model-gear-ratio").text(tratios[gear-1]+":1");
-			$("#model-road-speed").text((1000*rpm/tratios[gear-1]).toFixed(0));
-			$("#drive-wheel").attr({
-				"style":"-webkit-animation: wheel-spin linear infinite; -webkit-animation-duration:"+(1000/rpm)+"ms; animation: wheel-spin linear infinite; animation-duration:"+(1000/rpm)+"ms;"
-			});
+
+			var roadSpeed = 1000*rpm/tratios[gear-1];
+			$("#model-road-speed").text((roadSpeed).toFixed(0));
+
+			updateDriveWheel(index, rpm, roadSpeed);
+			// $("#drive-wheel").attr({
+			// 	"style":"-webkit-animation: wheel-spin linear; -webkit-animation-duration:"+(1000/rpm)+"ms; animation: wheel-spin linear infinite; animation-duration:"+(1000/rpm)+"ms;"
+			// });
+
+			index++;
+			
 		}
+	}
+
+
+	$driveWheel = $("#drive-wheel")
+		.css("transform", "rotate("+(360)+"deg)");
+
+
+	function updateDriveWheel(index, rpm, roadSpeed){
+		
+
+		var speed = roadSpeed/90;
+		var deg = 360-((index % 360)*speed);
+
+		console.log("updateDriveWheel", "speed ", (index % 10)+1, speed);
+		$driveWheel.css("transform", "rotate("+(deg)+"deg)");
+		
+		// if(index % 360){
+		// 	$driveWheel.css("transform", "rotate("+(360-(index*speed))+"deg)");
+				
+		// }
+
+
+		
+
+
+
 	}
 
 	$("#slider-gas").on({
 		slide: function(){
-			console.log("slide "+$("#slider-gas").val());
+			// console.log("slide "+$("#slider-gas").val());
 			gas = $("#slider-gas").val();
 			$("#pedal-gas").attr({
 				"transform":"translate(0,"+ ( 94 - 94 * $("#slider-gas").val() ) +")"
 			});
 			$("#slider-gas .noUi-handle.noUi-handle-lower").attr("data-content",(gas*100).toFixed(0)+"%");
 			setGearPos();
+
+
+			//$("#drive-wheel").addClass("spinning");
+
 		},
 		set: function(){
-			console.log("set "+$("#slider-gas").val());
+			// console.log("set "+$("#slider-gas").val());
 			gas = $("#slider-gas").val();
 			setGearPos();
 		},
 		change: function(){
-			console.log("change "+$("#slider-gas").val());
+			// console.log("change "+$("#slider-gas").val());
 			gas = $("#slider-gas").val();
 			setGearPos();
 		}

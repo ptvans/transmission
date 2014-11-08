@@ -248,16 +248,23 @@ h2.title {
 	fill: #F03B3B;
 }
 
+
+#drive-wheel.spinning{
+	-webkit-animation: wheel-spin linear;
+  	-webkit-animation-duration: 5000ms;
+	animation: wheel-spin linear;
+  	animation-duration: 5000ms;
+	
+}
+
+
 #drive-wheel {
 	position: absolute;
 	left: 681px;
 	top: 210px;
 	height: 160px;
 	width: 160px;
-	animation: wheel-spin linear infinite;
-  	animation-duration: 5000ms;
-	-webkit-animation: wheel-spin linear infinite;
-  	-webkit-animation-duration: 5000ms;
+	
 }
 #flywheel, #clutch {
 	position: absolute;
