@@ -91,7 +91,7 @@ h2.title {
 	margin-top: 20px;
 }
 #push-start {
-	width: 30%;
+	width: 20%;
 	display: inline-block;
 }
 .engine-start {
@@ -115,7 +115,12 @@ h2.title {
 	opacity: 1.0;
 }
 #throttle {
-	width: 60%;
+	width: 39%;
+	display: inline-block;
+}
+
+#shift-points {
+	width: 39%;
 	display: inline-block;
 }
 
@@ -138,8 +143,15 @@ h2.title {
 	top: -17px;
 	opacity: 0.8;
 }
-.noUi-handle:after, .noUi-handle:before {
+.noUi-handle:before {
 	display: none;
+}
+
+.noUi-handle:after {
+	content: attr(data-content);
+	top: 48px;
+	left: 5px;
+	font-size: 20px;
 }
 
 #controls, #model, #gauges {
@@ -151,7 +163,6 @@ h2.title {
 	position: absolute;
 	top: 132px;
 	left: 360px;
-	border: 1px solid #eee;
 	width: 80px;
 	height: 80px;
 }
@@ -167,7 +178,7 @@ h2.title {
 	transition: all 1s;
 }
 #gear-selector::after {
-	content: "N";
+	content: attr(data-content);
 	position: absolute;
 	top: 3px;
 	left: 7px;
@@ -187,6 +198,21 @@ h2.title {
 }
 #gear-selector.05::after {
 	content: "5";
+}
+
+
+#pedal-clutch.animate {
+	animation: depress-clutch ease-in-out 750ms;
+	-webkit-animation: depress-clutch ease-in-out 750ms;
+}
+
+@-webkit-keyframes depress-clutch{
+    0% {
+    	transform: translate(0px,0px);}
+    50% {
+    	transform: translate(0px,-32px);}
+    100% {
+    	transform: translate(0px,0px);}
 }
 
 
@@ -218,18 +244,14 @@ h2.title {
 
 
 /* MODEL */
-#gears rect {
-	transition: all 500ms;
-}
-
 #gears .active {
 	fill: #F03B3B;
 }
 
 #drive-wheel {
 	position: absolute;
-	left: 760px;
-	top: 231px;
+	left: 681px;
+	top: 210px;
 	height: 160px;
 	width: 160px;
 	animation: wheel-spin linear infinite;
@@ -239,16 +261,16 @@ h2.title {
 }
 #flywheel, #clutch {
 	position: absolute;
-	width:10px;
+	width: 10px;
 	height: 90px;
 }
 #flywheel {
-	top: 214px;
-	left: 337px;
+	top: 193px;
+	left: 258px;
 }
 #clutch {
-	top: 214px;
-	left: 354px;
+	top: 193px;
+	left: 277px;
 }
 
 #drive-dot, #clutch-dot, #engine-dot {
@@ -265,6 +287,8 @@ h2.title {
 #clutch-dot, #engine-dot {
 	top: -1px;
 	left: 1px;
+	animation: disk-revolve linear infinite;
+  	animation-duration: 500ms;
 	-webkit-animation: disk-revolve linear infinite;
   	-webkit-animation-duration: 500ms;
 }

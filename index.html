@@ -34,9 +34,15 @@
             <div class="engine-start">start engine</div>
         </div>
         <div id="throttle">
-            <h2>THROTTLE</h2>
+            <h2>Gas</h2>
             <div class="slider-wrapper">
-                Min <div class="slider"></div> Full Throttle
+                Min <div id="slider-gas" class="slider"></div> Full Throttle
+            </div>
+        </div>
+        <div id="shift-points">
+            <h2>When to Shift</h2>
+            <div class="slider-wrapper">
+                Downshift <div id="slider-shifts"  class="slider"></div> Upshift
             </div>
         </div>
 
@@ -62,7 +68,7 @@
             <use stroke="none" fill="none" xlink:href="#path-1"></use>
         </g>
         <rect id="pedal-clutch" opacity="0.5" fill="#F03B3B" sketch:type="MSShapeGroup" x="77.862108" y="170.801546" width="41" height="31.341073" rx="4"></rect>
-        <path d="M62,119.058594 L62,239.058594 L136,239.058594 L136,119.058594 L62,119.058594 Z M82.5064498,139.217521 C80.2940504,139.217521 78.5005463,141.01512 78.5005463,143.218723 L78.5005463,166.557391 C78.5005463,168.767194 80.2886286,170.558594 82.5064498,170.558594 L115.494643,170.558594 C117.707042,170.558594 119.500546,168.760994 119.500546,166.557391 L119.500546,143.218723 C119.500546,141.00892 117.712464,139.217521 115.494643,139.217521 L82.5064498,139.217521 Z" id="Rectangle-54" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+        <path d="M62,119.058594 L62,239.058594 L136,239.058594 L136,119.058594 L62,119.058594 Z M82.5064498,139.217521 C80.2940504,139.217521 78.5005463,141.01512 78.5005463,143.218723 L78.5005463,166.557391 C78.5005463,168.767194 80.2886286,170.558594 82.5064498,170.558594 L115.494643,170.558594 C117.707042,170.558594 119.500546,168.760994 119.500546,166.557391 L119.500546,143.218723 C119.500546,141.00892 117.712464,139.217521 115.494643,139.217521 L82.5064498,139.217521 Z" id="Rectangle-54" fill="#FCFCFC" sketch:type="MSShapeGroup"></path>
         <g id="Rectangle-8">
             <use stroke="#979797" stroke-width="3" fill="#D8D8D8" fill-rule="evenodd" sketch:type="MSShapeGroup" xlink:href="#path-2"></use>
             <use stroke="none" fill="none" xlink:href="#path-2"></use>
@@ -72,7 +78,7 @@
             <use stroke="none" fill="none" xlink:href="#path-3"></use>
         </g>
         <path d="M279.934344,137.976781 C277.730629,137.976781 275.944165,139.769561 275.944165,141.97991 L275.944165,172.006732 C275.944165,174.217348 276.175032,177.78128 277.118252,179.764095 L292.777004,190.27089 C293.421609,192.339093 293.944165,195.802674 293.944165,198.007572 L293.944165,228.000948 C293.944165,230.209563 295.735881,232 297.938949,232 L307.949382,232 C310.15564,232 311.944165,230.205719 311.944165,227.990018 L311.944165,141.986763 C311.944165,139.772111 310.15892,137.976781 307.953987,137.976781 L279.934344,137.976781 Z" id="pedal-gas" opacity="0.5" fill="#F03B3B" sketch:type="MSShapeGroup"></path>
-        <path d="M259,121 L259,275 L333,275 L333,121 L259,121 Z M279.934344,137.976781 C277.730629,137.976781 275.944165,139.769561 275.944165,141.97991 L275.944165,172.006732 C275.944165,174.217348 276.175032,177.78128 277.118252,179.764095 L292.777004,190.27089 C293.421609,192.339093 293.944165,195.802674 293.944165,198.007572 L293.944165,228.000948 C293.944165,230.209563 295.735881,232 297.938949,232 L307.949382,232 C310.15564,232 311.944165,230.205719 311.944165,227.990018 L311.944165,141.986763 C311.944165,139.772111 310.15892,137.976781 307.953987,137.976781 L279.934344,137.976781 Z" id="Rectangle-52" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+        <path d="M259,121 L259,275 L333,275 L333,121 L259,121 Z M279.934344,137.976781 C277.730629,137.976781 275.944165,139.769561 275.944165,141.97991 L275.944165,172.006732 C275.944165,174.217348 276.175032,177.78128 277.118252,179.764095 L292.777004,190.27089 C293.421609,192.339093 293.944165,195.802674 293.944165,198.007572 L293.944165,228.000948 C293.944165,230.209563 295.735881,232 297.938949,232 L307.949382,232 C310.15564,232 311.944165,230.205719 311.944165,227.990018 L311.944165,141.986763 C311.944165,139.772111 310.15892,137.976781 307.953987,137.976781 L279.934344,137.976781 Z" id="Rectangle-52" fill="#FCFCFC" sketch:type="MSShapeGroup"></path>
         <g id="Group" sketch:type="MSLayerGroup" transform="translate(370.792149, 143.750137)" fill="#D8D8D8">
             <rect id="Rectangle-12" sketch:type="MSShapeGroup" x="0" y="0" width="8.24765079" height="57.7335555" rx="4"></rect>
             <rect id="Rectangle-13" sketch:type="MSShapeGroup" x="24.7429524" y="0" width="8.24765079" height="57.7335555" rx="4"></rect>
@@ -90,6 +96,24 @@
         </text>
         <text id="gear-shift" sketch:type="MSTextLayer" font-family="Lato" font-size="18" font-weight="normal" fill="#9B9B9B">
             <tspan x="365.493089" y="123.058594">gear shift</tspan>
+        </text>
+        <text id="1" sketch:type="MSTextLayer" font-family="Lato" font-size="10" font-style="italic" font-weight="260" fill="#9B9B9B">
+            <tspan x="371.493089" y="140.058594">1</tspan>
+        </text>
+        <text id="3" sketch:type="MSTextLayer" font-family="Lato" font-size="10" font-style="italic" font-weight="260" fill="#9B9B9B">
+            <tspan x="396.493089" y="140.058594">3</tspan>
+        </text>
+        <text id="5" sketch:type="MSTextLayer" font-family="Lato" font-size="10" font-style="italic" font-weight="260" fill="#9B9B9B">
+            <tspan x="421.493089" y="140.058594">5</tspan>
+        </text>
+        <text id="2" sketch:type="MSTextLayer" font-family="Lato" font-size="10" font-style="italic" font-weight="260" fill="#9B9B9B">
+            <tspan x="371.493089" y="212.058594">2</tspan>
+        </text>
+        <text id="4" sketch:type="MSTextLayer" font-family="Lato" font-size="10" font-style="italic" font-weight="260" fill="#9B9B9B">
+            <tspan x="396.493089" y="212.058594">4</tspan>
+        </text>
+        <text id="R" sketch:type="MSTextLayer" font-family="Lato" font-size="10" font-style="italic" font-weight="260" fill="#9B9B9B">
+            <tspan x="421.493089" y="212.058594">R</tspan>
         </text>
         <path d="M521.5,20.9869258 L521.5,260.013382" id="Line" stroke="#E4E4E4" stroke-width="2" stroke-linecap="round" stroke-dasharray="1,4" sketch:type="MSShapeGroup"></path>
     </g>
@@ -216,7 +240,7 @@
             <tspan x="93.050462" y="179.899415">1/min </tspan>
             <tspan x="93.050462" y="190.899415">x1000</tspan>
         </text>
-        <g id="stroke-rpm" sketch:type="MSLayerGroup" transform="translate(67.913272, 43.665205)" stroke="#F03B3B" stroke-width="7" opacity="0.5">
+        <g id="stroke-rpm" sketch:type="MSLayerGroup" transform="translate(155.913272, 104.165205) rotate(-3.000000) translate(-155.913272, -104.165205) translate(64.913272, 44.665205)" stroke="#F03B3B" stroke-width="7" opacity="0.5">
             <path d="M3.80864828,119.380308 C1.25042527,110.900218 -0.125042527,101.906718 -0.125042527,92.5917849 C-0.125042527,41.436887 41.3449439,-0.0338350368 92.5005775,-0.0338350368 C135.605679,-0.0338350368 171.833441,29.410738 182.168574,69.2831223" id="Shape" sketch:type="MSShapeGroup"></path>
         </g>
         <g id="arcs" sketch:type="MSLayerGroup" transform="translate(326.000000, 33.244141)">
@@ -324,71 +348,98 @@
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="gears" sketch:type="MSLayerGroup" transform="translate(408.000000, 254.000000)" stroke="#F03B3B" stroke-width="2">
+        <g id="seat" sketch:type="MSLayerGroup" transform="translate(349.000000, 2.000000)" fill="#D8D8D8" opacity="0.5">
+            <path d="M90.1601587,250.574219 C71.7480661,246.250012 67.8701297,240.683615 55.2968736,239 C31.1570956,235.767577 13.0546876,234.164062 7.74609375,239 C2.43749989,243.835938 -12.0117174,278.945312 24.6992187,283.472656 C61.4101549,288 120.183591,288 145,288 C169.816409,288 152.66872,263.826263 145,257.378906 C137.33128,250.93155 107.098005,254.552189 90.1601587,250.574219 Z" id="Rectangle-16" sketch:type="MSShapeGroup"></path>
+            <path d="M184.867187,86.0195311 C175.179683,98.3164059 176.583071,107.344912 163.5,134.683594 C150.416929,162.022276 137.451829,171.390124 134,182.925781 C125.662747,210.788021 123.873724,224.664568 134,241 C144.126276,257.335432 155.847656,256.113285 170,241 C184.152344,225.886715 217.164059,98.0859375 217.164062,86.0195313 C217.164066,73.953125 194.554691,73.7226563 184.867187,86.0195311 Z" id="Rectangle-17" sketch:type="MSShapeGroup"></path>
+            <path d="M193,3.58203129 C183.707031,15.3437498 185.25,51.5 193,61 C200.75,70.5 205.072608,70.363111 212.710937,60.9999986 C220.349266,51.6368863 218.367187,41.8242203 212.710937,27.6796881 C207.054687,13.5351558 202.292969,-8.17968718 193,3.58203129 Z" id="Rectangle-18" sketch:type="MSShapeGroup"></path>
+        </g>
+        <g id="gears" sketch:type="MSLayerGroup" transform="translate(330.000000, 233.000000)" stroke="#F03B3B" stroke-width="2">
             <rect id="gear01" sketch:type="MSShapeGroup" x="0" y="0" width="12" height="36"></rect>
             <rect id="gear02" sketch:type="MSShapeGroup" x="15" y="4" width="12" height="32"></rect>
             <rect id="gear03" sketch:type="MSShapeGroup" x="30" y="8" width="12" height="28"></rect>
             <rect id="gear04" sketch:type="MSShapeGroup" x="45" y="12" width="12" height="24"></rect>
             <rect id="gear05" sketch:type="MSShapeGroup" x="60" y="16" width="12" height="20"></rect>
         </g>
-        <path d="M45.5,400 L1003.50208,400" id="Line" stroke="#E4E4E4" stroke-width="2" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
-        <path d="M178.044353,172.321175 C175.838932,172.321175 173.639522,174.055796 173.127694,176.213009 L167.798903,198.672374 C167.288928,200.821774 165.27831,203.382153 163.310667,204.389805 L136.378209,218.182216 C134.409399,219.190466 132.813364,221.794129 132.813364,224.013437 L132.813364,321.468642 C132.813364,323.680887 134.37604,326.347418 136.302863,327.42404 L155.398605,338.093873 C157.325802,339.170704 160.684802,340.043647 162.887262,340.043647 L263.631175,340.043647 C265.839849,340.043647 269.134822,339.062895 270.973185,337.864495 L296.372419,321.307138 C298.218625,320.103626 301.35847,318.403492 303.373074,317.515243 L321.398938,309.567552 C323.419087,308.676858 325.056741,306.154417 325.056741,303.957855 L325.056741,214.247405 C325.056741,212.039948 323.476244,209.398521 321.531923,208.35048 L314.322072,204.464178 C312.375369,203.414854 309.817618,201.064451 308.607682,199.212122 L293.232176,175.673261 C292.022909,173.821955 289.251763,172.321175 287.049336,172.321175 L178.044353,172.321175 Z" id="Rectangle-1" stroke="#F03B3B" stroke-width="2" sketch:type="MSShapeGroup"></path>
-        <path d="M111.721089,232.687085 C110.021953,234.101491 108.644531,237.035851 108.644531,239.253859 L108.644531,304.298741 C108.644531,306.511064 109.948675,309.527141 111.569069,311.046261 L125.832548,324.418272 C127.447726,325.932501 128.757086,325.364783 128.757086,323.164107 L128.757086,222.501779 C128.757086,220.294894 127.374668,219.656621 125.680528,221.066869 L111.721089,232.687085 Z" id="Rectangle-2" stroke="#F03B3B" stroke-width="2" sketch:type="MSShapeGroup"></path>
-        <g id="clutch-disk" sketch:type="MSLayerGroup" transform="translate(352.000000, 215.000000)" fill="#F03B3B">
+        <path d="M-32.5,379 L925.502075,379" id="Line" stroke="#E4E4E4" stroke-width="2" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+        <path d="M100.044353,151.321175 C97.8389321,151.321175 95.6395225,153.055796 95.1276941,155.213009 L89.7989027,177.672374 C89.2889281,179.821774 87.2783102,182.382153 85.3106666,183.389805 L58.378209,197.182216 C56.4093993,198.190466 54.8133637,200.794129 54.8133637,203.013437 L54.8133637,300.468642 C54.8133637,302.680887 56.3760398,305.347418 58.3028632,306.42404 L77.3986045,317.093873 C79.3258019,318.170704 82.684802,319.043647 84.8872624,319.043647 L185.631175,319.043647 C187.839849,319.043647 191.134822,318.062895 192.973185,316.864495 L218.372419,300.307138 C220.218625,299.103626 223.35847,297.403492 225.373074,296.515243 L243.398938,288.567552 C245.419087,287.676858 247.056741,285.154417 247.056741,282.957855 L247.056741,193.247405 C247.056741,191.039948 245.476244,188.398521 243.531923,187.35048 L236.322072,183.464178 C234.375369,182.414854 231.817618,180.064451 230.607682,178.212122 L215.232176,154.673261 C214.022909,152.821955 211.251763,151.321175 209.049336,151.321175 L100.044353,151.321175 Z" id="Rectangle-1" stroke="#F03B3B" stroke-width="2" sketch:type="MSShapeGroup"></path>
+        <path d="M33.7210889,211.687085 C32.021953,213.101491 30.6445312,216.035851 30.6445312,218.253859 L30.6445312,283.298741 C30.6445312,285.511064 31.9486753,288.527141 33.5690694,290.046261 L47.832548,303.418272 C49.4477259,304.932501 50.7570862,304.364783 50.7570862,302.164107 L50.7570858,201.501779 C50.7570858,199.294894 49.3746685,198.656621 47.6805281,200.066869 L33.7210889,211.687085 Z" id="Rectangle-2" stroke="#F03B3B" stroke-width="2" sketch:type="MSShapeGroup"></path>
+        <g id="clutch-disk" sketch:type="MSLayerGroup" transform="translate(274.000000, 193.000000)" fill="#F03B3B">
             <rect sketch:type="MSShapeGroup" x="0" y="0" width="15" height="90"></rect>
         </g>
-        <g id="engine-flywheel" sketch:type="MSLayerGroup" transform="translate(334.000000, 215.000000)" fill="#F03B3B">
+        <g id="engine-flywheel" sketch:type="MSLayerGroup" transform="translate(255.000000, 193.000000)" fill="#F03B3B">
             <rect sketch:type="MSShapeGroup" x="0" y="0" width="15" height="90"></rect>
         </g>
-        <g id="road-wheel" sketch:type="MSLayerGroup" transform="translate(751.000000, 222.000000)" fill="#D8D8D8" opacity="0.5">
+        <g id="road-wheel" sketch:type="MSLayerGroup" transform="translate(673.000000, 201.000000)" fill="#D8D8D8" opacity="0.5">
             <circle id="wheel" sketch:type="MSShapeGroup" cx="88.5" cy="88.5" r="88.5"></circle>
         </g>
         <text id="road-speed" sketch:type="MSTextLayer" font-family="Lato" font-size="24" font-weight="normal" fill="#9B9B9B">
-            <tspan x="778" y="210">road speed</tspan>
+            <tspan x="700" y="189">road speed</tspan>
         </text>
-        <path d="M479.166116,261.265967 C477.177865,260.306266 473.814943,259.197702 471.63766,258.786682 L428.622559,250.666443 C426.452958,250.256873 422.901375,249.808181 420.696969,249.664723 L413.325108,249.184979 C411.117526,249.041314 408.365386,247.408502 407.189011,245.55529 L386.123514,212.369562 C384.942223,210.508604 382.185298,209 379.980791,209 L332.003807,209 C329.792565,209 328,210.79953 328,212.997324 L328,305.002676 C328,307.210337 329.796253,309 331.994372,309 L378.931434,309 C381.137465,309 384.47881,308.118557 386.404572,307.025548 L405.849161,295.989333 C407.770431,294.898873 411.122454,293.99041 413.32271,293.960406 L478.666223,293.069355 C480.872481,293.03927 483.750718,291.58233 485.084641,289.828735 L486.576365,287.867694 C487.914901,286.108034 489,282.891495 489,280.6766 L489,270.017596 C489,267.805725 487.379554,265.230482 485.399953,264.274955 L479.166116,261.265967 Z" id="Rectangle-5" stroke="#F03B3B" stroke-width="2" sketch:type="MSShapeGroup"></path>
-        <path d="M497.005827,266 C494.79347,266 493,267.790448 493,269.999369 L493,283.000631 C493,285.209421 494.788445,287 496.99329,287 L740.00671,287 C742.212143,287 745.004512,285.506567 746.230354,283.684076 L755.894646,269.315924 C757.126437,267.48459 756.326311,266 754.119173,266 L497.005827,266 Z" id="Rectangle-6" stroke="#27AAE1" stroke-width="2" sketch:type="MSShapeGroup"></path>
-        <circle id="Oval-4" stroke="#27AAE1" stroke-width="2" sketch:type="MSShapeGroup" cx="839.5" cy="310.5" r="88.5"></circle>
-        <circle id="Oval-2" opacity="0.5" fill="#D8D8D8" sketch:type="MSShapeGroup" cx="239.5" cy="310.5" r="88.5"></circle>
+        <path d="M401.166116,240.265967 C399.177865,239.306266 395.814943,238.197702 393.63766,237.786682 L350.622559,229.666443 C348.452958,229.256873 344.901375,228.808181 342.696969,228.664723 L335.325108,228.184979 C333.117526,228.041314 330.365386,226.408502 329.189011,224.55529 L308.123514,191.369562 C306.942223,189.508604 304.185298,188 301.980791,188 L254.003807,188 C251.792565,188 250,189.79953 250,191.997324 L250,284.002676 C250,286.210337 251.796253,288 253.994372,288 L300.931434,288 C303.137465,288 306.47881,287.118557 308.404572,286.025548 L327.849161,274.989333 C329.770431,273.898873 333.122454,272.99041 335.32271,272.960406 L400.666223,272.069355 C402.872481,272.03927 405.750718,270.58233 407.084641,268.828735 L408.576365,266.867694 C409.914901,265.108034 411,261.891495 411,259.6766 L411,249.017596 C411,246.805725 409.379554,244.230482 407.399953,243.274955 L401.166116,240.265967 Z" id="Rectangle-5" stroke="#F03B3B" stroke-width="2" sketch:type="MSShapeGroup"></path>
+        <path d="M419.005827,245 C416.79347,245 415,246.790448 415,248.999369 L415,262.000631 C415,264.209421 416.788445,266 418.99329,266 L662.00671,266 C664.212143,266 667.004512,264.506567 668.230354,262.684076 L677.894646,248.315924 C679.126437,246.48459 678.326311,245 676.119173,245 L419.005827,245 Z" id="Rectangle-6" stroke="#27AAE1" stroke-width="2" sketch:type="MSShapeGroup"></path>
+        <circle id="Oval-4" stroke="#27AAE1" stroke-width="2" sketch:type="MSShapeGroup" cx="761.5" cy="289.5" r="88.5"></circle>
+        <circle id="Oval-2" opacity="0.5" fill="#D8D8D8" sketch:type="MSShapeGroup" cx="161.5" cy="289.5" r="88.5"></circle>
         <text id="model-road-speed" sketch:type="MSTextLayer" font-family="Lato" font-size="42" font-weight="normal" sketch:alignment="middle" fill="#A5D8EE">
-            <tspan x="788.828" y="320">2,200</tspan>
+            <tspan x="710.828" y="299">2,200</tspan>
         </text>
         <text id="RPM-2" sketch:type="MSTextLayer" font-family="Lato" font-size="20" font-weight="260" sketch:alignment="middle" fill="#9B9B9B">
-            <tspan x="820.665" y="354">RPM</tspan>
+            <tspan x="742.665" y="333">RPM</tspan>
         </text>
         <text id="model-engine-speed" sketch:type="MSTextLayer" font-family="Lato" font-size="42" font-weight="normal" sketch:alignment="middle" fill="#F2A8A8">
-            <tspan x="173.828" y="274">2,500</tspan>
+            <tspan x="95.828" y="253">2,500</tspan>
         </text>
         <text id="RPM" sketch:type="MSTextLayer" font-family="Lato" font-size="20" font-weight="260" sketch:alignment="middle" fill="#9B9B9B">
-            <tspan x="205.665" y="313">RPM</tspan>
+            <tspan x="127.665" y="292">RPM</tspan>
         </text>
-        <g id="Rectangle-16-+-Rectangle-17-+-Rectangle-18" sketch:type="MSLayerGroup" transform="translate(427.000000, 21.000000)" fill="#D8D8D8" opacity="0.5">
-            <path d="M90.1601587,250.574219 C71.7480661,246.250012 67.8701297,240.683615 55.2968736,239 C31.1570956,235.767577 13.0546876,234.164062 7.74609375,239 C2.43749989,243.835938 -12.0117174,278.945312 24.6992187,283.472656 C61.4101549,288 120.183591,288 145,288 C169.816409,288 152.66872,263.826263 145,257.378906 C137.33128,250.93155 107.098005,254.552189 90.1601587,250.574219 Z" id="Rectangle-16" sketch:type="MSShapeGroup"></path>
-            <path d="M184.867187,86.0195311 C175.179683,98.3164059 176.583071,107.344912 163.5,134.683594 C150.416929,162.022276 137.451829,171.390124 134,182.925781 C125.662747,210.788021 123.873724,224.664568 134,241 C144.126276,257.335432 155.847656,256.113285 170,241 C184.152344,225.886715 217.164059,98.0859375 217.164062,86.0195313 C217.164066,73.953125 194.554691,73.7226563 184.867187,86.0195311 Z" id="Rectangle-17" sketch:type="MSShapeGroup"></path>
-            <path d="M193,3.58203129 C183.707031,15.3437498 185.25,51.5 193,61 C200.75,70.5 205.072608,70.363111 212.710937,60.9999986 C220.349266,51.6368863 218.367187,41.8242203 212.710937,27.6796881 C207.054687,13.5351558 202.292969,-8.17968718 193,3.58203129 Z" id="Rectangle-18" sketch:type="MSShapeGroup"></path>
+        <text id="gear" sketch:type="MSTextLayer" font-family="Lato" font-size="12" font-weight="normal" fill="#D1D1D1">
+            <tspan x="389.493089" y="164.058594">gear</tspan>
+            <tspan x="389.493089" y="179.058594">shift</tspan>
+        </text>
+        <text id="steering" sketch:type="MSTextLayer" font-family="Lato" font-size="12" font-weight="normal" fill="#D2D2D2">
+            <tspan x="336.493089" y="59.0585938">steering</tspan>
+            <tspan x="336.493089" y="74.0585938">wheel</tspan>
+        </text>
+        <g id="Group" sketch:type="MSLayerGroup" transform="translate(333.000000, 253.000000)" font-size="10" font-family="Lato" fill="#F2A8A8" font-weight="normal">
+            <text id="-2" sketch:type="MSTextLayer">
+                <tspan x="0" y="10">1</tspan>
+            </text>
+            <text id="-4" sketch:type="MSTextLayer">
+                <tspan x="30" y="10">3</tspan>
+            </text>
+            <text id="-6" sketch:type="MSTextLayer">
+                <tspan x="60" y="10">5</tspan>
+            </text>
+            <text id="-3" sketch:type="MSTextLayer">
+                <tspan x="15" y="10">2</tspan>
+            </text>
+            <text id="-5" sketch:type="MSTextLayer">
+                <tspan x="45" y="10">4</tspan>
+            </text>
         </g>
-        <rect id="Rectangle-41" stroke="#EBEBEB" stroke-width="2" sketch:type="MSShapeGroup" transform="translate(402.000000, 124.000000) rotate(-10.000000) translate(-402.000000, -124.000000) " x="393" y="72" width="18" height="104" rx="6"></rect>
-        <g id="Rectangle-43-+-Rectangle-42" sketch:type="MSLayerGroup" transform="translate(417.000000, 157.000000)">
-            <path d="M19.5809725,63.1200479 C13.4321608,68.6683897 -5.76783933,72.6162401 1.75742479,78.1045738 C9.28268892,83.5929075 38.6613181,84.844842 46.5861051,82.8154603 C54.5108921,80.7860785 43.4812755,73.0334054 41.3259889,67.9718445 C39.1707022,62.9102836 25.7297842,57.5717061 19.5809725,63.1200479 Z" id="Rectangle-43" opacity="0.5" fill="#D8D8D8" sketch:type="MSShapeGroup"></path>
-            <path d="M31.5837718,2.02092907 C24.7193934,4.9033909 28.3449192,20.3893752 27.4491955,25.4692767 C23.9793714,45.1476272 22.6122655,63.1081285 22.6122655,63.1081285 C22.3201842,66.4075031 24.7320747,69.5492065 27.9945143,70.1244627 L30.7052508,70.6024386 C33.9698659,71.1780784 36.472725,68.9624728 36.3546345,65.6502439 C36.3546345,65.6502439 35.1101492,50.0881779 38.3823736,31.5304714 C39.0348879,27.8298787 46.0248171,25.1622834 47.0296515,19.4635844 C48.0344859,13.7648855 45.4972261,9.61310786 45.4972261,9.61310786 C44.2416473,6.55360062 41.0595389,2.49618875 37.9619527,1.33143618 C37.9619527,1.33143618 38.4481502,-0.861532755 31.5837718,2.02092907 Z" id="Rectangle-42" stroke="#EBEBEB" stroke-width="2" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+        <g id="steering-wheel" sketch:type="MSLayerGroup" transform="translate(277.000000, 50.000000)" stroke="#EBEBEB" stroke-width="2">
+            <path d="M18.70784,48.7382812 C8.79768372,48.7382812 -0.083984375,62.6884766 -0.083984375,62.6884766 C-0.083984375,62.6884766 2.85546879,82.7607422 4.88769531,85.5488281 C6.91992182,88.3369141 8.82910156,85.5488281 20.9628906,85.5488281 C33.0966797,85.5488281 47.3427734,106.234375 45.0869141,92.6992188 C44.6488878,90.0710614 44.5235983,89.8077728 43.7207031,85.5488281 C43.0271969,81.870135 32.7832031,76.6445312 30.4160156,69.2392578 C28.0488281,61.8339844 39.2422738,58.1999661 38.6464844,54.90625 C36.0278965,40.4298519 35.3476562,35.3886719 35.3476562,35.3886719 C35.3476562,35.3886719 28.6179962,48.7382812 18.70784,48.7382812 Z" id="Rectangle-55" sketch:type="MSShapeGroup"></path>
+            <rect id="Rectangle-41" sketch:type="MSShapeGroup" transform="translate(47.000000, 53.000000) rotate(-10.000000) translate(-47.000000, -53.000000) " x="38" y="1" width="18" height="104" rx="6"></rect>
+        </g>
+        <g id="shifter" sketch:type="MSLayerGroup" transform="translate(339.000000, 156.000000)">
+            <path d="M19.5809725,43.1200479 C13.4321608,48.6683897 -5.76783933,52.6162401 1.75742479,58.1045738 C9.28268892,63.5929075 38.6613181,64.844842 46.5861051,62.8154603 C54.5108921,60.7860785 43.4812755,53.0334054 41.3259889,47.9718445 C39.1707022,42.9102836 25.7297842,37.5717061 19.5809725,43.1200479 Z" id="Rectangle-43" opacity="0.5" fill="#D8D8D8" sketch:type="MSShapeGroup"></path>
+            <path d="M23.536398,7.4764272 C22.6899843,12.276678 25.5265827,13.5324041 24.630859,18.6123056 C21.1610349,38.2906561 21.1735355,45.2696197 21.1735355,45.2696197 C20.978221,48.5637096 23.4685565,51.701129 26.730996,52.2763851 L29.4417325,52.7543611 C32.7063477,53.3300008 35.1776314,51.1204672 35.0159752,47.8025653 C35.0159752,47.8025653 34.1289069,38.750001 35.2997274,20.4935144 C35.5336847,16.8454411 40.8643058,16.4076829 41.8691402,10.708984 C42.8739746,5.01028504 39.1029626,2.52063103 39.1029626,2.52063103 C36.9264988,0.0369740013 32.6130301,-1.12000837 29.6222826,0.291687127 C29.6222826,0.291687127 24.7386557,0.65808518 23.536398,7.4764272 Z" id="Rectangle-42" stroke="#EBEBEB" stroke-width="2" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
         </g>
         <text id="drive-wheel" opacity="0.799999952" fill="#27AAE1" sketch:type="MSTextLayer" font-family="Lato" font-size="14" font-weight="normal">
-            <tspan x="807" y="273" fill="#9B9B9B">drive wheel</tspan>
+            <tspan x="729" y="252" fill="#9B9B9B">drive wheel</tspan>
         </text>
         <text id="transmission" opacity="0.799999952" fill="#F03B3B" sketch:type="MSTextLayer" font-family="Lato" font-size="12" font-weight="normal">
-            <tspan x="338" y="203" fill="#9B9B9B">transmission</tspan>
+            <tspan x="250" y="182" fill="#9B9B9B">transmission</tspan>
         </text>
         <text id="engine" opacity="0.799999952" fill="#F03B3B" sketch:type="MSTextLayer" font-family="Lato" font-size="14" font-weight="normal">
-            <tspan x="211" y="219" fill="#9B9B9B">engine</tspan>
+            <tspan x="133" y="198" fill="#9B9B9B">engine</tspan>
         </text>
         <text id="gear-ratio" sketch:type="MSTextLayer" font-family="Lato" font-size="18" font-weight="normal" fill="#9B9B9B">
-            <tspan x="411" y="362">gear ratio</tspan>
+            <tspan x="333" y="341">gear ratio</tspan>
         </text>
         <text id="model-gear-ratio" sketch:type="MSTextLayer" font-family="Lato" font-size="38" font-weight="normal">
-            <tspan x="406" y="341" fill="#F2A8A8">0.8</tspan>
-            <tspan x="458.136" y="341" fill="#A5D8EE">:1</tspan>
+            <tspan x="328" y="320" fill="#F2A8A8">0.8</tspan>
+            <tspan x="380.136" y="320" fill="#A5D8EE">:1</tspan>
         </text>
-        <path d="M1.5,2.5 L1077.51672,2.5" id="Line" stroke="#E4E4E4" stroke-width="2" stroke-linecap="round" stroke-dasharray="1,4" sketch:type="MSShapeGroup"></path>
     </g>
 </svg>
 </div>
