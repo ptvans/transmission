@@ -446,6 +446,63 @@
     
     </div>
 
+
+<!-- COPIED FROM ONLINE TONE GENERATOR -->
+<div id="generator" class='generator'>
+
+    <form id="generatorForm" action ="php/tonegenerator.php" method="post">
+        <div class="input-group">
+            <input type="text" class="input--frequency" id="freq" name="freq" value="440" />
+            <p id="units">Hertz</p>
+        </div>
+        <div style='clear:both'></div>
+        <div class="generator-buttons">
+            <button type="button" class="beginTuning generatorButton">Play</button>
+            <button type="button" onclick="stop()" class="stopTuning generatorButton">Stop</button>
+            <button type="submit" class="downloadButton generatorButton">Save</button>
+        </div>
+        <div class="volume-wrapper">
+            <label for="">Volume</label>
+            <div class="volume-slider"></div>
+        </div>
+        <div class="advanced-options">
+            <div class="waveform-wrapper">
+                <input type="radio" name="waveform" value='sine' id='sine' checked>
+                <label for="sine">Sine</label>
+                <div class="waveform-image waveform-image--sine"></div>
+            </div>
+            <div class="waveform-wrapper">
+                <input type="radio" name="waveform" value='square' id='square'>
+                <label for="square">Square</label>
+                <div class="waveform-image waveform-image--square"></div>
+            </div>
+            <div class="waveform-wrapper">
+                <input type="radio" name="waveform" value='sawtooth' id='sawtooth'>
+                <label for="sawtooth">Sawtooth</label>
+                <div class="waveform-image waveform-image--sawtooth"></div>
+            </div>
+            <div class="waveform-wrapper">
+                <input type="radio" name="waveform" value='triangle' id='triangle'>
+                <label for="triangle">Triangle</label>
+                <div class="waveform-image waveform-image--triangle"></div>
+            </div>
+        </div>
+    </form>
+
+    <p class="clear"></p>
+    <div id="spinner" style="display:none;">
+    <p>Your file will be ready in a few seconds...</p>
+    <img src="/img/ajax-loader.gif" alt="Spinning loader" />
+    </div>
+
+    <p class="clear"></p>
+</div>
+
+
+
+
+
+
 </div> 
        
         <script src="js/vendor/jquery.min.js"></script> 
@@ -454,8 +511,10 @@
         <script src="js/vendor/backbone.min.js"></script>
         <!--<script src="js/vendor/angular.min.js"></script>-->
         <script src="js/vendor/d3.min.js"></script>
+        <script src="js/vendor/tonegenerator.js"></script>
         <script src="js/app-backbone.js"></script>
-        <!--<script src="js/app-angular.js"></script>--> 
+        <!--<script src="js/app-angular.js"></script>-->
+        
 
     </body>
 </html>

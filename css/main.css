@@ -129,6 +129,11 @@ h2.title {
 	display: inline-block;
 }
 
+.volume-slider {
+	width: 200px;
+	display: inline-block;
+}
+
 .noUi-connect {
 	background: #F03B3B;
 }
